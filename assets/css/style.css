@@ -1,0 +1,35 @@
+.header-background {
+    background-color: #DCE5E2;
+}
+
+.nav-link {
+    color: #011638 !important;
+}
+
+a:hover {
+    color: #087E8B!important;
+}
+
+a:active {
+    color: #087E8B!important;
+}
+
+.dropdown-background {
+    background-color: #DCE5E2;
+}
+
+/*--- Header ---*/
+
+    /*--- Logo styles --*/
+
+.logo-size {
+    height: 100px;
+}
+
+    /*--- Navigation styles --*/
+
+.link-styles {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 55%;
+}
