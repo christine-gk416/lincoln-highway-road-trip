@@ -20,6 +20,14 @@ a:active {
     background-color: #DCE5E2;
 }
 
+i {
+   color: #011638;
+}
+
+a:hover i {
+    color: #087E8B;
+}
+
 /*--- Header ---*/
 
     /*--- Logo styles --*/
@@ -36,13 +44,19 @@ a:active {
     padding-left: 55%;
 }
 
+h4 {
+    color: #087e8b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
 /*--- Footer --*/
 
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20%;
+    height: 25%;
     background-color: #FFCA85;
   }
 
@@ -50,6 +64,15 @@ footer {
     float: left;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-    color: #011638;
     font-size: 20px;
+  }
+
+ li a {
+    color: #011638;
+    padding-right: 10px;
+    
+  }
+
+  .footer-pos {
+      padding-top: 25px;
   }
