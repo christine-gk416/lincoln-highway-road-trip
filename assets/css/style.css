@@ -1,3 +1,5 @@
+/*--- General Colors---*/
+
 .header-background {
     background-color: #DCE5E2;
 }
@@ -33,3 +35,21 @@ a:active {
     font-family: 'Roboto', sans-serif;
     padding-left: 55%;
 }
+
+/*--- Footer --*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #FFCA85;
+  }
+
+  .footer-links li {
+    float: left;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    color: #011638;
+    font-size: 20px;
+  }
