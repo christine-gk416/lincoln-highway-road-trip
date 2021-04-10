@@ -1,7 +1,7 @@
 /*--- General Colors---*/
 
 .header-background {
-    background-color: #DCE5E2;
+    background-color: #FBFFFE;
 }
 
 .nav-link {
@@ -17,7 +17,7 @@ a:active {
 }
 
 .dropdown-background {
-    background-color: #DCE5E2;
+    background-color: #FBFFFE;
 }
 
 i {
@@ -30,10 +30,21 @@ a:hover i {
 
 /*--- General styles---*/
 
+h1 {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 30px;
+}
+
 h4 {
     color: #087e8b;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
+    font-weight: 500;
+}
+
+i {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 html,body{
@@ -61,27 +72,99 @@ html,body{
 }
 
 /*--- Home ---*/
+    
+    /*--- Roadtrip banner ---*/
+
+.banner-background {
+    background-color: #FFCA85;
+    height: 150px;
+}
+
+.bn-txt-pos {
+    padding-top: 60px;
+    padding-left: 400px;
+}
 
     /*--- Home Slideshow ---*/
 
 .image-size{
-    width: 100%;
+    width: 1200px;
     height: auto;
     display: block;
-    position: relative;
+    position: absolute;
     padding-bottom: 0px;
     object-fit: contain;
+    opacity: 0;
+    margin: auto;
+    padding: 1rem 4rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
 }
 
 .slider-wrapper {
     overflow: hidden;
     width: 90%;
     box-sizing: border-box;
+    background-color: #FBFFFE;
   }
 
   .slider {
     transform-style: preserve-3d;
   }
+
+.image-size.initial,
+.image-size.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.image-size.prev,
+.image-size.next {
+  z-index: 800;
+}
+.image-size.prev {
+  transform: translateX(-100%); 
+}
+.image-size.next {
+  transform: translateX(100%); 
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFCA85;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 2px solid #011638;
+}
+.carousel__button--prev {
+  left: 5%;
+}
+.carousel__button--next {
+  right: 5%;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 
 /*--- Footer --*/
@@ -90,7 +173,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 25%;
+    height: 175px;
     background-color: #FFCA85;
   }
 
@@ -108,5 +191,160 @@ footer {
   }
 
   .footer-pos {
-      padding-top: 25px;
+      padding-top: 40px;
   }
+
+ .contact-pos {
+   padding-left: 75px;
+ } 
+
+ @media screen and (max-width: 1024px) {
+  .footer-pos{
+    padding-top: 3%;
+   }
+
+  .explore-mobile {
+    padding-left: 25%;
+   } 
+
+  .explore-head {
+    padding-left: 5%;
+  } 
+
+  .bn-txt-pos {
+    padding-top: 5%;
+    padding-left: 17%;
+   }
+
+   .logo-size {
+     padding-left: 5%;
+   }
+ }
+
+ @media screen and (max-width: 812px) {
+
+   footer {
+     position: relative;
+   }
+
+   .footer-pos {
+    padding-top: 3%;
+   }
+
+   .explore-mobile {
+    padding-left: 20%;
+   }
+
+   .bn-txt-pos {
+    padding-top: 7%;
+    padding-left: 8%;
+   }
+
+   .logo-size {
+     padding-left: 5%;
+   }
+ }
+
+
+ @media screen and (max-width: 768px) {
+
+  footer {
+    position: absolute;
+  }
+
+  .footer-pos {
+    padding-top: 3%;
+  }
+
+  .explore-head {
+    padding-left: 20%;
+  }
+
+  .explore-mobile {
+    padding-left: 15%;
+  }
+
+  .bn-txt-pos {
+   padding-top: 7%;
+   padding-left: 8%;
+  }
+
+  .logo-size {
+    padding-left: 5%;
+  }
+
+ }
+
+ @media screen and (max-width: 740px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .footer-pos {
+    padding-top: 18px;
+  }
+  .explore-mobile {
+    padding-left: 12%;
+  }
+  .explore-head {
+    padding-left: 20%;
+  }
+
+  .bn-txt-pos {
+    padding-top: 8%;
+    padding-left: 10%;
+  }
+ }
+
+ @media screen and (max-width: 414px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 18px;
+   }
+
+   a i {
+     font-size: 17px;
+   }
+
+   li a {
+    font-size: 18px;
+   }
+
+   .footer-pos {
+     padding-top: 12px;
+   }
+
+   footer {
+     position: absolute;
+   }
+
+   .explore-mobile {
+    padding-left: 15%;
+   }
+   
+   .explore-head {
+     padding-left: 5%;
+   }
+
+   .contact-pos {
+     padding-left: 5%;
+  }
+
+  .social-pos {
+    padding-left: 0%;
+  }
+
+   .bn-txt-pos {
+    padding-top: 10%;
+    padding-left: 8%;
+   }
+ }
