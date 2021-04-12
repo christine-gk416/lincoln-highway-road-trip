@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
+   
     
     <title>Lincoln Highway Road Trip</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
@@ -55,109 +57,135 @@
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-      Keep in mind that COVID-19 restrictions may be in place. Learn more about restrictions in Pennsylvania <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" target="_blank" class="alert-link">here</a>.
+      Learn more about COVID-19 restrictions in Pennsylvania 
+      <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" target="_blank" class="alert-link" rel="noopener">here</a>.
     </div>
 
     <section class="banner-background">
       <h1 class="bn-txt-pos">Lincoln Highway Roadtrip: Pennsylvania</h1>
     </section>
-    <section>
-      <div class="row">
-        
 
-       <div class="col-12 slider-wrapper">
-          <div class="slider">
-           
-            <img class="image-size slider-img initial" src="assets/images/fallingwater.jpg" alt="Image of Frank Lloyd Wright's Fallingwater house">
-          
-        
-            <img class="image-size slider-img" src="assets/images/coffee-pot.jpg" alt="Image of the Bedford coffee pot house">
-        
-        
-            <img class="image-size slider-img" src="assets/images/gettysburg.jpg" alt="Image of cannon in Gettysburg National Park">
-        
-            <div class="carousel__button--next"></div>
-            <div class="carousel__button--prev"></div>
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container-fluid">
-        <div class="row no-gutter"> 
-    <!--Social links-->
-
-          <div class="col-xl-4 col-md-6 col-6 footer-pos social-pos">
-            <ul class="footer-links">
-              <li>
-                <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
-                   <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                 </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com/" aria-label="Twitter" target="_blank" rel="noopener">
-                   <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                  <a href="mailto:kelleyc416@gmail.com" aria-label="Contact email address" target="_blank" rel="noopener">
-                    <i class="fas fa-envelope-square" aria-hidden="true"></i>
-                              </a>
-                          </li>
-  
-                          <li>
-                              <a href="tel:0876093111" aria-label="Contact phone number" target="_blank" rel="noopener">
-                              <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                              </a>
-                          </li>
-                  
-                      </ul>    
-                  </div>
-                  <!--Footer Contact Info-->
-                  <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos">
-                    <h4>Contact Us</h4>
-                  </div>
-                  
-                  <!--Bookshop links-->
-                  <div class="col-xl-4 col-md-12 col-12 footer-pos explore-mobile">
-                 
-                      <h4 class="explore-head">
-                        <i class="fas fa-road"></i>
-                          Explore Pennsylvania:
-                      </h4>
-  
-                      <ul class="footer-links">
-                          
-                           <li>
-                              <a href="http://www.weirdus.com/states/pennsylvania/index.php" target="_blank" rel="noopener">
-                              Weird Pennsylvania
-                              </a>
-  
-                          </li>
-                          <li>
-                              <a href="https://uncoveringpa.com/" target="_blank" rel="noopener">
-                              Uncovering PA
-                              </a>
-                          </li>
-                          <li>
-                              <a href="https://www.atlasobscura.com/things-to-do/pennsylvania" target="_blank" rel="noopener">
-                                  Atlas Obscura
-                              </a>
-                          </li>
-                      </ul>   
-                  </div>
-                
-              </div> 
-          </div>  
-    </footer>
     
-    <script src="assets/js/project.js"></script>
+    <section class="slideshow-top">
+
+      <div class="slideshow-container">
+            
+        <div class="mySlides fade-style">
+              <img class="image-size" src="assets/images/fallingwater.jpg" alt="Image of Frank Lloyd Wright's Fallingwater house">
+        </div>     
+
+        <div class="mySlides fade-style">
+              <img class="image-size" src="assets/images/coffee-pot.jpg" alt="Image of the Bedford coffee pot house">
+        </div>
+        
+        <div class="mySlides fade-style">
+              <img class="image-size" src="assets/images/gettysburg.jpg" alt="Image of cannon in Gettysburg National Park">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div> 
+
+      <br>
+      <div class="dot-pos">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+        
+    </section>  
+
+    <section class="exp-btn-pos">
+      <div>
+        <a href="#" class="explore-btn">
+         Explore
+        </a>
+      </div>
+    </section>  
+
+  <footer>
+
+    <div class="container-fluid">
+      <div class="row no-gutter"> 
+
+    <!--Footer Contact Info-->
+        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos">
+          <a class="contact-btn">Contact Us</a>
+        </div>
+
+    <!--Social links-->
+        <div class="col-xl-4 col-md-6 col-6 footer-pos social-pos">
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+                      
+            <li>
+              <a href="https://www.twitter.com/" aria-label="Twitter" target="_blank" rel="noopener">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:kelleyc416@gmail.com" aria-label="Contact email address" target="_blank" rel="noopener">
+                <i class="fas fa-envelope-square" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a href="tel:0876093111" aria-label="Contact phone number" target="_blank" rel="noopener">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+                          
+          </ul>    
+        </div>
+                  
+    <!--Bookshop links-->
+        <div class="col-xl-4 col-md-12 col-12 footer-pos explore-mobile">
+          <h4 class="explore-head">
+            <i class="fas fa-road"></i>
+            Explore Pennsylvania:
+          </h4>
+  
+          <ul class="footer-links">
+                          
+            <li>
+              <a href="http://www.weirdus.com/states/pennsylvania/index.php" target="_blank" rel="noopener">
+                  Weird Pennsylvania
+              </a>
+            </li>
+                          
+            <li>
+              <a href="https://uncoveringpa.com/" target="_blank" rel="noopener">
+                Uncovering PA
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.atlasobscura.com/things-to-do/pennsylvania" target="_blank" rel="noopener">
+                Atlas Obscura
+              </a>
+            </li>
+          </ul>   
+        </div>
+                
+      </div> 
+    </div>  
+  </footer>
+    
+    <script src="assets/js/slider.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
