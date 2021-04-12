@@ -71,9 +71,14 @@ html,body{
     padding-left: 55%;
 }
 
-/*--- Home ---*/
+/*--- Home Page---*/
     
     /*--- Roadtrip banner ---*/
+
+.alert-margin {
+  margin-bottom: 0;
+  padding-left: 30%;
+}    
 
 .banner-background {
     background-color: #FFCA85;
@@ -85,87 +90,94 @@ html,body{
     padding-left: 400px;
 }
 
+.explore-btn {
+  background-color: #FFCA85;
+  color: #011638;
+  padding: 1em 1.5em;
+  font-family:'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.exp-btn-pos {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 46%;
+}
+
     /*--- Home Slideshow ---*/
 
-.image-size{
-    width: 1200px;
-    height: auto;
-    display: block;
-    position: absolute;
-    padding-bottom: 0px;
-    object-fit: contain;
-    opacity: 0;
-    margin: auto;
-    padding: 1rem 4rem;
-    z-index: 100;
-    transition: transform .5s, opacity .5s, z-index .5s;
-}
+    .slideshow-top {
+      padding-top: 2%;
+    }
 
-.slider-wrapper {
-    overflow: hidden;
-    width: 90%;
-    box-sizing: border-box;
-    background-color: #FBFFFE;
-  }
+    .image-size {
+      width: 100%;
+      vertical-align: middle;
+    }
+  
+    .slideshow-container {
+      max-width: 1200px;
+      position: relative;
+      margin: auto;
+    }
 
-  .slider {
-    transform-style: preserve-3d;
-  }
+    .mySlides {
+      display: none;
+    }
 
-.image-size.initial,
-.image-size.active {
-  opacity: 1;
-  position: relative;
-  z-index: 900;
-}
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      background-color: #FFCA85;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
 
-.image-size.prev,
-.image-size.next {
-  z-index: 800;
-}
-.image-size.prev {
-  transform: translateX(-100%); 
-}
-.image-size.next {
-  transform: translateX(100%); 
-}
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
 
-.carousel__button--prev,
-.carousel__button--next {
-  position: absolute;
-  top:50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: #FFCA85;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  cursor: pointer; 
-  z-index: 1001; /* Sit on top of everything */
-  border: 2px solid #011638;
-}
-.carousel__button--prev {
-  left: 5%;
-}
-.carousel__button--next {
-  right: 5%;
-}
-.carousel__button--prev::after,
-.carousel__button--next::after {
-  content: " ";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 50%;
-  left: 54%;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  transform: translate(-50%, -50%) rotate(135deg);
-}
-.carousel__button--next::after {
-  left: 47%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
+    .prev:hover, .next:hover {
+      background-color: #011638;
+    }
 
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      
+    }
+
+    .dot-pos {
+      text-align:center;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+ .fade-style {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+  
 
 /*--- Footer --*/
 
@@ -173,7 +185,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 175px;
+    height: 165px;
     background-color: #FFCA85;
   }
 
@@ -198,7 +210,19 @@ footer {
    padding-left: 75px;
  } 
 
+ .contact-btn {
+   background-color: #011638;
+   color: #FBFFFE !important;
+   padding: 1em 1.5em;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+ }
+
  @media screen and (max-width: 1024px) {
+
+  /*--- Footer Styles--*/
+
   .footer-pos{
     padding-top: 3%;
    }
@@ -210,18 +234,31 @@ footer {
   .explore-head {
     padding-left: 5%;
   } 
+  
+     /*--- Header styles--*/
+
+
+   .logo-size {
+     padding-left: 5%;
+   }
+
+   /*--- Home banner styles--*/
 
   .bn-txt-pos {
     padding-top: 5%;
     padding-left: 17%;
    }
 
-   .logo-size {
-     padding-left: 5%;
+   /*--- Home slider styles--*/
+
+   .image-size {
+     width: 100%;
    }
  }
 
  @media screen and (max-width: 812px) {
+  
+  /*--- Footer Styles--*/
 
    footer {
      position: relative;
@@ -243,13 +280,24 @@ footer {
    .logo-size {
      padding-left: 5%;
    }
+
+   .alert-margin {
+    padding-left: 15%;
+  }
+  .exp-btn-pos {
+   padding-top: 5%;
+   padding-bottom: 5%;
+   padding-left: 43%;
+  } 
  }
 
 
  @media screen and (max-width: 768px) {
+  
+  /*--- Footer Styles--*/
 
   footer {
-    position: absolute;
+    position: relative;
   }
 
   .footer-pos {
@@ -276,10 +324,14 @@ footer {
  }
 
  @media screen and (max-width: 740px) {
+  
+  /*--- General Styles--*/
 
   h1 {
     font-size: 25px;
   }
+
+  /*--- Footer Styles--*/
 
   footer {
     position: relative;
@@ -288,11 +340,18 @@ footer {
   .footer-pos {
     padding-top: 18px;
   }
+
   .explore-mobile {
     padding-left: 12%;
   }
+
   .explore-head {
     padding-left: 20%;
+  }
+
+  .contact-btn {
+    padding: .5em 1.0em;
+    font-size: 16px;
   }
 
   .bn-txt-pos {
@@ -302,6 +361,8 @@ footer {
  }
 
  @media screen and (max-width: 414px) {
+ 
+  /*--- General Styles--*/
 
   h1 {
     font-size: 25px;
@@ -310,6 +371,8 @@ footer {
   h4 {
     font-size: 18px;
    }
+
+   /*--- Footer Styles--*/
 
    a i {
      font-size: 17px;
@@ -324,7 +387,7 @@ footer {
    }
 
    footer {
-     position: absolute;
+     position: relative;
    }
 
    .explore-mobile {
@@ -343,8 +406,20 @@ footer {
     padding-left: 0%;
   }
 
+  .contact-btn {
+    padding: .5em 1.0em;
+    font-size: 16px;
+  }
+
    .bn-txt-pos {
     padding-top: 10%;
     padding-left: 8%;
    }
+
+   .exp-btn-pos {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 35%;
+   }
+
  }
