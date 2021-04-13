@@ -53,7 +53,7 @@
           </nav>
     </header>
 
-    <div class="alert alert-info alert-dismissible fade show alert-margin" role="alert">
+    <div class="alert alert-info fade show alert-margin" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -110,9 +110,43 @@
       <div class="row no-gutter"> 
 
     <!--Footer Contact Info-->
-        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos">
-          <a class="contact-btn">Contact Us</a>
+        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos" >
+          <a class="contact-btn" id="form-btn">Contact Us</a>
         </div>
+
+        <!--Hidden Contact Form-->
+
+        <div class="hide-form contact-modal" id="modal">
+
+          <div class="contact-pop">
+  
+            <span class="close-form">&times;</span>
+  
+            <form aria-label="Send us your comments, ideas, or feedback">
+            
+              <h1 class="mobile-heading form-heading">Tell us more!</h1>
+              <br>
+              <label for="fname" class="form-font label-display mobile-label"> First Name</label>
+              <input type="text" id="fname" name="firstname" class="label-width" aria-label="First Name" required>
+              <br>
+              <br>
+              <label for="fname" class="form-font label-display mobile-label">Last Name</label>
+              <input type="text" id="lname" name="lastname" class="label-width" aria-label="Last Name" required>
+              <br>
+              <br>
+              <label for="email-label" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
+              <input id="email-label" type="email" name="email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+              <br>
+              <br>
+              <label for="textarea" class="form-font label-display mobile-label">Send us your comments, ideas, or feedback</label>
+              <br>
+              <textarea id="textarea" name="textarea" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
+              <br>
+              <br>
+              <input type="submit" value="Submit" class="newsletter-button btn btn-outline-light" aria-label="Submit this form">
+           </form>
+         </div>
+       </div>
 
     <!--Social links-->
         <div class="col-xl-4 col-md-6 col-6 footer-pos social-pos">
@@ -185,6 +219,7 @@
     </div>  
   </footer>
     
+    <script src="assets/js/contact-btn.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
