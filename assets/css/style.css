@@ -28,6 +28,10 @@ a:hover i {
     color: #087E8B;
 }
 
+h1.form-heading {
+  color: #087E8B
+}
+
 /*--- General styles---*/
 
 h1 {
@@ -210,6 +214,8 @@ footer {
    padding-left: 75px;
  } 
 
+    /*--- Footer Contact Button--*/
+
  .contact-btn {
    background-color: #011638;
    color: #FBFFFE !important;
@@ -218,6 +224,59 @@ footer {
    font-size: 18px;
    font-weight: 500;
  }
+
+   /*---Contact Form--*/
+
+   .hide-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.contact-pop {
+  margin: 0% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: #011638;
+  width: 45%;
+}
+
+.form-font {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    color: #FFCA85;
+  }
+  
+  .label-display {
+    display: block;
+  }
+  
+  .label-width {
+    width: 60%;
+  }
+
+  .close-form {
+    color: #E5E8F0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.close-form:hover,
+.close-form:focus {
+  color: #087E8B;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
  @media screen and (max-width: 1024px) {
 
@@ -284,6 +343,7 @@ footer {
    .alert-margin {
     padding-left: 15%;
   }
+
   .exp-btn-pos {
    padding-top: 5%;
    padding-bottom: 5%;
@@ -372,6 +432,17 @@ footer {
     font-size: 18px;
    }
 
+   .bn-txt-pos {
+    padding-top: 10%;
+    padding-left: 8%;
+   }
+
+   .exp-btn-pos {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 35%;
+   }
+
    /*--- Footer Styles--*/
 
    a i {
@@ -411,15 +482,22 @@ footer {
     font-size: 16px;
   }
 
-   .bn-txt-pos {
-    padding-top: 10%;
-    padding-left: 8%;
-   }
-
-   .exp-btn-pos {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 35%;
-   }
+    .contact-us {
+        padding-bottom: 15%;
+      }
+    
+      .label-width {
+        width: 268px;
+      }
+    
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+      }
+    
+      .mobile-label {
+        padding-top: 6%;
+      }
+    
 
  }
