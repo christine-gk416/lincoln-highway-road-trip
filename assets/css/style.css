@@ -240,7 +240,7 @@ footer {
 }
 
 .contact-pop {
-  margin: 0% auto;
+  margin: 3% auto;
   padding: 20px;
   border: 1px solid #888;
   background-color: #011638;
@@ -372,6 +372,14 @@ footer {
     padding-left: 15%;
   }
 
+  .mobile-label {
+    width: 85%;
+   }
+
+  .label-width {
+    width: 65%;
+  }
+
   .bn-txt-pos {
    padding-top: 7%;
    padding-left: 8%;
@@ -419,6 +427,20 @@ footer {
     padding-left: 10%;
   }
  }
+
+ @media screen and (max-width: 540px) {
+   .mobile-label {
+    width: 85%;
+   }
+   .contact-pop {
+    margin: 5% auto;
+    width: 65%;
+   }
+
+   .label-width {
+    width: 65%;
+  }
+ }   
 
  @media screen and (max-width: 414px) {
  
@@ -498,6 +520,14 @@ footer {
       .mobile-label {
         padding-top: 6%;
       }
-    
+
+  .label-width {
+     width: 95%;
+   }
+
+  .contact-pop {
+    margin: 8% auto;
+    width: 85%;
+  }
 
  }
