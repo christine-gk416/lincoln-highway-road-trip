@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <title>Lincoln Highway Road Trip</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico"/>
@@ -122,28 +124,24 @@
   
             <span class="close-form">&times;</span>
   
-            <form aria-label="Send us your comments, ideas, or feedback" id="jsEmail" onsubmit="return sendMail(this);">
+            <form aria-label="Send us your comments, ideas, or feedback" id="contactForm">
             
               <h1 class="mobile-heading form-heading">Tell us more!</h1>
               <br>
-              <label for="fname" class="form-font label-display mobile-label"> First Name</label>
-              <input type="text" id="fname" name="firstname" class="label-width" aria-label="First Name" required>
+              <label for="name" class="form-font label-display mobile-label">Name</label>
+              <input type="text" id="name" name="name" class="label-width" aria-label="Name" required>
               <br>
               <br>
-              <label for="fname" class="form-font label-display mobile-label">Last Name</label>
-              <input type="text" id="lname" name="lastname" class="label-width" aria-label="Last Name" required>
+              <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
+              <input id="email" type="email" name="email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
               <br>
               <br>
-              <label for="email-label" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
-              <input id="email-label" type="email" name="email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+              <label for="enquiry" class="form-font label-display">Send us your comments, ideas, or feedback</label>
+              <br>
+              <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
               <br>
               <br>
-              <label for="textarea" class="form-font label-display mobile-label">Send us your comments, ideas, or feedback</label>
-              <br>
-              <textarea id="textarea" name="textarea" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
-              <br>
-              <br>
-              <input type="submit" value="Submit" class="newsletter-button btn btn-outline-light" aria-label="Submit this form">
+              <input type="submit" value="Send" onsubmit="return sendMail(this);" class="newsletter-button btn btn-outline-light" aria-label="Submit this form">
            </form>
          </div>
        </div>
@@ -219,27 +217,11 @@
     </div>  
   </footer>
     
-    <script src="assets/js/contactButton.js"></script>
-    <script src="assets/js/slider.js"></script>
+  <script src="assets/js/contactButton.js"></script>
+  <script src="assets/js/emailJS.js"></script>
+  <script src="assets/js/slider.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-      (function(){
-        emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
-      })();
-      emailjs.sendForm('service_bmmh32m', 'template_n85a6ph', '#jsEmail')
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
-    </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    
 </body>
 </html>
