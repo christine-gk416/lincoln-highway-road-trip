@@ -1,16 +1,20 @@
-function sendMail(contactForm) {
-    emailjs.send ("service_bmmh32m", "template_n85a6ph", {
-    "from_name": contactForm.name.value,
-    "from_email": contactForm.email.value,
-    "project_enquiry": contactForm.project-enquiry.value,
-    })
+(function(){
+   emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
+   })();
+  
 
-    .then(
-        function(response) {
-            console.log("SUCCESS", response)
-        },
-        function(error) {
-            console.log("FAILED", error)
-        }
-    )
+function sendMail() {
+
+    let fullName = document.getElementById("name").value;
+    let userEmail = document.getElementById("email").value;
+    let enquiry = document.getElementById("enquiry").value;
+
+    var contactParams = {
+    from_name: fullName,
+    from_email: userEmail,
+    enquiry: enquiry,
+    };
+
+    emailjs.send ("gmail", "lh-roadtrip", contactParams).then(function (res) {})
+
 }
