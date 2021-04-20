@@ -1,20 +1,13 @@
-(function(){
-   emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
-   })();
-  
+window.onload = function() {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-function sendMail() {
-
-    let fullName = document.getElementById("name").value;
-    let userEmail = document.getElementById("email").value;
-    let enquiry = document.getElementById("enquiry").value;
-
-    var contactParams = {
-    from_name: fullName,
-    from_email: userEmail,
-    enquiry: enquiry,
-    };
-
-    emailjs.send ("gmail", "lh-roadtrip", contactParams).then(function (res) {})
+        emailjs.sendForm('gmail', 'lh-roadtrip', this)
+            .then(function() {
+                alert('Your form has been sent to the LH Road Trip team!')
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
 
 }
