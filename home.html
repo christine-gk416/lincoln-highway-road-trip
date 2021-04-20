@@ -40,7 +40,7 @@
                   <a class="nav-link" href="#">About Route 30</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="lincoln-highway-map.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Plan Your Trip
                   </a>
                   <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
@@ -129,11 +129,11 @@
               <h1 class="mobile-heading form-heading">Tell us more!</h1>
               <br>
               <label for="name" class="form-font label-display mobile-label">Name</label>
-              <input type="text" id="name" name="name" class="label-width" aria-label="Name" required>
+              <input type="text" id="name" name="from_name" class="label-width" aria-label="Name" required>
               <br>
               <br>
               <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
-              <input id="email" type="email" name="email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+              <input id="email" type="email" name="from_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
               <br>
               <br>
               <label for="enquiry" class="form-font label-display">Send us your comments, ideas, or feedback</label>
@@ -222,6 +222,10 @@
   <script src="assets/js/slider.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>(function(){
+    emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
+    })();
+  </script>  
     
 </body>
 </html>
