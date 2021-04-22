@@ -181,6 +181,16 @@ html,body{
       animation-duration: 1.5s;
     }
 
+/*--- Map Page --*/ 
+
+div#map {
+  min-height: 360px;
+}
+
+.map-background {
+  background-color: #aed19e;
+  height: 150px;
+}
   
 
 /*--- Footer --*/
@@ -213,6 +223,10 @@ footer {
  .contact-pos {
    padding-left: 75px;
  } 
+
+ .social-pos {
+   padding-left: 50px;
+ }
 
     /*--- Footer Contact Button--*/
 
