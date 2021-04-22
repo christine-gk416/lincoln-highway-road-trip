@@ -184,13 +184,23 @@ html,body{
 /*--- Map Page --*/ 
 
 div#map {
-  min-height: 360px;
+  min-height: 450px;
+  max-width: 100%;
 }
 
 .map-background {
   background-color: #aed19e;
   height: 150px;
 }
+
+.map-top-padding {
+  padding-top: 50px;
+}
+
+.bn-txt-pos2 {
+  padding-top: 60px;
+  padding-left: 450px;
+} 
   
 
 /*--- Footer --*/
