@@ -39,11 +39,26 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
 h4 {
     color: #087e8b;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 500;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 
 i {
@@ -194,13 +209,23 @@ div#map {
 }
 
 .map-top-padding {
-  padding-top: 50px;
+  padding: 50px 75px 0px 75px;
+  background-color: #FBFFFE;
 }
 
 .bn-txt-pos2 {
   padding-top: 60px;
   padding-left: 450px;
 } 
+
+.newsletter-button {
+  background-color: #FBFFFE;
+  padding-top: 8%;
+}
+
+.map-pg-img {
+  width: 100%;
+}
   
 
 /*--- Footer --*/
