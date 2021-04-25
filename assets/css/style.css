@@ -226,6 +226,18 @@ div#map {
 .map-pg-img {
   width: 100%;
 }
+
+.location-bttm-pdding {
+  padding-bottom: 25px;
+}
+
+.into-bttm-pdding {
+  padding-bottom: 100px;
+}
+
+.left-title {
+  padding-left: 70%;
+}
   
 
 /*--- Footer --*/
