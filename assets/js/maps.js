@@ -14,8 +14,16 @@ function initMap() {
         {coords: {lat: 40.440624, lng: -79.995888},  
         content: '<h3>Pittsburgh</h3>',
         info: 
-            `<h2>Test</h2>
-            <p>Test</p>
+            `<h2>Lorem ipsum dolor </h2>
+            <br>
+            <p>Sit amet, consectetur adipiscing elit. 
+            Nunc vitae rhoncus neque, a mattis nulla. 
+            Mauris vel mi cursus purus maximus fermentum. 
+            Praesent pulvinar finibus mauris quis suscipit. 
+            Fusce volutpat vehicula augue, a finibus orci cursus pretium. 
+            Aliquam interdum magna aliquet urna interdum porta. 
+            Aliquam volutpat erat id elit fringilla ullamcorper. </p>
+            <br>
             <a>Test</a>`
         },
 
@@ -73,28 +81,38 @@ function initMap() {
     };
 
     function addMarker (props){
+        var image = 'http://maps.google.com/mapfiles/kml/paddle/red-stars.png';
         var marker = new google.maps.Marker({
             position: props.coords, 
-            map: map,
+            icon: image,
+            map: map  
         });
 
         if(props.content){
             var infoWindow = new google.maps.InfoWindow({
-              content:props.content
+              content: props.content
             });
   
             marker.addListener('mouseover', function(){
                 infoWindow.open(map, marker);  
 
-                google.maps.event.addlistener(marker, 'mouseout', function(){
-                    infoWindow.close(map, marker); 
-                });
-
             }); 
-            
+
+            marker.addListener('mouseout', function(){
+                infoWindow.close(map, marker);  
+
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(i) {
+                return function() {
+                    document.getElementById('sideCard').innerHTML = markers[i].info;
+                }
+            })(i));
+
         
-        }  
+        }    
             
+           
     };  
 };
 
