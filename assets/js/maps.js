@@ -12,7 +12,7 @@ function initMap() {
 
     const markers = [
         {coords: {lat: 40.440624, lng: -79.995888},  
-        content: '<h3>Pittsburgh</h3>',
+        content: '<h3>Pittsburgh</h3><p>Start here! &#128664</p>',
         info: 
             `<h2>Lorem ipsum dolor </h2>
             <br>
@@ -24,39 +24,39 @@ function initMap() {
             Aliquam interdum magna aliquet urna interdum porta. 
             Aliquam volutpat erat id elit fringilla ullamcorper. </p>
             <br>
-            <a>Test</a>`
+            <a href="#Pittsburgh">More info</a>`
         },
 
         {coords: {lat: 39.906113, lng: -79.468056},
         content: '<h3>Fallingwater</h3>',
         info: 
-            `<h2>Test</h2>
+            `<h2>Fallingwater</h2>
             <p>Test</p>
-            <a>Test</a>`
+            <a href="#Fallingwater">More info</a>`
         },
 
         {coords: {lat: 40.022899, lng: -78.517347},
         content: `<h3>Bedford</h3>`,
         info: 
-            `<h2>Test</h2>
+            `<h2>Bedford</h2>
             <p>Test</p>
-            <a>Test</a>`
+            <a href="#Bedford">More info</a>`
         },
 
         {coords: {lat: 39.8121605, lng: -77.2216721},
         content: `<h3>Gettysburg</h3>`,
         info: 
-            `<h2>Test</h2>
+            `<h2>Gettysburg</h2>
             <p>Test</p>
-            <a>Test</a>`
+            <a href="#Gettysburg">More info</a>`
         },
 
         {coords: {lat: 40.259590, lng: -76.881866},
         content: `<h3>Harrisburg</h3>`,
         info: 
-            `<h2>Test</h2>
+            `<h2>Harrisburg</h2>
             <p>Test</p>
-            <a>Test</a>`
+            <a href="#Harrisburg">More info</a>`
         },
 
         {coords: {lat: 40.0213909, lng: -76.191827},
@@ -68,7 +68,7 @@ function initMap() {
         },
 
         {coords: {lat: 39.9526, lng: -75.1652}, 
-        content: `<h3>Philadelphia</h3>`,
+        content: `<h3>Philadelphia</h3><p>End here &#128075</p>`,
         info: 
             `<h2>Test</h2>
             <p>Test</p>
