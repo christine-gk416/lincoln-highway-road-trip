@@ -32,6 +32,10 @@ h1.form-heading {
   color: #087E8B
 }
 
+div.section-color {
+  background-color: #aed19e;
+}
+
 /*--- General styles---*/
 
 h1 {
@@ -236,7 +240,7 @@ div#map {
 }
 
 .left-title {
-  padding-left: 70%;
+  padding-bottom: 6%;
 }
   
 
@@ -374,6 +378,23 @@ footer {
    .image-size {
      width: 100%;
    }
+
+   /*--- Map Page styles--*/
+
+
+   .bn-txt-pos2 {
+    padding-top: 60px;
+    padding-left: 300px;
+}
+
+ .mobile-map-padding {
+  padding: 5%;
+}
+
+#sideCard {
+  padding-bottom: 8%;
+}
+
  }
 
  @media screen and (max-width: 812px) {
@@ -410,6 +431,18 @@ footer {
    padding-bottom: 5%;
    padding-left: 43%;
   } 
+
+  /*--- Map Page--*/
+
+  .bn-txt-pos2 {
+    padding-top: 8%;
+    padding-left: 20%;
+  }  
+
+  .col-reverse {
+    flex-direction: column-reverse;
+  }
+
  }
 
 
@@ -590,5 +623,17 @@ footer {
     margin: 8% auto;
     width: 85%;
   }
+
+  /*--- Map Page styles--*/
+
+  .bn-txt-pos2 {
+    padding-top: 15%;
+    padding-left: 5%;
+    font-size: 22px;
+}
+
+#sideCard {
+  padding: 8%;
+}
 
  }
