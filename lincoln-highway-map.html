@@ -118,10 +118,28 @@
 
     <section>
       <div class="col-12 exp-btn-pos newsletter-button"> 
-        <a href="lincoln-highway-map.html" class="explore-btn">
+        <a class="explore-btn" id="newsletterButton">
           Get our Newsletter!
          </a>
       </div>
+
+      <div class="hide-form contact-modal" id="modal2">
+
+        <div class="contact-pop newsletter-pop">
+
+          <span class="close-form">&times;</span>
+
+          <form aria-label="Subscribe to our Newsletter" id="newsletterForm">
+            <h1 class="mobile-heading form-heading">Subscribe!</h1>
+            <img src="assets/images/windy-road.jpg" class="newsletter-img" alt="Image of a winding road">
+            <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
+            <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+            <br>
+            <br>
+            <input type="submit" value="Send" onsubmit="return sendMail(this);" class="btn btn-outline-light" aria-label="Submit this form">
+         </form>
+       </div>
+     </div>
     </section>
 
     <section>
@@ -420,6 +438,8 @@
   </footer>
     
   <script src="assets/js/contactButton.js"></script>
+  <script src="assets/js/newsletterButton.js"></script>
+  <script src="assets/js/newsletterEmail.js"></script>
   <script src="assets/js/emailJS.js"></script>
   <script src="assets/js/maps.js"></script>
     
