@@ -62,17 +62,17 @@ function initMap() {
         {coords: {lat: 40.0213909, lng: -76.191827},
         content: `<h3>Lancaster</h3>`,
         info: 
-            `<h2>Test</h2>
+            `<h2>Lancaster</h2>
             <p>Test</p>
-            <a>Test</a>`
+            <a href="#Lancaster">More info</a>`
         },
 
         {coords: {lat: 39.9526, lng: -75.1652}, 
         content: `<h3>Philadelphia</h3><p>End here &#128075</p>`,
         info: 
-            `<h2>Test</h2>
+            `<h2>Philadelphia</h2>
             <p>Test</p>
-            <a>Test</a>`
+            <a href="#Philadelphia">More info</a>`
         },
     ];
 
