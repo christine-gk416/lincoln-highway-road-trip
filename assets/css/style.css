@@ -77,6 +77,7 @@ html,body{
     overflow-x: hidden; 
 }
 
+
 /*--- Header ---*/
 
     /*--- Logo styles --*/
@@ -227,6 +228,15 @@ div#map {
   padding-top: 8%;
 }
 
+.newsletter-img {
+  width: 60%;
+padding: 5%;
+}
+
+.contact-pop.newsletter-pop {
+  width: 25%;
+}
+
 .map-pg-img {
   width: 100%;
 }
@@ -304,14 +314,6 @@ footer {
     background-color: rgba(0,0,0,0.5);
 }
 
-.contact-pop {
-  margin: 3% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  background-color: #011638;
-  width: 45%;
-}
-
 .form-font {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -340,6 +342,14 @@ footer {
   color: #087E8B;
   text-decoration: none;
   cursor: pointer;
+}
+
+.contact-pop {
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: #011638;
+  width: 45%;
 }
 
 
