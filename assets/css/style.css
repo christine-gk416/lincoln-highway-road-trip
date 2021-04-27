@@ -252,6 +252,25 @@ padding: 5%;
 .left-title {
   padding-bottom: 6%;
 }
+
+.read-more-btn {
+  background-color: #011638;
+   color: #FFCA85 !important;
+   padding: 1em 1.2em;
+   border-radius: 8px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   border: none;
+}
+
+.more-text {
+  display: none;
+}
+
+.post:not(:last-child){
+  margin-bottom: 30px;
+}
   
 
 /*--- Footer --*/
