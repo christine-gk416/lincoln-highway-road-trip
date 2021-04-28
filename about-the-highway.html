@@ -15,6 +15,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>(function(){
+      emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
+      })();
+    </script>  
+
     <title>Lincoln Highway Road Trip</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico"/>
 
@@ -37,21 +43,26 @@
                   <a class="nav-link" href="home.html">Home</a>
                 </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" href="about-the-highway.html">About Route 30</a>
+                </li>
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="lincoln-highway-map.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Plan Your Trip
                   </a>
                   <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="lincoln-highway-map.html">Map 1</a>
-                    <a class="dropdown-item" href="#">Map 2</a>
-                    <a class="dropdown-item" href="#">Map 3</a>
-                    <a class="dropdown-item" href="#">Map 4</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
+                    <a class="dropdown-item" href="#Pittsburgh">Pittsburgh</a>
+                    <a class="dropdown-item" href="#Fallingwater">Fallingwater</a>
+                    <a class="dropdown-item" href="#Bedford">Bedford</a>
+                    <a class="dropdown-item" href="#Gettysburg">Gettysburg</a>
+                    <a class="dropdown-item" href="#Harrisburg">Harrisburg</a>
+                    <a class="dropdown-item" href="#Lancaster">Lancaster</a>
+                    <a class="dropdown-item" href="#Philadelphia">Philadelphia</a>
                   </div>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="about-the-highway.html">About Route 30</a>
-                </li>
               </ul>
             </div>    
           </nav>
@@ -66,19 +77,58 @@
     </div>
 
     <section class="banner-background">
-      <h1 class="bn-txt-pos">Lincoln Highway Roadtrip: Pennsylvania</h1>
+      <h1 class="bn-txt-pos">The Lincoln Highway in Pennsylvania</h1>
+    </section>
+      <div class="row">
+        <div class="col">
+          <h2>The history of the Lincoln Highway</h2>
+          <img src="assets/images/historical-postcard.jpg" alt="Historical postcard of the Lincoln Highway in 1920s">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Fusce sit amet accumsan diam, vel porttitor leo. 
+          Aliquam erat volutpat. 
+          Integer vel libero bibendum, volutpat libero eget, mattis leo. 
+          Etiam rhoncus hendrerit mi. Vivamus cursus auctor ipsum quis malesuada. 
+          Praesent rutrum ut ipsum pulvinar blandit. 
+          Mauris magna magna, feugiat quis erat vel, imperdiet luctus metus. 
+          Curabitur porttitor justo quis purus lobortis, quis commodo ipsum interdum. 
+          Nulla euismod eleifend lorem ut mattis. 
+          Donec nisi leo, vulputate ut libero vitae, condimentum aliquet quam. 
+          Donec blandit justo ac dignissim ultrices. Nam dapibus interdum rhoncus. 
+          Nullam in nisi sed turpis placerat consequat vitae quis turpis. 
+          Fusce vulputate odio non risus hendrerit molestie. 
+          Ut nec sapien vel quam lacinia porta non vel neque. </p>
+        </div>
+      </div>
+
+    <section>
+      <div class="row">
+        <div class="col">
+          <h2>About Pennsylvania</h2>
+          <img src="assets/images/independence-hall.jpg" alt="Image of Independence Hall in Philadelphia">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Fusce sit amet accumsan diam, vel porttitor leo. 
+            Aliquam erat volutpat. 
+            Integer vel libero bibendum, volutpat libero eget, mattis leo. 
+            Etiam rhoncus hendrerit mi. Vivamus cursus auctor ipsum quis malesuada. 
+            Praesent rutrum ut ipsum pulvinar blandit. 
+            Mauris magna magna, feugiat quis erat vel, imperdiet luctus metus. 
+            Curabitur porttitor justo quis purus lobortis, quis commodo ipsum interdum. 
+            Nulla euismod eleifend lorem ut mattis. 
+            Donec nisi leo, vulputate ut libero vitae, condimentum aliquet quam. 
+            Donec blandit justo ac dignissim ultrices. Nam dapibus interdum rhoncus. 
+            Nullam in nisi sed turpis placerat consequat vitae quis turpis. 
+            Fusce vulputate odio non risus hendrerit molestie. 
+            Ut nec sapien vel quam lacinia porta non vel neque. </p>
+        </div>
+
+      </div>
+
     </section>
 
-    
-      
+    <section>
 
-    <section class="exp-btn-pos">
-      <div>
-        <a href="lincoln-highway-map.html" class="explore-btn">
-         Explore
-        </a>
-      </div>
-    </section>  
+    </section>
+      
 
   <footer>
 
@@ -96,7 +146,7 @@
 
           <div class="contact-pop">
   
-            <span class="close-form">&times;</span>
+            <span id="close-form">&times;</span>
   
             <form aria-label="Send us your comments, ideas, or feedback" id="contactForm">
             
@@ -115,7 +165,7 @@
               <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
               <br>
               <br>
-              <input type="submit" value="Send" onsubmit="return sendMail(this);" class="newsletter-button btn btn-outline-light" aria-label="Submit this form">
+              <input type="submit" value="Send" onsubmit="return sendMail(this);" class="btn btn-outline-light" aria-label="Submit this form">
            </form>
          </div>
        </div>
@@ -194,12 +244,6 @@
   <script src="assets/js/contactButton.js"></script>
   <script src="assets/js/emailJS.js"></script>
   <script src="assets/js/slider.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script>(function(){
-    emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
-    })();
-  </script>  
     
 </body>
 </html>
