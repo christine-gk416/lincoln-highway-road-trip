@@ -10,10 +10,11 @@
 
 a:hover {
     color: #087E8B!important;
+    text-decoration: none;
 }
 
 a:active {
-    color: #087E8B!important;
+    color: #aed19e!important;
 }
 
 .dropdown-background {
@@ -230,6 +231,17 @@ div#map {
 .newsletter-button {
   background-color: #FBFFFE;
   padding-top: 8%;
+  padding-bottom: 5%;
+  padding-left: 42%;
+}
+
+.news-btn-styles {
+  background-color: #011638;
+  color: #FBFFFE !important;
+  padding: 1em 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .newsletter-img {
@@ -239,6 +251,20 @@ padding: 5%;
 
 .contact-pop.newsletter-pop {
   width: 25%;
+}
+
+#close-form2{
+  color: #E5E8F0;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close-form2:hover,
+#close-form2:focus {
+  color: #087E8B;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .map-pg-img {
@@ -262,8 +288,8 @@ padding: 5%;
 }
 
 .read-more-btn {
-  background-color: #011638;
-   color: #FFCA85 !important;
+  background-color: #FFCA85;
+   color: #011638 !important;
    padding: 1em 1.2em;
    border-radius: 8px;
    font-family: 'Poppins', sans-serif;
@@ -357,26 +383,26 @@ footer {
     width: 60%;
   }
 
-  .close-form {
+  #close-form {
     color: #E5E8F0;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
 
-.close-form:hover,
-.close-form:focus {
+  #close-form:hover,
+  #close-form:focus {
   color: #087E8B;
   text-decoration: none;
   cursor: pointer;
 }
 
 .contact-pop {
-  margin: 10% auto;
-  padding: 20px;
+  margin: 11% auto;
+  padding: 12px;
   border: 1px solid #888;
   background-color: #011638;
-  width: 45%;
+  width: 35%;
 }
 
 
@@ -395,6 +421,11 @@ footer {
   .explore-head {
     padding-left: 5%;
   } 
+
+  .contact-pop {
+    width: 50%;
+    margin-top: 15%;
+  }
   
      /*--- Header styles--*/
 
@@ -494,6 +525,15 @@ footer {
    padding-bottom: 5%;
    padding-left: 43%;
   } 
+
+  .contact-pop {
+    margin-top: 17%;
+    width: 45%;
+  }
+
+  textarea {
+    width: 85%;
+  }
 
   /*--- Map Page--*/
 
@@ -697,7 +737,7 @@ footer {
    }
 
   .contact-pop {
-    margin: 8% auto;
+    margin: 35% auto;
     width: 85%;
   }
 
@@ -714,7 +754,7 @@ footer {
 }
 
 #alert-map-header {
-  margin-top: 30%;
+  margin-top: 32%;
 }
 
 .mobile-news-btn {
