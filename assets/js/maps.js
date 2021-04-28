@@ -14,7 +14,7 @@ function initMap() {
         {coords: {lat: 40.440624, lng: -79.995888},  
         content: '<h3>Pittsburgh</h3><p>Start here! &#128664</p>',
         info: 
-            `<h2>Lorem ipsum dolor </h2>
+            `<h2>Pittsburgh</h2>
             <br>
             <p>Sit amet, consectetur adipiscing elit. 
             Nunc vitae rhoncus neque, a mattis nulla. 
@@ -44,7 +44,7 @@ function initMap() {
         },
 
         {coords: {lat: 39.8121605, lng: -77.2216721},
-        content: `<h3>Gettysburg</h3>`,
+        content: `<h3>Gettysburg</h3><p>&#128123</p>`,
         info: 
             `<h2>Gettysburg</h2>
             <p>Test</p>

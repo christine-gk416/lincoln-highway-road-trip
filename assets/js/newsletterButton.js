@@ -2,7 +2,7 @@ let modalNewsletter = document.getElementById("modal2");
 
 let newsletterButton = document.getElementById("newsletterButton");
 
-let closeNewsletter = document.getElementsByClassName("close-form")[0];
+let closeNewsletter = document.getElementById("close-form2");
 
 newsletterButton.onclick = function() {
     modalNewsletter.style.display = "block";
