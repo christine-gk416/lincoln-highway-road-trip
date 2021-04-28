@@ -203,6 +203,10 @@ html,body{
 
 /*--- Map Page --*/ 
 
+#alert-map-header {
+  margin-top: 10%;
+}
+
 div#map {
   min-height: 450px;
   max-width: 100%;
@@ -243,6 +247,10 @@ padding: 5%;
 
 .location-bttm-pdding {
   padding-bottom: 25px;
+}
+
+.location-top-pdding {
+  padding-top: 4%;
 }
 
 .into-bttm-pdding {
@@ -364,7 +372,7 @@ footer {
 }
 
 .contact-pop {
-  margin: 3% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   background-color: #011638;
@@ -410,6 +418,13 @@ footer {
 
    /*--- Map Page styles--*/
 
+   #alert-map-header {
+    margin-top: 12%;
+   }
+
+   .col-reverse {
+    flex-direction: column-reverse;
+  }
 
    .bn-txt-pos2 {
     padding-top: 60px;
@@ -421,7 +436,26 @@ footer {
 }
 
 #sideCard {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.mobile-news-btn {
+  
+    padding-top: 2%;
+    padding-left: 40%;
+
+}
+.readmore-bttm-mobile {
   padding-bottom: 8%;
+}
+
+.into-bttm-pdding {
+  padding-bottom: 3%;
+}
+
+.left-title {
+  padding-bottom: 4%;
 }
 
  }
@@ -462,6 +496,10 @@ footer {
   } 
 
   /*--- Map Page--*/
+
+  #alert-map-header {
+    margin-top: 16%;
+}
 
   .bn-txt-pos2 {
     padding-top: 8%;
@@ -549,6 +587,16 @@ footer {
     padding-top: 8%;
     padding-left: 10%;
   }
+
+  /*--- Map Page styles--*/
+
+  #alert-map-header {
+    margin-top: 19%;
+}
+
+.mobile-news-btn {
+  padding-left: 35%;
+}
  }
 
  @media screen and (max-width: 540px) {
@@ -556,7 +604,7 @@ footer {
     width: 85%;
    }
    .contact-pop {
-    margin: 5% auto;
+    margin: 6% auto;
     width: 65%;
    }
 
@@ -663,6 +711,14 @@ footer {
 
 #sideCard {
   padding: 8%;
+}
+
+#alert-map-header {
+  margin-top: 30%;
+}
+
+.mobile-news-btn {
+  padding-left: 25%;
 }
 
  }
