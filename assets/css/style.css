@@ -25,6 +25,10 @@ a:hover i {
     color: #087E8B;
 }
 
+.active-link {
+  color: #aed19e;
+}
+
 h1.form-heading {
   color: #087E8B
 }
@@ -200,16 +204,7 @@ html,body{
 
 /*--- Map Page --*/ 
 
-#sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
 
-#alert-map-header {
-  margin-top: 10%;
-}
 
 div#map {
   min-height: 450px;
@@ -272,6 +267,7 @@ padding: 5%;
 
 .map-pg-img {
   width: 100%;
+  height: auto;
 }
 
 .location-bttm-pdding {
@@ -307,6 +303,16 @@ padding: 5%;
 
 .post:not(:last-child){
   margin-bottom: 30px;
+}
+
+.map-icon1 {
+  font-size: 30px;
+    padding: 5%;
+    padding-left: 45%;
+}
+
+.back-map1 {
+  padding-left: 36%;
 }
 
 /*--- About Page --*/
@@ -473,9 +479,6 @@ footer {
 
    /*--- Map Page styles--*/
 
-   #alert-map-header {
-    margin-top: 12%;
-   }
 
    .col-reverse {
     flex-direction: column-reverse;
@@ -566,9 +569,6 @@ footer {
 
   /*--- Map Page--*/
 
-  #alert-map-header {
-    margin-top: 16%;
-}
 
   .bn-txt-pos2 {
     padding-top: 8%;
@@ -659,9 +659,7 @@ footer {
 
   /*--- Map Page styles--*/
 
-  #alert-map-header {
-    margin-top: 19%;
-}
+ 
 
 .mobile-news-btn {
   padding-left: 35%;
@@ -782,9 +780,7 @@ footer {
   padding: 8%;
 }
 
-#alert-map-header {
-  margin-top: 32%;
-}
+
 
 .mobile-news-btn {
   padding-left: 25%;
