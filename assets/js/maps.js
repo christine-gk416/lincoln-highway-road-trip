@@ -24,7 +24,7 @@ function initMap() {
             Aliquam interdum magna aliquet urna interdum porta. 
             Aliquam volutpat erat id elit fringilla ullamcorper. </p>
             <br>
-            <a href="#Pittsburgh">More info</a>`
+            <a href="#Pittsburgh" class="read-more-btn">More info</a>`
         },
 
         {coords: {lat: 39.906113, lng: -79.468056},
@@ -32,7 +32,7 @@ function initMap() {
         info: 
             `<h2>Fallingwater</h2>
             <p>Test</p>
-            <a href="#Fallingwater">More info</a>`
+            <a href="#Fallingwater" class="read-more-btn">More info</a>`
         },
 
         {coords: {lat: 40.022899, lng: -78.517347},
@@ -40,7 +40,7 @@ function initMap() {
         info: 
             `<h2>Bedford</h2>
             <p>Test</p>
-            <a href="#Bedford">More info</a>`
+            <a href="#Bedford" class="read-more-btn">More info</a>`
         },
 
         {coords: {lat: 39.8121605, lng: -77.2216721},
@@ -48,7 +48,7 @@ function initMap() {
         info: 
             `<h2>Gettysburg</h2>
             <p>Test</p>
-            <a href="#Gettysburg">More info</a>`
+            <a href="#Gettysburg" class="read-more-btn">More info</a>`
         },
 
         {coords: {lat: 40.259590, lng: -76.881866},
@@ -56,7 +56,7 @@ function initMap() {
         info: 
             `<h2>Harrisburg</h2>
             <p>Test</p>
-            <a href="#Harrisburg">More info</a>`
+            <a href="#Harrisburg" class="read-more-btn">More info</a>`
         },
 
         {coords: {lat: 40.0213909, lng: -76.191827},
@@ -64,7 +64,7 @@ function initMap() {
         info: 
             `<h2>Lancaster</h2>
             <p>Test</p>
-            <a href="#Lancaster">More info</a>`
+            <a href="#Lancaster" class="read-more-btn">More info</a>`
         },
 
         {coords: {lat: 39.9526, lng: -75.1652}, 
@@ -72,7 +72,7 @@ function initMap() {
         info: 
             `<h2>Philadelphia</h2>
             <p>Test</p>
-            <a href="#Philadelphia">More info</a>`
+            <a href="#Philadelphia" class="read-more-btn">More info</a>`
         },
     ];
 
