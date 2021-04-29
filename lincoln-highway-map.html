@@ -31,7 +31,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-light header-background navbar-expand-lg" id="sticky">
+        <nav class="navbar navbar-light header-background navbar-expand-lg">
             <a class="navbar-brand" href="home.html">
               <img class="logo-size" src="/assets/images/lincoln.png" alt="Lincoln Highway Road Trip logo">
             </a>
@@ -56,7 +56,7 @@
                   </a>
                   <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
-                    <a class="dropdown-item" href="#Pittsburgh">Pittsburgh</a>
+                    <a class="dropdown-item " href="#Pittsburgh">Pittsburgh</a>
                     <a class="dropdown-item" href="#Fallingwater">Fallingwater</a>
                     <a class="dropdown-item" href="#Bedford">Bedford</a>
                     <a class="dropdown-item" href="#Gettysburg">Gettysburg</a>
@@ -86,7 +86,7 @@
     <section class="map-top-padding mobile-map-padding">
       <div class="row">
 
-        <div class="col-xl-8 col-md-12">
+        <div class="col-xl-8 col-md-12" id="map-jump">
           <div id="map">
 
           </div>
@@ -108,7 +108,7 @@
             Aliquam volutpat erat id elit fringilla ullamcorper. 
           </p>
           <br>
-          <a href="#Pittsburgh">More info</a>
+          <a href="#Pittsburgh" class="read-more-btn">More info</a>
         </div>
       </div>
       
@@ -149,6 +149,8 @@
 
         <div class="col-xl-4 into-bttm-pdding">
           <img src="assets/images/pittsburgh2.jpg" class="map-pg-img" alt="Image of Pittsburgh skyline">
+          <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+          <p class="back-map1">Back to map</p>
         </div>
 
         <div class="col-xl-8 post">
@@ -507,7 +509,8 @@
       </div> 
     </div>  
   </footer>
-    
+  
+  <script src="assets/js/activeLink.js"></script>
   <script src="assets/js/contactButton.js"></script>
   <script src="assets/js/newsletterButton.js"></script>
   <script src="assets/js/newsletterEmail.js"></script>
