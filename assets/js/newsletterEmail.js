@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener('load', () => { 
     document.getElementById('newsletterForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -9,5 +9,4 @@ window.onload = function() {
                 console.log('FAILED...', error);
             });
     });
-
-}
+});
