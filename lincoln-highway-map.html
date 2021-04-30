@@ -18,6 +18,9 @@
 <body>
 
     <header>
+
+      <!--Bootstrap navigation-->
+
         <nav class="navbar navbar-light header-background navbar-expand-lg">
             <a class="navbar-brand" href="home.html">
               <img class="logo-size" src="/assets/images/lincoln.png" alt="Lincoln Highway Road Trip logo">
@@ -44,12 +47,12 @@
                   <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
                     <a class="dropdown-item" href="lincoln-highway-map.html#Pittsburgh">Pittsburgh</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html/#Fallingwater">Fallingwater</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html/#Bedford">Bedford</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html/#Gettysburg">Gettysburg</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html/#Harrisburg">Harrisburg</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html/#Lancaster">Lancaster</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html/#Philadelphia">Philadelphia</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html#Fallingwater">Fallingwater</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html#Bedford">Bedford</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html#Gettysburg">Gettysburg</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html#Harrisburg">Harrisburg</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html#Lancaster">Lancaster</a>
+                    <a class="dropdown-item" href="lincoln-highway-map.html#Philadelphia">Philadelphia</a>
                   </div>
                 </li>
             
@@ -57,6 +60,8 @@
             </div>    
           </nav>
     </header>
+
+    <!--Bootstrap alert-->
 
     <div class="alert alert-info fade show alert-margin" role="alert" id="alert-map-header">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -66,18 +71,28 @@
       <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" target="_blank" class="alert-link" rel="noopener">here</a>.
     </div>
 
+    <!--Banner-->
+
     <section class="map-background">
       <h1 class="bn-txt-pos2">Your Journey Down Route 30</h1>
     </section>
 
+    <!--Map section-->
+
+      
+
     <section class="map-top-padding mobile-map-padding">
       <div class="row">
+
+        <!--Map-->
 
         <div class="col-xl-8 col-md-12" id="map-jump">
           <div id="map">
 
           </div>
         </div>
+
+        <!--Map cards-->
 
         <div class="col-xl-4 col-md-12" id="sideCard">
           <h2>
@@ -101,12 +116,19 @@
       
     </section>
 
+    <!--Newsletter pop-out section-->
+
     <section>
+
+      <!--Pop-out Button-->
+
       <div class="col-12 exp-btn-pos mobile-news-btn newsletter-button"> 
         <a class="news-btn-styles" id="newsletterButton">
           Get our Newsletter!
          </a>
       </div>
+
+      <!--Hidden form-->
 
       <div class="hide-form contact-modal" id="modal2">
 
@@ -126,6 +148,10 @@
        </div>
      </div>
     </section>
+
+  <!--Location sections--> 
+  
+    <!--Pittsburgh-->
 
     <section>
       <div class="row section-color map-top-padding readmore-bttm-mobile" id="Pittsburgh">
@@ -168,7 +194,9 @@
 
         </div>
       </div>
-     </section>   
+     </section>  
+     
+     <!--Fallingwater-->
 
      <section>
       <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Fallingwater"> 
@@ -207,7 +235,9 @@
         </div>
       </div>
     
-    </section>    
+    </section>   
+    
+    <!--Bedford-->
         
     <section>
       <div class="row section-color map-top-padding readmore-bttm-mobile" id="Bedford"> 
@@ -247,6 +277,8 @@
       </div>
     </section> 
 
+    <!--Gettysburg-->
+
     <section>
       <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Gettysburg"> 
         
@@ -282,7 +314,9 @@
           <p class="back-map1">Back to map</p>
         </div>
       </div>
-    </section>   
+    </section>  
+    
+    <!--Harrisburg-->
         
     <section>
       <div class="row section-color map-top-padding readmore-bttm-mobile" id="Harrisburg"> 
@@ -323,6 +357,8 @@
       </div>
     </section>
 
+    <!--Lancaster-->
+
     <section>
       <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Lancaster"> 
         
@@ -360,6 +396,7 @@
       </div>
     </section>   
 
+    <!--Philadelphia-->
 
     <section>
       <div class="row section-color map-top-padding readmore-bttm-mobile" id="Philadelphia"> 
@@ -399,6 +436,8 @@
 
       </div>
     </section>
+
+  <!--Footer-->  
     
   <footer>
 
@@ -511,12 +550,14 @@
     </div>  
   </footer>
   
-  
+<!--JavaScript links-->  
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
+  <!--JavaScript files on site-->
+
   <script src="assets/js/activeLink.js"></script>
   <script src="assets/js/contactButton.js"></script>
   <script src="assets/js/newsletterButton.js"></script>
@@ -525,11 +566,15 @@
   <script src="assets/js/maps.js"></script>
   <script src="assets/js/readMore.js"></script>
 
+  <!--EmailJS-->
+
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script>(function(){
     emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
     })();
   </script>
+
+  <!--Google Maps-->
 
   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL9D8PL6MHBPThnZpi1xUlGQcka4TVAJc&map_ids=1a97cdea16f163b5&callback=initMap"></script>
 
