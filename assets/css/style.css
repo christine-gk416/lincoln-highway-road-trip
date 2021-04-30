@@ -532,6 +532,16 @@ footer {
   padding-left: 41%;
 }
 
+ /*--- About page styles--*/
+
+ .postcard-img {
+   height: 30%;
+ }
+
+ .ind-hall-img {
+  height: 30%;
+}
+
  }
 
  @media screen and (max-width: 812px) {
@@ -598,6 +608,16 @@ footer {
 
   .back-map1 {
     padding-left: 40%;
+}
+
+/*--- About page styles--*/
+
+.postcard-img {
+  height: 25%;
+}
+
+.ind-hall-img {
+  height: 25%;
 }
 
  }
@@ -819,6 +839,16 @@ footer {
 
 .contact-pop.newsletter-pop {
   width: 57%;
+}
+
+/*--- About page styles--*/
+
+.postcard-img {
+  height: 20%;
+}
+
+.ind-hall-img {
+  height: 20%;
 }
 
  }
