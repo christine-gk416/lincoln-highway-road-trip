@@ -3,8 +3,10 @@ window.addEventListener('load', () => {
         event.preventDefault();
 
         emailjs.sendForm('gmail', 'newsletter', this)
-            .then(function() {
-                alert('Thanks for subscribing to our newsletter!')
+        .then(function() {
+            swal("Hey Road Tripper!", "You've signed up for our newsletter, so we'll send you updates on LH events", "success", {
+            button: "Thank you!",
+            });
             }, function(error) {
                 console.log('FAILED...', error);
             });

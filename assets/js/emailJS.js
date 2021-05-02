@@ -4,7 +4,9 @@ window.addEventListener('load', () => {
 
         emailjs.sendForm('gmail', 'lh-roadtrip', this)
             .then(function() {
-                alert('Your form has been sent to the LH Road Trip team!')
+                swal("Hey Road Tripper!", "We've recieved your message and will be back in touch soon", "success", {
+                    button: "Thank you!",
+                  });
             }, function(error) {
                 console.log('FAILED...', error);
             });
