@@ -70,6 +70,39 @@
       <h1 class="bn-txt-pos">The Lincoln Highway in Pennsylvania</h1>
     </section>
 
+      <!--Newsletter pop-out section-->
+
+      <section>
+
+        <!--Pop-out Button-->
+  
+        <div class="col-12 exp-btn-pos mobile-news-btn newsletter-button"> 
+          <a class="news-btn-styles" id="newsletterButton">
+            Get our Newsletter!
+           </a>
+        </div>
+  
+        <!--Hidden form-->
+  
+        <div class="hide-form contact-modal" id="modal2">
+  
+          <div class="contact-pop newsletter-pop">
+  
+            <span id="close-form2">&times;</span>
+  
+            <form aria-label="Subscribe to our Newsletter" id="newsletterForm">
+              <h1 class="mobile-heading form-heading">Subscribe!</h1>
+              <img src="assets/images/windy-road.jpg" class="newsletter-img" alt="Image of a winding road">
+              <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
+              <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+              <br>
+              <br>
+              <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
+           </form>
+         </div>
+       </div>
+      </section>
+
     <section>
       <div class="row">
         <div class="col about-content header-background">
@@ -232,10 +265,12 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     
+  <script src="assets/js/newsletterButton.js"></script>
+  <script src="assets/js/newsletterEmail.js"></script>
   <script src="assets/js/contactButton.js"></script>
   <script src="assets/js/emailJS.js"></script>
 
