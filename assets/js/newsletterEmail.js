@@ -8,5 +8,7 @@ window.addEventListener('load', () => {
             }, function(error) {
                 console.log('FAILED...', error);
             });
+
+        document.getElementById('newsletterForm').reset();     
     });
 });
