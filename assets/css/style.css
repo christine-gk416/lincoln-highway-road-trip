@@ -81,7 +81,9 @@ html,body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    scroll-behavior: smooth;
 }
+
 
 
 /*--- Header ---*/
@@ -224,6 +226,17 @@ div#map {
 .map-top-padding {
   padding: 50px 75px 0px 75px;
   background-color: #FBFFFE;
+}
+
+.more-info-btn {
+  background-color: #FFCA85;
+   color: #011638 !important;
+   padding: 1em 1.2em;
+   border-radius: 8px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   border: none;
 }
 
 .bn-txt-pos2 {
