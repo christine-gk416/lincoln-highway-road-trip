@@ -143,6 +143,8 @@
             <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
             <br>
             <br>
+            <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
+            <br>
             <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
          </form>
        </div>
@@ -474,6 +476,8 @@
               <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
               <br>
               <br>
+              <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
+              <br>
               <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
            </form>
          </div>
@@ -577,6 +581,10 @@
     emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
     })();
   </script>
+
+  <!--Google reCAPTCHA-->
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!--Google Maps-->
 
