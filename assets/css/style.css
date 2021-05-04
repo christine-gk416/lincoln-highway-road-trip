@@ -223,6 +223,21 @@ div#map {
   height: 150px;
 }
 
+#map-search {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#map-search:focus {
+  border-color: #4d90fe;
+}
+
 .map-top-padding {
   padding: 50px 75px 0px 75px;
   background-color: #FBFFFE;
@@ -446,7 +461,7 @@ footer {
 }
 
 .contact-pop {
-  margin: 11% auto;
+  margin: 6% auto;
   padding: 12px;
   border: 1px solid #888;
   background-color: #011638;
