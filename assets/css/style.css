@@ -228,14 +228,18 @@ div#map {
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
+  width: 50%;
   text-overflow: ellipsis;
   width: 400px;
 }
 
 #map-search:focus {
   border-color: #4d90fe;
+}
+
+.map-search-pos {
+  padding-left: 25%;
+  padding-top: 5%;
 }
 
 .map-top-padding {
@@ -263,7 +267,7 @@ div#map {
   background-color: #FBFFFE;
   padding-top: 8%;
   padding-bottom: 5%;
-  padding-left: 42%;
+  padding-left: 40%;
 }
 
 .news-btn-styles {
@@ -542,7 +546,7 @@ footer {
 .mobile-news-btn {
   
     padding-top: 2%;
-    padding-left: 40%;
+    padding-left: 37%;
 
 }
 
@@ -603,10 +607,6 @@ footer {
      padding-left: 5%;
    }
 
-   .alert-margin {
-    padding-left: 15%;
-  }
-
   .exp-btn-pos {
    padding-top: 5%;
    padding-bottom: 5%;
@@ -628,6 +628,10 @@ footer {
     padding-right: 35%;
    }
 
+   .alert-margin {
+    padding-left: 15%;
+  }
+
   /*--- Map Page--*/
 
 
@@ -644,6 +648,18 @@ footer {
     padding-left: 40%;
 }
 
+#sideCard {
+  padding: 8%;
+}
+
+#map-search {
+  width: 75%;
+}
+
+.map-search-pos {
+  padding-left: 20%;
+} 
+
 /*--- About page styles--*/
 
 .postcard-img {
@@ -656,8 +672,7 @@ footer {
 
  }
 
-
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   
   /*--- Footer Styles--*/
 
@@ -734,10 +749,9 @@ footer {
 
   /*--- Map Page styles--*/
 
- 
 
 .mobile-news-btn {
-  padding-left: 35%;
+  padding-left: 34%;
 }
  }
 
@@ -859,16 +873,20 @@ footer {
     font-size: 22px;
 }
 
-#sideCard {
-  padding: 8%;
+#map-search {
+  width: 97%;
+}
+
+.map-search-pos {
+    padding: 10%;
 }
 
 .back-map1 {
   padding-left: 30%;
 }
 
-.mobile-news-btn {
-  padding-left: 25%;
+.mobile-news-btn.newsletter-button {
+  padding: 5% 0% 15% 25%;
 }
 
 .contact-pop.newsletter-pop {
