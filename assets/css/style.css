@@ -37,6 +37,10 @@ div.section-color {
   background-color: #aed19e;
 }
 
+.four-four-background {
+  background-color: #ffca85;
+}
+
 /*--- General styles---*/
 
 h1 {
@@ -466,6 +470,17 @@ li a {
   border: 1px solid #888;
   background-color: #011638;
   width: 35%;
+}
+
+/*--- 404 Page---*/
+
+.ff-text {
+  padding-top: 12%;
+  padding-left: 17%;
+}
+
+.ff-img {
+  padding: 10% 0% 15% 32%;
 }
 
 /*--- Media Queries---*/
