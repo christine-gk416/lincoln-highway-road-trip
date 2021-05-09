@@ -130,6 +130,7 @@ In each location section, I added in a paragraph of text with external links to 
 I followed these two Youtube videos for instructions on how to build these Read More/Read Less buttons with jQuery:
 
 [LearnDesign]( https://www.youtube.com/watch?v=uI18xGocVnw)
+
 [Coding Artist](https://www.youtube.com/watch?v=uzSkExQtPkg)
 
 Finally, I added an anchor link to a map icon below the image in each location section. The map icon anchor link jumps back to the Google Map near the top of the page.
@@ -232,6 +233,8 @@ To reset the form after information has been sent to EmailJS, I followed [these 
 - [GIMP](https://www.gimp.org/)
     - I edited images on this tool  
 
+## Testing    
+
 
 ## Deployment
 
@@ -258,4 +261,10 @@ This CNAME file created a conflict with my original workspace, which I wasn't ab
 The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.com
 
 
+## Credits
 
+### Code sources
+
+### Text content sources 
+
+### Images & media
