@@ -86,6 +86,8 @@ Inside the keystone, I placed 30 for the name of the route that's assigned to th
 
 For the logo, I avoided using the colours or emblems used by the official Lincoln Highway Heritage Corridor or Historical organisations. I did this to avoid copyright infringement, as I'm not associated with these organisations. 
 
+![Logo Design](assets/images/lincoln.png)
+
 **Fonts**
 
 I used Google fonts for this project, and chose fonts that are currently popular on the Google fonts front site: Roboto, Poppins, and Kiwi Maru. 
@@ -119,6 +121,8 @@ The CSS for the slideshow demo was edited to match the colour scheme for the sit
 
 For the most part, the JavaScript from the tutorial was followed closely with little change. I’ve marked this in the JavaScript file the slideshow, along with my own notes.
 
+![Slideshow Gif](assets/images/slideshow.gif)
+
 #### User Story 2- Information about hotels/restaurants 
 
 This feature is connected to the main Google Map that’s on the map page. 
@@ -135,7 +139,9 @@ I followed these two Youtube videos for instructions on how to build these Read 
 
 Finally, I added an anchor link to a map icon below the image in each location section. The map icon anchor link jumps back to the Google Map near the top of the page.
 
-I used `scroll-behavior: smooth;` CSS to make all these page jumps less harsh
+I used `scroll-behavior: smooth;` CSS to make all these page jumps less harsh.
+
+![Newsletter Gif](assets/images/newsletter.gif)
 
 #### User Story 4- Newsletter 
 
