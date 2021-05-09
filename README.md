@@ -10,6 +10,14 @@ The aim of this project is to help people plan a road trip along the Lincoln Hig
 
 The Lincoln Highway Road trip is a project meant to give people an alternate to public trave during a pandemic, allow travelers to explore attractions off the beaten track, and to allow visitors to learn about the history of the Lincoln Highway/the state of Pennsylvania along the way. 
 
+## Live Site
+
+www.lincolnhighwayroadtrip.com
+
+![Responsive demo](assets/images/responsive-demo2.png)
+
+From [Am I Responsive?](http://ami.responsivedesign.is/)
+
 ## Table of Conents
 
 <br>
@@ -140,8 +148,7 @@ I placed the newsletter sign up buttons on the map page and on the about page, n
 
 To build the pop-out button and modal, I used a link styled like a button following the instructions from CSS tricks [here](https://css-tricks.com/css-basics-styling-links-like-boss/).
 
-Then I followed [these instructions](https://www.w3schools.com/howto/howto_css_modals.asp
-) from W3 Schools to build a pop-out modal. 
+Then I followed [these instructions](https://www.w3schools.com/howto/howto_css_modals.asp) from W3 Schools to build a pop-out modal. 
 
 The modal HTML is a basic form with a Bootstrap button. It’s the same type of form used in my Contact Us button (which is based on a form I created for my Milestone 1 project). I added an image to this newsletter pop-out content to add more space and emulate the style of the Mailchimp test form I made. 
 
@@ -185,19 +192,70 @@ To reset the form after information has been sent to EmailJS, I followed [these 
 - Ajax
     - This was also used for the navigation bar.
 
-- [Google Maps JS API]( https://developers.google.com/maps/documentation/javascript/overview)
+- [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/overview)
   - The map was created from this custom **Google Maps API** and the atlas style used for the map colouring comes from their built-in map style options and a unique map style ID. 
 
 - [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview)
   - The Search Box feature connected to the map was added to the site using the **Google Places** library.
 
-- [Google reCAPTCHA2]( https://www.google.com/recaptcha/about/)
+- [Google reCAPTCHA2](https://www.google.com/recaptcha/about/)
   - **reCAPTCHA2** is added to all forms through **EmailJS** to prevent form/newsletter spam. This only works on the live site, as the account is associated with my custom domain name.
 
 - [EmailJS](https://www.emailjs.com/)
     - I used **EmailJS** for form storage on the contact form in the footer and for the newsletter sign up on the map and about pages.
 
-- [Sweet Alert]( https://sweetalert.js.org/)
+- [Sweet Alert](https://sweetalert.js.org/)
   - This tool is used to show a post-submit alert after any form on the site is submitted to **EmailJS**.
+
+### Other tools used
+
+- [JIRA](https://www.atlassian.com/software/jira)
+    - I built my original user stories and started the Strategy Plane on a **JIRA** board. 
+
+- [Trello](https://trello.com)
+    - I used a **Trello** scope/strategy board to visualise the development process/map out the Strategy and Scope Planes.    
+
+- [Basalmiq](https://balsamiq.com/)
+    - My wireframes were all built on Balsalmiq.
+
+- [Free Logo Design](https://www.freelogodesign.org/)   
+    - My logo was created on this tool.
+
+- [GitPod](https://gitpod.io/)
+    - I built the site on **GitPod**
+
+- [GitHub](github.com/)
+    - I stored and managed by code on **GitHub**
+    - The site is deployed on **GitHub Pages**  
+- [GoDaddy]( https://ie.godaddy.com/)
+	- The site’s custom domain name: www.lincolnhighwayroadtrip.com is hosted by **GoDaddy**
+- [GIMP](https://www.gimp.org/)
+    - I edited images on this tool  
+
+
+## Deployment
+
+I used GitHub pages to deploy this project live online. This project was deployed early on so that I could ensure that the live content looks the same as it does on the GitPod preview. 
+
+To do this I:
+
+1. Logged into my GitHub account
+2. Opened my repository for lincoln-highway-road-trip
+3. Went to the Settings tab of my repository
+4. In the Options tab of the Settings, went to the GitHub Pages section
+5. Selected Master as the Source from a dropdown
+6. Selected the /(root) folder
+7. Clicked Save 
+
+Then I connected my custom domain name by typing in my full domain name, including teh wwww subdomain and clicking Save. 
+
+I added the custom DNS records from GitPod to the DNS panel on GoDaddy's end. [These steps](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) from GitHub Pages' documentation walks you through how to connect the apex domain and the required DNS records.
+
+Finally, I created a CNAME file in my respository to complete the connection and waited 24 hours for the SSL certificate to generate. 
+
+This CNAME file created a conflict with my original workspace, which I wasn't able to pull through on GitPod. To fix this, I created a new GitPod workspace and was able to push new updates as expected. 
+
+The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.com
+
 
 
