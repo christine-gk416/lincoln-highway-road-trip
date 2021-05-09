@@ -117,9 +117,9 @@ This feature is connected to the main Google Map that’s on the map page.
 
 To allow users to navigate the map page to plan out their road trip, I added a few buttons on the page. The first is on the card for each map location, that appears when you click on a map pin. There’s a More Info anchor link that then takes the user to a location section on the page.
 
-In each location section, I added in a paragraph of text with external links to different places to eat along the road trip. Then I created a Read More button with JQuery to show more information about hotels and places of interest (more external links). The JQuery button also can be clicked on to show less information (Read Less). 
+In each location section, I added in a paragraph of text with external links to different places to eat along the road trip. Then I created a Read More button with jQuery to show more information about hotels and places of interest (more external links). The jQuery button also can be clicked on to show less information (Read Less). jQuery was specifically used to demonstrate that I understand how to use this JavaScript framework.
 
-I followed these two Youtube videos for instructions on how to build these Read More/Read Less buttons with JQuery:
+I followed these two Youtube videos for instructions on how to build these Read More/Read Less buttons with jQuery:
 
 [LearnDesign]( https://www.youtube.com/watch?v=uI18xGocVnw)
 [Coding Artist](https://www.youtube.com/watch?v=uzSkExQtPkg)
@@ -149,5 +149,55 @@ For form storage, I used EmailJS. I followed [their documentation](https://www.e
 
 My mentor suggested that I try using a custom post-submit pop-out for after the form is sent, instead of a general alert. So I added these feature to the form using Sweet Alert’s documentation [here](https://sweetalert.js.org/).
 
-To reset the form after information has been sent to EmailJS, I followed [these instructions](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset)  from Mozilla’s documentation.
+To reset the form after information has been sent to EmailJS, I followed [these instructions](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset) from Mozilla’s documentation.
+
+## Technologies used
+
+### Languages and libraries
+
+- [HTML5](https://html.com/html5/)
+    - This project uses **HTML5** to build the pages on the site.
+
+- [CSS3](https://html.com/css/)
+    - I used **CSS** to style the HTML.
+
+- [Bootstrap CSS](https://getbootstrap.com/docs/3.4/css/)
+    - I used **Bootstrap CSS** to style buttons on the site. I also used Bootstrap grids to create the structure of my pages and to allow the site to resize responsively on different devices.
+
+- [Google Fonts](https://fonts.google.com/)
+    - Roboto, Poppins, and Kiwi Maru were added to the project using **Google Fonts**
+
+- [Font Awesome](https://fontawesome.com/)
+    - I added icons from **Font Awesome** to the site footer and to encourage visitors to jump back up to the map section of the map page. 
+
+- [JavaScript]( https://www.javascript.com/)
+	- I used vanilla **JavaScript** for the slideshow, map, and form pop-outs on the site. 
+
+- [jQuery](https://jquery.com/)
+	- The Read More/Less button functionality works through **jQuery**.
+
+- [Bootstrap JS](https://getbootstrap.com/docs/3.4/javascript/)
+    - I used **Bootstrap JS** for the site navigation. I wanted to save time on adding a dropdown folder in the main navigation without having to code it myself. I also used Bootstrap JavaScript for the mobile navigation button. 
+
+- [Popper](https://popper.js.org/) 
+    - The navigation bar also uses **Popper**.
+
+- Ajax
+    - This was also used for the navigation bar.
+
+- [Google Maps JS API]( https://developers.google.com/maps/documentation/javascript/overview)
+  - The map was created from this custom **Google Maps API** and the atlas style used for the map colouring comes from their built-in map style options and a unique map style ID. 
+
+- [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview)
+  - The Search Box feature connected to the map was added to the site using the **Google Places** library.
+
+- [Google reCAPTCHA2]( https://www.google.com/recaptcha/about/)
+  - **reCAPTCHA2** is added to all forms through **EmailJS** to prevent form/newsletter spam. This only works on the live site, as the account is associated with my custom domain name.
+
+- [EmailJS](https://www.emailjs.com/)
+    - I used **EmailJS** for form storage on the contact form in the footer and for the newsletter sign up on the map and about pages.
+
+- [Sweet Alert]( https://sweetalert.js.org/)
+  - This tool is used to show a post-submit alert after any form on the site is submitted to **EmailJS**.
+
 
