@@ -88,4 +88,66 @@ I chose Poppins for the main text areas of my site because it's the default font
 
 In the banner headings near the top of each page, I used Kiwi Maru because it's both bold and quirky. I think it complements the san serif fonts used on the rest of the site, while adding a fun touch to the main headings. 
 
-The reason I used three fonts is that I understand a font pack should remain small and that adding multiple fonts to a site can increas loading time.
+The reason I used three fonts is that I understand a font pack should remain small and that adding multiple fonts to a site can increase loading time.
+
+## Features:
+
+### Existing Features:
+
+#### User story 1- Image slideshow
+The slideshow feature is meant to draw the site visitor in so that they can see for themselves the unique roadside attractions on the Lincoln Highway. These quirky attractions, like the Fallingwater House or the Bedford Coffee Pot restaurant are certainly unique and not features that you would find anywhere else in the world. They’re talking points. 
+
+I imagined a person who wants to convince their partner to plan a road trip instead of going to the beach for a few days. I thought, would I be convinced by compelling images to take a holiday that jumps from one place to the next instead of a relaxing one? 
+
+The slideshow is meant to convince people who are on the fence. It’s like a thesis statement of: ‘what do you think about this?’ Then the site visitor can click through each image and decide for themselves. 
+
+To build the slideshow, I followed the instructions from this W3 schools [guide](https://www.w3schools.com/howto/howto_js_slideshow.asp).
+
+I edited their HTML to add in stock images specific to different locations along the way, which I’ve sited the sources for below. The captions and numbers on the demo slideshow were also removed from the code on the live site. 
+
+The images are not in the exact order of the trip, but in a random order. The reason for this choice is that the Fallingwater image works the best with the site’s colour scheme and is an elegant introduction to what the road trip guide has to offer. Plus, one image location may stick out to a different site visitor, so I wanted to have the images appear at random so that they would have to go to the map page to learn more. 
+
+The CSS for the slideshow demo was edited to match the colour scheme for the site. 
+
+For the most part, the JavaScript from the tutorial was followed closely with little change. I’ve marked this in the JavaScript file the slideshow, along with my own notes.
+
+#### User Story 2- Information about hotels/restaurants 
+
+This feature is connected to the main Google Map that’s on the map page. 
+
+To allow users to navigate the map page to plan out their road trip, I added a few buttons on the page. The first is on the card for each map location, that appears when you click on a map pin. There’s a More Info anchor link that then takes the user to a location section on the page.
+
+In each location section, I added in a paragraph of text with external links to different places to eat along the road trip. Then I created a Read More button with JQuery to show more information about hotels and places of interest (more external links). The JQuery button also can be clicked on to show less information (Read Less). 
+
+I followed these two Youtube videos for instructions on how to build these Read More/Read Less buttons with JQuery:
+
+[LearnDesign]( https://www.youtube.com/watch?v=uI18xGocVnw)
+[Coding Artist](https://www.youtube.com/watch?v=uzSkExQtPkg)
+
+Finally, I added an anchor link to a map icon below the image in each location section. The map icon anchor link jumps back to the Google Map near the top of the page.
+
+I used `scroll-behavior: smooth;` CSS to make all these page jumps less harsh
+
+#### User Story 4- Newsletter 
+
+I initially wanted to create a pop-up newsletter subscribe feature that appears when you enter the site. 
+
+To test out this feature, I tried adding embed code from Mailchimp to the homepage, but I didn’t think that this pop-out feature was intuitive for this project. While automatic pop-ups can be built with JavaScript, I didn’t think that this feature was good for user experience. The user is reminded to sign up for the newsletter, but they don’t have a choice over whether they see this pop-up or not. 
+
+I decided to go for a design similar to the Contact Us button that I added in the site footer instead. The contact button gives the site visitor a choice if they want to access the newsletter form. 
+
+I placed the newsletter sign up buttons on the map page and on the about page, near the top of the page to remind visitors to sign up. 
+
+To build the pop-out button and modal, I used a link styled like a button following the instructions from CSS tricks [here](https://css-tricks.com/css-basics-styling-links-like-boss/).
+
+Then I followed [these instructions](https://www.w3schools.com/howto/howto_css_modals.asp
+) from W3 Schools to build a pop-out modal. 
+
+The modal HTML is a basic form with a Bootstrap button. It’s the same type of form used in my Contact Us button (which is based on a form I created for my Milestone 1 project). I added an image to this newsletter pop-out content to add more space and emulate the style of the Mailchimp test form I made. 
+
+For form storage, I used EmailJS. I followed [their documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) directly. I couldn’t get the instructions from the course video to work as expected, and I’ve noted this in my testing section.
+
+My mentor suggested that I try using a custom post-submit pop-out for after the form is sent, instead of a general alert. So I added these feature to the form using Sweet Alert’s documentation [here](https://sweetalert.js.org/).
+
+To reset the form after information has been sent to EmailJS, I followed [these instructions](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset)  from Mozilla’s documentation.
+
