@@ -136,7 +136,7 @@ function initAutocomplete() {
       info: 
             `<h2>Gettysburg</h2>
             <p>
-            The site of one of the bloodiest and northern-most battles of the American Civil War, is a must-see to learn about the more sordid parts of American history. 
+            The site of one of the bloodiest and northern-most battles of the American Civil War, is a must-see to learn about the darker parts of American history. 
             Gettysburg town is situated down the road from the battlefield, which makes it a hot-spot for ghosts. 
             If you go after dark, you can take a haunted tour of the city. Or if you go visit during the day, you can visit the battlefield itself. 
             The entire battlefield is now a National Park, which you can explore at your leisure or with a park ranger as a tour guide. 
