@@ -8,7 +8,7 @@ The aim of this project is to help people plan a road trip along the Lincoln Hig
 2.	Highlight the benefits of an old highway road trip like quirky roadside attractions and locally owned restaurants/hotels. I planned this trip based on a road trip I took back in 2016, so that I could really get to know the most eclectic parts of my home state (the heart of my state) before I moved to Ireland. The core of this project is based on that specific trip. 
 3.	Educate road trippers on the history of the Lincoln Highway, which is one of the oldest cross country highways in the US. It’s now mostly bypassed by the turnpike on route 76 in Pennsylvania. One aim of this project is to encourage holiday-makers to stay off the beaten path and explore recent history based off of one road. 
 
-The Lincoln Highway Road trip is a project meant to give people an alternate to public trave during a pandemic, allow travelers to explore attractions off the beaten track, and to allow visitors to learn about the history of the Lincoln Highway/the state of Pennsylvania along the way. 
+The Lincoln Highway Road trip is a project meant to give people an alternate to public trave during a pandemic, persuade travelers to explore attractions off the beaten track, and teach site visitors about the history of the Lincoln Highway/the state of Pennsylvania along the way. 
 
 ## Live Site
 
