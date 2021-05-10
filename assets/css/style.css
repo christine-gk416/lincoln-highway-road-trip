@@ -226,23 +226,8 @@ div#map {
   height: 150px;
 }
 
-#map-search {
-  background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  width: 50%;
-  text-overflow: ellipsis;
-  width: 400px;
-}
-
-#map-search:focus {
-  border-color: #4d90fe;
-}
-
-.map-search-pos {
-  padding-left: 30%;
-  padding-top: 5%;
+#sideCard {
+  padding-bottom: 2%;
 }
 
 .map-top-padding {
@@ -380,6 +365,25 @@ div#map {
 .search-banner {
   padding-top: 60px;
   padding-left: 450px;
+}
+
+#map-search {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  width: 50%;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#map-search:focus {
+  border-color: #4d90fe;
+}
+
+.map-search-pos {
+  padding-left: 30%;
+  padding-top: 5%;
 }
 
 /*--- Footer --*/
