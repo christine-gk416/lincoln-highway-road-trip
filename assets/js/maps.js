@@ -75,14 +75,16 @@ function initAutocomplete() {
       content: "<h3>Pittsburgh</h3><p>Start here! &#128664</p>",
       info: 
             `<h2>Pittsburgh</h2>
-            <br>
-            <p>Sit amet, consectetur adipiscing elit. 
-            Nunc vitae rhoncus neque, a mattis nulla. 
-            Mauris vel mi cursus purus maximus fermentum. 
-            Praesent pulvinar finibus mauris quis suscipit. 
-            Fusce volutpat vehicula augue, a finibus orci cursus pretium. 
-            Aliquam interdum magna aliquet urna interdum porta. 
-            Aliquam volutpat erat id elit fringilla ullamcorper. </p>
+            <p>Start your trip in Pittsburgh, the second largest city in Pennsylvania. 
+            This city is located in the far southwestern part of the state, on the Allegheny plateau. 
+            Many of its distinctive neighborhoods are built right into the these mountainous foothills. 
+            Other parts of Pittsburgh are shaped around its iconic three rivers: the Ohio, Monongahela, and Allegheny. 
+            Pittsburgh was once one of the most industrialised cities in the world, but in the post-industrial era it 
+            has focused on becoming a hub of higher education. 
+            With the Andy Warhol and Carnegie museums located in the city, Pittsburgh is also considered an artistic 
+            stronghold in Pennsylvania. 
+            It’s regularly listed as the most livable city in the US. 
+            </p>
             <br>
             <a href="#Pittsburgh" class="read-more-btn">More info</a>`
     },
@@ -91,7 +93,19 @@ function initAutocomplete() {
       content: "<h3>Fallingwater</h3>",
       info: 
             `<h2>Fallingwater</h2>
-            <p>Test</p>
+            <p>This iconic house was built by one of America’s most famous architects. 
+            Fallingwater was built between 1933-38 for the Kaufmann family, 
+            the owners of a prominent department store chain in Pittsburgh. 
+            The house was built atop of a waterfall, so that its foundation rises above the falling water. 
+            It seamlessly blends into the forest and the hills around the building, with a minimalist, 
+            modern style characteristic of Wright’s design.
+            </p>
+            <br>
+            <p>
+            Today, the house is open to the public as a museum and the land it’s on is a nature reserve (Bear Run). 
+            In 2019, Fallingwater house was added to the list of UNESCO world heritage sites. 
+            </p>
+            <br>
             <a href="#Fallingwater" class="read-more-btn">More info</a>`
     },
 
@@ -99,7 +113,21 @@ function initAutocomplete() {
       content: "<h3>Bedford</h3>",
       info: 
             `<h2>Bedford</h2>
-            <p>Test</p>
+            <p>
+            Bedford is a small town tucked into the Allegheny mountains. 
+            If you’re there in the autumn, the trees will be alive with changing colours and there’s a fall foliage festival to celebrate. 
+            Any other time of year, Bedford has an outsized history. 
+            President George Washington spent some time there while quelling the whisky rebellion and the first president from Pennsylvania, 
+            James Buchanon spent his summers at the Bedford Springs Hotel. 
+            The town is still renowned for its spirits (though mostly beer these days) and nearby hot spring spas. 
+            </p>
+            <br>
+            <p>
+            But for passing through on a road trip, the key stop in Bedford is to The Coffee Pot. 
+            Built in 1927 as a diner, this coffee pot-shaped building still stands in the town. 
+            It’s closed now, but is still full of potential for photographs.
+            </p>
+            <br>
             <a href="#Bedford" class="read-more-btn">More info</a>`
     },
 
@@ -107,7 +135,18 @@ function initAutocomplete() {
       content: "<h3>Gettysburg</h3><p>&#128123</p>",
       info: 
             `<h2>Gettysburg</h2>
-            <p>Test</p>
+            <p>
+            The site of one of the bloodiest and northern-most battles of the American Civil War, is a must-see to learn about the more sordid parts of American history. 
+            Gettysburg town is situated down the road from the battlefield, which makes it a hot-spot for ghosts. 
+            If you go after dark, you can take a haunted tour of the city. Or if you go visit during the day, you can visit the battlefield itself. 
+            The entire battlefield is now a National Park, which you can explore at your leisure or with a park ranger as a tour guide. 
+            The most iconic part of the field, Devil’s Den, is a harrowing reminder of the cost of war. 
+            </p>
+            <br>
+            <p>
+            The town also has a robust shopping and antiques district, as well as wine/craft beer and food tours. 
+            </p>
+            <br>
             <a href="#Gettysburg" class="read-more-btn">More info</a>`
     },
 
@@ -115,7 +154,19 @@ function initAutocomplete() {
       content: "<h3>Harrisburg</h3>",
       info: 
             `<h2>Harrisburg</h2>
-            <p>Test</p>
+            <p>
+            The capitol city and the third largest in Pennsylvania. 
+            Harrisburg is built along the Susquehanna river, a wide and enchanting river that flows into the Chesapeake Bay. 
+            One of the best places to visit in Harrisburg is the River Front park, which has a walking bridge that takes you 
+            to the City Island leisure centre. You can take in a baseball game, play a round of miniature golf, 
+            or take a ride on the red and white paddle-wheel river boat the Pride of the Susquehanna on City Island.
+            </p>
+            <br>
+            <p>
+            Harrisburg’s midtown is its cultural hub where you can find restaurants, bars, coffee shops, and more. 
+            The keystone of midtown is the Midtown Scholar Bookshop, which is run by the city’s mayor. 
+            </p>
+            <br>
             <a href="#Harrisburg" class="read-more-btn">More info</a>`
     },
 
