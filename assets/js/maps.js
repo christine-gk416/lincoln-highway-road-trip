@@ -110,7 +110,19 @@ function initMap() {
       coords: { lat: 40.03, lng: -76.3 },
       content: "<h3>Lancaster</h3>",
       info: `<h2>Lancaster</h2>
-            <p>Test</p>
+            <p>
+            The first stop here in Lancaster county is to the Fulton Steamboat Inn. 
+            This hotel is designed to look like a real steam boat, and was built in honor of Robert Fulton, 
+            the engineer who made steamboats a commercial success in the late 19th century. Fulton was born in Lancaster. 
+            </p>
+            <br>
+            <p>
+            Continuing down route 30 from the hotel, through Amish country, you’ll head into Lancaster city. 
+            This city was the capitol city of the United States for one day 1777. Today, it’s one of the best preserved in-land historical city. 
+            The history is only part of what makes this little city so cool. Lancaster has a thriving arts and theatre scene on Gallery Row, and is on the rise 
+            with its eclectic cuisine and craft breweries. 
+            </p>
+            <br>
             <a href="#Lancaster" class="read-more-btn">More info</a>`,
     },
 
@@ -118,7 +130,21 @@ function initMap() {
       coords: { lat: 39.9526, lng: -75.1652 },
       content: "<h3>Philadelphia</h3><p>End here &#128075</p>",
       info: `<h2>Philadelphia</h2>
-            <p>Test</p>
+            <p>
+            Final stop on this road trip is Pennsylvania’s largest city. 
+            Philadelphia is the birthplace of the US, and it’s earned that reputation. 
+            Old city Philly is the home of Independence Hall, where the Declaration of Independence was signed, 
+            and the Continental Congresses formed the US government. 
+            Nearby is the Liberty Bell and Ben Franklin’s house. 
+            </p> 
+            <br>
+            <p>
+            For lunch, head over to the food hall at Reading Terminal Market, 
+            then sit over by the large rise of city hall. Behind city hall is the Benjamin Franklin Parkway, 
+            which is lined with every world flag. If you continue down the Parkway, you’ll find a long row of art, science, and history museums. 
+            The Philadelphia Museum Art is at the end of the Parkway. Here, you can run up the 72 steps from Rocky and take a picture with a bronze Sylvester Stallone. 
+            </p>
+            <br>
             <a href="#Philadelphia" class="read-more-btn">More info</a>`,
     },
   ];
