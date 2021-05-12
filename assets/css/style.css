@@ -89,6 +89,21 @@ body {
   scroll-behavior: smooth;
 }
 
+.location-font {
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.location-font li {
+  padding-bottom: 15px;
+}
+
+.location-font li a {
+  padding: 0px;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
 /*--- Header ---*/
 
 /*--- Logo styles --*/
