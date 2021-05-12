@@ -11,12 +11,16 @@ function initMap() {
       coords: { lat: 40.44, lng: -79.99 },
       content: "<h3>Pittsburgh</h3><p>Start here! &#128664</p>",
       info: `<h2>Pittsburgh</h2>
-            <p>Start your trip in Pittsburgh, the second largest city in Pennsylvania. 
+            <p>
+            Start your trip in Pittsburgh, the second largest city in Pennsylvania. 
             This city is located in the far southwestern part of the state, on the Allegheny plateau. 
             Many of its distinctive neighborhoods are built right into the these mountainous foothills. 
             Other parts of Pittsburgh are shaped around its iconic three rivers: the Ohio, Monongahela, and Allegheny. 
             Pittsburgh was once one of the most industrialised cities in the world, but in the post-industrial era it 
             has focused on becoming a hub of higher education. 
+            </p>
+            <p>
+            <br>
             With the Andy Warhol and Carnegie museums located in the city, Pittsburgh is also considered an artistic 
             stronghold in Pennsylvania. 
             It’s regularly listed as the most livable city in the US. 
