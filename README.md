@@ -227,6 +227,8 @@ All maps on the site are styled to have an atlas design on Google's Cloud-based 
 
 Finally, I added custom location cards to the maps.js file. Each unique card appears when a site visitor clicks on the map marker. This part of the map feature was built using a click event listener and by following [this StackOverflow post](https://stackoverflow.com/questions/47017679/how-to-show-infowindow-content-in-separate-div).
 
+The lat/long positions come from [this site](https://www.maps.ie/).
+
 ## Technologies used
 
 ### Languages and libraries
@@ -340,40 +342,70 @@ The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.co
 **Pittsburgh**
 
 https://www.visitpittsburgh.com/plan-your-trip/
+
 https://en.wikipedia.org/wiki/Pittsburgh
+
 https://theculturetrip.com/north-america/usa/pennsylvania/articles/where-to-eat-in-pittsburgh-pa-the-10-best-local-restaurants/
 
 **Fallingwater**
 
 https://en.wikipedia.org/wiki/Fallingwater
+
 https://fallingwater.org/what-is-fallingwater/
+
 https://www.golaurelhighlands.com/
 
 **Bedford**
 
 https://en.wikipedia.org/wiki/Bedford,_Pennsylvania
+
 https://www.travelawaits.com/2496410/how-to-spend-a-weekend-in-bedford-pa/
 
 **Gettysburg**
 
 https://uncoveringpa.com/things-to-do-in-gettysburg-pa
+
 https://destinationgettysburg.com/
+
 https://www.nps.gov/gett/index.htm
 
 **Harrisburg**
 
 https://selectregistry.com/blog/things-to-do-in-harrisburg-pa/
+
 https://www.visithersheyharrisburg.org/about/
 
 **Lancaster**
 
 https://fultonsteamboatinn.com/the-history-of-steamboats/
+
 https://www.discoverlancaster.com/blog/10-reasons-to-visit-downtown-lancaster-pa/
+
 https://www.discoverlancaster.com/blog/forbes-10-coolest-u-s-cities-to-visit/
 
 **Philadelphia**
 
 https://www.visitphilly.com/
+
 https://en.wikipedia.org/wiki/Rocky_Steps 
 
 ### Images & media
+
+- amish-country.jpg was sourced from Unsplash and taken by [Doug Kelley](https://unsplash.com/@dkphotos)
+- bedford.jpg was found on the [Bedford Fall Foliage Festival](https://bedfordfallfoliagefestival.com/) official site
+- coffee-pot.jpg is credited to [Joseph](https://www.flickr.com/photos/josepha/) on Flikr
+- fallingwater.jpg is from Unsplash by [Kirk Thornton](https://unsplash.com/@kirkthornton)
+- fallingwater2.jpg is also from Unsplash by [Cameron Venti](https://unsplash.com/@ventiviews)
+- favicon.ico is a general emoji of a road from [favicon.io](https://favicon.io/emoji-favicons/)
+- gettysburg.jpg is sourced from freeimages.com by [Eric Nelson](https://www.freeimages.com/photographer/ericnelson-32464)
+- gettysburg2.jpg comes from Unsplash by [Timothy Pierce](https://unsplash.com/@tpierce)
+- harrisburg-bridge.jpg is an image by [Charles Jackson](https://unsplash.com/@cneasonj) on Unsplash
+- harrisburg.jpg is by [Andre Frueh](https://unsplash.com/@andrefrueh) on Unsplash
+- historical-postcard.jpg is from a collection of postcards found and reposted by [Kate](https://www.flickr.com/photos/123378252@N05/) on Flickr
+- independence-hall.jpg is also from Flickr by [Jonathan](https://www.flickr.com/photos/iceninejon/)
+- philadelphia.jpg is by [Chris Murray](https://unsplash.com/@seemurray) on Unsplash
+- philly-skyline.jpg is sourced from Pexels by [Sanaan Mazhar](https://www.pexels.com/@sanaan)
+- pittsburgh.jpg was taken by [Vidar Nordli-Mathisen](https://unsplash.com/@vidarnm) and sourced from Unsplash
+- pittsburgh2.jpg is also from Unsplash, taken by [Guido Coppa](https://unsplash.com/@gcoppa)
+- turn-around.gif was sourced from the official Groundhog Day film page on [Giphy](https://giphy.com/groundhogday/)
+- windy-roady.jpg is from [Matt Duncan](https://unsplash.com/@foxxmd) on Unsplash
