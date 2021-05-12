@@ -44,8 +44,8 @@ User stories are effective for planning out and determing which features will wo
 
 These are the user stories I've identified for the current version of this project:
 
-1.	Ellan wants to have a slideshow of the unique attractions along the highway, so that they can talk their partner into taking a road trip instead of going on a beach holiday.
-2.	Julia likes to plan ahead for places to eat and hotels/motels to stay in while she’s on a road trip. She wants to find suggestions for restaurants and hotels directly on the site.
+1.	Jo wants to have a slideshow of the unique attractions along the highway, so that they can talk their partner into taking a road trip instead of going on a beach holiday.
+2.	Julia likes to plan ahead for places to eat and other places of interest in while she’s on a road trip. She wants to find suggestions for restaurants and hotels directly on the site.
 3.	Miles is fascinated by the history of the roadside attractions on the Lincoln highway. He wants to learn more about the general history of the highway and facts about the attractions. 
 4.	Skye lives near the Lincoln highway heritage quarter in Pennsylvania and wants to keep up with events at each destination. She’d like to subscribe to a newsletter to get updates. 
 5.	Robert wants to have a way to search the map for places to stop along the way. He’s particularly concerned with locating petrol stations, so that the car doesn’t break down and so that he can keep an eye on the cost of petrol. 
@@ -102,7 +102,7 @@ The reason I used three fonts is that I understand a font pack should remain sma
 
 ## Features:
 
-### Existing Features:
+### User Story Features:
 
 #### User story 1- Image slideshow
 The slideshow feature is meant to draw the site visitor in so that they can see for themselves the unique roadside attractions on the Lincoln Highway. These quirky attractions, like the Fallingwater House or the Bedford Coffee Pot restaurant are certainly unique and not features that you would find anywhere else in the world. They’re talking points. 
@@ -141,7 +141,7 @@ Finally, I added an anchor link to a map icon below the image in each location s
 
 I used `scroll-behavior: smooth;` CSS to make all these page jumps less harsh.
 
-![Newsletter Gif](assets/images/newsletter.gif)
+![Location Gif](assets/images/location-userstory.gif)
 
 #### User Story 4- Newsletter 
 
@@ -164,6 +164,68 @@ For form storage, I used EmailJS. I followed [their documentation](https://www.e
 My mentor suggested that I try using a custom post-submit pop-out for after the form is sent, instead of a general alert. So I added these feature to the form using Sweet Alert’s documentation [here](https://sweetalert.js.org/).
 
 To reset the form after information has been sent to EmailJS, I followed [these instructions](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset) from Mozilla’s documentation.
+
+![Newsletter Gif](assets/images/newsletter.gif)
+
+#### User Story 5- Search Box for Map
+
+I added a Google Places Search Box so that users can search for petrol stations or other locations to stop not mentioned on the location setions. This feature was originally part of the map on the Plan Your Trip page. However, I have the map on this page set to a zoom of 7 to show all the markers and cards for designated places of interest.
+
+After testing on the Search Box and trying to set specific bonds for the map, it turned out that the Search Box local markers don't stay fixed on the viewport if you have a closer zoom in on the map. I've more information on this in the testing section. 
+
+My mentor and I decided that the best way to add this feature in would be to create a new map and Search Box on a page titled Search. The map is zoomed out to a 13 zoom on Pittsburgh, so that site visitors can move around the map and use the Search Box to find specific points of interest around each location on their own. 
+
+The JavaScript for this feature is mostly from [Google Search Box's documentation](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript).
+
+I also followed the instructions on the general [Google Autocomplete documentation](https://developers.google.com/maps/documentation/javascript/places-autocomplete?hl=en#places-searchbox).
+
+![Search Box Gif](assets/images/searchbox.gif)
+
+### Other Existing Features
+
+#### Bootstrap Nav
+
+To save time to build other features on the site, I used a Bootstrap navigation with a dropdown folder for anchor links on the Plan Your Trip (map) page. 
+
+I followed the navbar instructions on Bootstrap [here](https://getbootstrap.com/docs/4.0/components/navbar/#nav).
+
+The instructions for building the mobile navigation on Bootstrap were found [here](https://getbootstrap.com/docs/4.0/components/navbar/#responsive-behaviors).
+
+#### Explore button
+
+This feature is simply a link styles ad a button that links through to the Map it Out section of the map page. I placed this on the homepage so that a site visitor can click through to start planning their trip after seeing the slideshow.
+
+#### Contact Us button
+
+To save space on building a Contact Us page, I created a pop-out button that opens into a form. The form connects to EmailJS, requires Google reCAPTCHA to submit, and shows a Sweet Alert post submit message. 
+
+This feature uses the same tools as the Newsletter feature for the User Story above. 
+
+#### Social Links
+
+I used Font Awesome icons to create external links to the homepage of social media sites (which would be real social media pages for an actual business) and to my email and phone. 
+
+Because these are external links that I'm not entirely sure are secure, so I used `rel="noopener"` tags on all external links used on the site. 
+
+#### Explore Pennsylvania links
+
+To give road trippers more options for researching/planning their trip, I included direct footer links to trave sites about distinctive and unusual locations in Pennsylvania. This was included to give visitors as much information to plan a completely unique trip that they have the resources to organise. 
+
+#### Map with markers and corresponding cards
+
+The map on the Map it Out page is the key feature for this project, since it marks out 7 locations in the state of Pennsylvania, going across the state from west to east. 
+
+To start building this map, I followed the course instruction videos and [this guide](https://developers.google.com/maps/documentation/javascript/overview) on the Maps JavaScript API.
+
+Then I added markers and info windows for each marker, which appear on mouseover/mouseout event listeners, by following this this [Youtube video](https://www.youtube.com/watch?v=Zxf1mnP5zcw) by Traversy Media.
+
+I also followed [Google's documentation](https://developers.google.com/maps/documentation/javascript/infowindows) on adding info windows.
+
+Next, I created custom map markers with a star inside the regular red Google maps marker. [This guide](https://developers.google.com/maps/documentation/javascript/custom-markers) taught me how to add the custom markers. The custom marker comes from [KML4 Earth](http://kml4earth.appspot.com/icons.html).
+
+All maps on the site are styled to have an atlas design on Google's Cloud-based map styling, using [this documentation](https://developers.google.com/maps/documentation/javascript/styling).
+
+Finally, I added custom location cards to the maps.js file. Each unique card appears when a site visitor clicks on the map marker. This part of the map feature was built using a click event listener and by following [this StackOverflow post](https://stackoverflow.com/questions/47017679/how-to-show-infowindow-content-in-separate-div).
 
 ## Technologies used
 
@@ -272,5 +334,46 @@ The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.co
 ### Code sources
 
 ### Text content sources 
+
+#### Location sections sources
+
+**Pittsburgh**
+
+https://www.visitpittsburgh.com/plan-your-trip/
+https://en.wikipedia.org/wiki/Pittsburgh
+https://theculturetrip.com/north-america/usa/pennsylvania/articles/where-to-eat-in-pittsburgh-pa-the-10-best-local-restaurants/
+
+**Fallingwater**
+
+https://en.wikipedia.org/wiki/Fallingwater
+https://fallingwater.org/what-is-fallingwater/
+https://www.golaurelhighlands.com/
+
+**Bedford**
+
+https://en.wikipedia.org/wiki/Bedford,_Pennsylvania
+https://www.travelawaits.com/2496410/how-to-spend-a-weekend-in-bedford-pa/
+
+**Gettysburg**
+
+https://uncoveringpa.com/things-to-do-in-gettysburg-pa
+https://destinationgettysburg.com/
+https://www.nps.gov/gett/index.htm
+
+**Harrisburg**
+
+https://selectregistry.com/blog/things-to-do-in-harrisburg-pa/
+https://www.visithersheyharrisburg.org/about/
+
+**Lancaster**
+
+https://fultonsteamboatinn.com/the-history-of-steamboats/
+https://www.discoverlancaster.com/blog/10-reasons-to-visit-downtown-lancaster-pa/
+https://www.discoverlancaster.com/blog/forbes-10-coolest-u-s-cities-to-visit/
+
+**Philadelphia**
+
+https://www.visitphilly.com/
+https://en.wikipedia.org/wiki/Rocky_Steps 
 
 ### Images & media
