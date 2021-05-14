@@ -102,6 +102,7 @@ body {
 
 .logo-size {
   height: 100px;
+  width: auto;
   padding-left: 50px;
 }
 
@@ -277,6 +278,7 @@ div#map {
 
 .newsletter-img {
   width: 60%;
+  height: auto;
   padding: 5%;
 }
 
