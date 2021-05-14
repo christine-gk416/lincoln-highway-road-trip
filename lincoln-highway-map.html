@@ -1,556 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!--Style packs and CSS-->
 
-    <title>Lincoln Highway Road Trip</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
+  <title>Lincoln Highway Road Trip</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+  <!--Meta description-->
+
+  <meta name="description" content="Map out where to stop as you travel across Pennsylvania on the Lincoln Highway. These stops
+  on route 30 include: Pittsburgh, Fallingwater, Bedford, Gettysburg, Harrisburg, Lancaster, and Philadelphia. We've suggested places to stop and 
+  eat or to explore along the way. The road trip map is a comprehensive way to plan out a road trip across the state of Pennsylvania.">
 
 </head>
+
 <body>
 
-    <header>
+  <header>
 
-      <!--Bootstrap navigation-->
+    <!--Bootstrap navigation-->
 
-        <nav class="navbar navbar-light header-background navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo-size" src="/assets/images/lincoln.png" alt="Lincoln Highway Road Trip logo">
-            </a>
+    <nav class="navbar navbar-light header-background navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-size" src="/assets/images/lincoln.png" alt="Lincoln Highway Road Trip logo">
+      </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto link-styles">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="about-the-highway.html">About Route 30</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="lincoln-highway-map.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plan Your Trip
-                  </a>
-                  <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Pittsburgh">Pittsburgh</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Fallingwater">Fallingwater</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Bedford">Bedford</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Gettysburg">Gettysburg</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Harrisburg">Harrisburg</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Lancaster">Lancaster</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Philadelphia">Philadelphia</a>
-                  </div>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="search.html">Search</a>
-                </li>
-            
-              </ul>
-            </div>    
-          </nav>
-    </header>
-
-    <!--Bootstrap alert-->
-
-    <div class="alert alert-info fade show alert-margin" role="alert" id="alert-map-header">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      Learn more about 
-      <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" 
-      target="_blank" class="alert-link" rel="noopener">COVID-19 restrictions</a>
-      in Pennsylvania. 
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto link-styles">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about-the-highway.html">About Route 30</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lincoln-highway-map.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plan Your Trip
+            </a>
+            <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Pittsburgh">Pittsburgh</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Fallingwater">Fallingwater</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Bedford">Bedford</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Gettysburg">Gettysburg</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Harrisburg">Harrisburg</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Lancaster">Lancaster</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Philadelphia">Philadelphia</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--Bootstrap alert-->
+
+  <div class="alert alert-info fade show alert-margin" role="alert" id="alert-map-header">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    Learn more about
+    <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" target="_blank"
+      class="alert-link" rel="noopener">COVID-19 restrictions</a>
+    in Pennsylvania.
+  </div>
+
+  <!--Banner-->
+
+  <section class="map-background">
+    <h1 class="bn-txt-pos2">Your Journey Down Route 30</h1>
+  </section>
+
+  <!--Map section-->
+
+
+
+  <section class="map-top-padding mobile-map-padding">
+    <div class="row">
+
+      <!--Map-->
+
+      <div class="col-xl-8 col-md-12" id="map-jump">
+        <div id="map">
+        </div>
+      </div>
+
+      <!--Map cards-->
+
+      <div class="col-xl-4 col-md-12" id="sideCard">
+        <h2>
+          <strong>
+            Pittsburgh
+          </strong>
+        </h2>
+        <p>
+          Start your trip in Pittsburgh, the second largest city in Pennsylvania.
+          This city is located in the far southwestern part of the state, on the Allegheny plateau.
+          Many of its distinctive neighborhoods are built right into the these mountainous foothills.
+          Other parts of Pittsburgh are shaped around its iconic three rivers: the Ohio, Monongahela, and Allegheny.
+          Pittsburgh was once one of the most industrialised cities in the world, but in the post-industrial era it has
+          focused on becoming a hub of higher education.
+        </p>
+        <br>
+        <p>
+          With the Andy Warhol and Carnegie museums located in the city, Pittsburgh is also considered an artistic
+          stronghold in Pennsylvania. It’s regularly listed as the most livable city in the US.
+        </p>
+        <br>
+        <a href="#Pittsburgh" class="more-info-btn">More info</a>
+      </div>
     </div>
 
-    <!--Banner-->
+  </section>
 
-    <section class="map-background">
-      <h1 class="bn-txt-pos2">Your Journey Down Route 30</h1>
-    </section>
+  <!--Newsletter pop-out section-->
 
-    <!--Map section-->
+  <section>
 
-      
+    <!--Pop-out Button-->
 
-    <section class="map-top-padding mobile-map-padding">
-      <div class="row">
+    <div class="col-12 mobile-news-btn newsletter-button">
+      <a class="news-btn-styles" id="newsletterButton">
+        Get our Newsletter!
+      </a>
+    </div>
 
-        <!--Map-->
+    <!--Hidden form-->
 
-        <div class="col-xl-8 col-md-12" id="map-jump">
-          <div id="map">
-          </div>
-        </div>
+    <div class="hide-form contact-modal" id="modal2">
 
-        <!--Map cards-->
+      <div class="contact-pop newsletter-pop">
 
-        <div class="col-xl-4 col-md-12" id="sideCard">
-          <h2>
-            <strong>
-              Pittsburgh
-            </strong>
-          </h2>
-          <p>
-            Start your trip in Pittsburgh, the second largest city in Pennsylvania. 
-            This city is located in the far southwestern part of the state, on the Allegheny plateau. 
-            Many of its distinctive neighborhoods are built right into the these mountainous foothills. 
-            Other parts of Pittsburgh are shaped around its iconic three rivers: the Ohio, Monongahela, and Allegheny. 
-            Pittsburgh was once one of the most industrialised cities in the world, but in the post-industrial era it has 
-            focused on becoming a hub of higher education. 
-          </p>
+        <span id="close-form2">&times;</span>
+
+        <form aria-label="Subscribe to our Newsletter" id="newsletterForm">
+          <h1 class="mobile-heading form-heading">Subscribe!</h1>
+          <img src="assets/images/windy-road.jpg" class="newsletter-img" alt="Image of a winding road">
+          <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
+          <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com"
+            class="label-width" aria-label="Email Address" required>
           <br>
-          <p>
-            With the Andy Warhol and Carnegie museums located in the city, Pittsburgh is also considered an artistic 
-            stronghold in Pennsylvania. It’s regularly listed as the most livable city in the US.  
-          </p>
           <br>
-          <a href="#Pittsburgh" class="more-info-btn">More info</a>
-        </div>
+          <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
+          <br>
+          <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
+        </form>
       </div>
-      
-    </section>
+    </div>
+  </section>
 
-    <!--Newsletter pop-out section-->
+  <!--Location sections-->
 
-    <section>
+  <!--Pittsburgh-->
 
-      <!--Pop-out Button-->
+  <section>
+    <div class="row section-color map-top-padding readmore-bttm-mobile" id="Pittsburgh">
 
-      <div class="col-12 mobile-news-btn newsletter-button"> 
-        <a class="news-btn-styles" id="newsletterButton">
-          Get our Newsletter!
-         </a>
+      <div class="col-12 location-bttm-pdding">
+        <h3><strong>Things to do in Pittsburgh</strong></h3>
       </div>
 
-      <!--Hidden form-->
-
-      <div class="hide-form contact-modal" id="modal2">
-
-        <div class="contact-pop newsletter-pop">
-
-          <span id="close-form2">&times;</span>
-
-          <form aria-label="Subscribe to our Newsletter" id="newsletterForm">
-            <h1 class="mobile-heading form-heading">Subscribe!</h1>
-            <img src="assets/images/windy-road.jpg" class="newsletter-img" alt="Image of a winding road">
-            <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
-            <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
-            <br>
-            <br>
-            <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
-            <br>
-            <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
-         </form>
-       </div>
-     </div>
-    </section>
-
-  <!--Location sections--> 
-  
-    <!--Pittsburgh-->
-
-    <section>
-      <div class="row section-color map-top-padding readmore-bttm-mobile" id="Pittsburgh">
-
-        <div class="col-12 location-bttm-pdding">
-          <h3><strong>Things to do in Pittsburgh</strong></h3>
-        </div>
-
-        <div class="col-xl-4 into-bttm-pdding">
-          <img src="assets/images/pittsburgh2.jpg" class="map-pg-img" alt="Image of Pittsburgh skyline">
-          <div>
-          <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
-          <p class="back-map1">Back to map</p>
-          </div>
-        </div>
-
-        <div class="col-xl-8 post">
-            <p><strong>Where to eat:</strong></p> 
-            
-              <ul class ="location-font">
-                <li>Try Pittsburgh’s signature sandwich, with fries on it at <a href="https://primantibros.com/" target="_blank" rel="noopener">
-                  Primanti Bros</a>.
-                </li>
-                
-                <li>
-                  <a href="https://www.eatgaucho.com/" target="_blank" rel="noopener">Gaucho Parrilla Argentina</a>
-                  regularly ranks as a local favourite steakhouse.
-                </li>
-                
-                <li>
-                  For more local flavour and brews, check out <a href="https://churchbrew.com/" target="_blank" rel="noopener">The Church Brew Works</a>.
-                </li>  
-              </ul>    
-            
-            <br>  
-            <span class="more-text"> 
-              <p><strong>More things to do:</strong></p>
-              
-                <ul class ="location-font">
-                  <li>Encounter plants and flowers from around the world at the <a href="https://www.phipps.conservatory.org/" target="_blank" rel="noopener">
-                    Phipps Conservatory</a>.
-                </li>
-      
-                  <li>
-                    Immerse yourself in the installation art pieces at the <a href="https://mattress.org/" target="_blank" rel="noopener">The Matress Factory</a>.
-                  </li>
-                  
-                  <li>
-                    Walk with the dinosaurs at <a href="https://carnegiemnh.org/" target="_blank" rel="noopener">Carnegie Museum of Natural History</a>.
-                  </li>  
-                </ul>
-              
-            </span>
-            <br>
-          <button class="read-more-btn">Read More</button>
-          
-
-        </div>
-      </div>
-     </section>  
-     
-     <!--Fallingwater-->
-
-     <section>
-      <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Fallingwater"> 
-        
-        <div class="col-xl-8 location-top-pdding">
-          
-          <p><strong>Where to eat:</strong></p>
-         
-            <ul class ="location-font">
-              <li>
-                You can grab a picnic lunch after a tour of the house at the <a href="https://fallingwater.org/experience-fallingwater/#lunch" target="_blank" rel="noopener">Fallingwater Café</a>.
-              </li>
-              
-              <li>For a sit-down meal and a pint, head to the nearby <a href="https://www.fallscitypub.com/" target="_blank" rel="noopener">Falls City Pub</a>.
-              </li>
-              
-              <li>Enjoy healthy farm to table fare at the <a href="https://www.bittersweetfresh.com/" target="_blank" rel="noopener">Bittersweet Café</a>.
-              </li>
-            </ul>  
-          
-          <br>
-          <span class="more-text"> 
-            <p><strong>More things to do:</strong></p>
-            
-              <ul class ="location-font">
-                <li>
-                  Of course, take a tour of the <a href="https://fallingwater.org/visitor-information/" target="_blank" rel="noopener">Fallingwater House</a> 
-                  and go hiking at Bear Run Nature Reserve.
-                </li>
-                
-                <li>
-                  If you're feeling adventurous, go white water rafting in Ohiopyle with <a href="https://wwaraft.com/" target="_blank" rel="noopener">White Water Adventures</a>.
-                </li>
-                
-                <li>
-                  Visit the <a href="https://www.nps.gov/flni/planyourvisit/index.htm" target="_blank" rel="noopener">Flight 93 Memorial</a> before looping back up onto the main route 30.
-                </li>
-              </ul>
-            
-          </span>
-          
-        <br>
-        <button class="read-more-btn">Read More</button>
-
-        </div>
-        
-        <div class="col-xl-4 into-bttm-pdding">
-          <h3 class="left-title"><strong>Things to do around Fallingwater</strong></h3>
-          <img src="assets/images/fallingwater2.jpg" class="map-pg-img" alt="Image of Fallingwater house in autumn">
+      <div class="col-xl-4 into-bttm-pdding">
+        <img src="assets/images/pittsburgh2.jpg" class="map-pg-img" alt="Image of Pittsburgh skyline">
+        <div>
           <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
           <p class="back-map1">Back to map</p>
         </div>
       </div>
-    
-    </section>   
-    
-    <!--Bedford-->
-        
-    <section>
-      <div class="row section-color map-top-padding readmore-bttm-mobile" id="Bedford"> 
-        <div class="col-12 location-bttm-pdding">
-          <h3><strong>Things to do around Bedford</strong></h3>
-        </div>
-          <div class="col-xl-4 into-bttm-pdding">
-            <img src="assets/images/bedford.jpg" class="map-pg-img" alt="Image of Bedford town in autumn">
-            <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
-            <p class="back-map1">Back to map</p>
-          </div>
-          <div class="col-xl-8">
-          
-          <p><strong>Where to eat:</strong></p>
-          
-            <ul class ="location-font">
-              <li>
-                Stop at the <a href="https://www.nps.gov/flni/planyourvisit/index.htm" target="_blank" rel="noopener">Jean Bonnet Tavern</a>, where George Washington may have stayed, for American pub fair.
-              </li>
-              
-              <li>
-                Try <a href="https://www.myhornoplenty.com/" target="_blank" rel="noopener">Horn O Plenty</a> for a healthy and fresh-grown brunch.
-              </li>
-              
-              <li>
-                For a special occasion, check out the carefully chosen menu at <a href="https://www.1009kitchen.com/" target="_blank" rel="noopener">10/09</a>.
-              </li>
-            </ul>
-          
-          <br>
-          <span class="more-text">
-            <p><strong>More things to do:</strong></p> 
-           
-              <ul class ="location-font">
-                <li>
-                  There are multiple options for <a href="https://www.visitbedfordcounty.com/walkingtour/index.html" target="_blank" rel="noopener">free walking tours</a> of the modern town of Bedford, either guided or self-paced.
-                </li>
-                
-                <li>
-                  Explore the history of western PA by touring <a href="https://www.tripadvisor.ie/Attraction_Review-g52178-d1547127-Reviews-Old_Bedford_Village-Bedford_Pennsylvania.html" target="_blank" rel="noopener">old Bedford Village</a>, a reconstruction of the 18th-19th century town.
-                </li>
-                
-                <li>
-                  Take a step back from the hustle and bustle of the road and enjoy a spa day at <a href="https://www.omnihotels.com/hotels/bedford-springs/spa" target="_blank" rel="noopener">Springs Eternal Spa</a>.
-                </li>
-              </ul>
-            
-          </span>
-          
+
+      <div class="col-xl-8 post">
+        <p><strong>Where to eat:</strong></p>
+
+        <ul class="location-font">
+          <li>Try Pittsburgh’s signature sandwich, with fries on it at <a href="https://primantibros.com/"
+              target="_blank" rel="noopener">
+              Primanti Bros</a>.
+          </li>
+
+          <li>
+            <a href="https://www.eatgaucho.com/" target="_blank" rel="noopener">Gaucho Parrilla Argentina</a>
+            regularly ranks as a local favourite steakhouse.
+          </li>
+
+          <li>
+            For more local flavour and brews, check out <a href="https://churchbrew.com/" target="_blank"
+              rel="noopener">The Church Brew Works</a>.
+          </li>
+        </ul>
+
         <br>
-        <button class="read-more-btn">Read More</button> 
-        </div>
-      </div>
-    </section> 
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
 
-    <!--Gettysburg-->
+          <ul class="location-font">
+            <li>Encounter plants and flowers from around the world at the <a href="https://www.phipps.conservatory.org/"
+                target="_blank" rel="noopener">
+                Phipps Conservatory</a>.
+            </li>
 
-    <section>
-      <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Gettysburg"> 
-        
-        <div class="col-xl-8 location-top-pdding">
-          
-          <p><strong>Where to eat:</strong></p>
-          <br>
-          <ul class ="location-font">
             <li>
-              Located in a ivy-covered brick building, <a href="http://www.warehousegourmet.net/" target="_blank" rel="noopener">Warehouse Gourmet: Bistro & Brew Pub</a> is a romantic place to stop for dinner.
+              Immerse yourself in the installation art pieces at the <a href="https://mattress.org/" target="_blank"
+                rel="noopener">The Matress Factory</a>.
             </li>
-            
+
             <li>
-              Taste classic central Pennsylvania cuisine in an 160 year-old restored barn at <a href="https://www.hickorybridgefarm.com/" target="_blank" rel="noopener">Hickory Bridge Farm Restaurant</a>.
-            </li>
-            
-            <li>
-              Looking for a place right on the town square to catch a game? Try <a href="https://www.bluegraybargrill.com/" target="_blank" rel="noopener">Blue & Gray Bar: Bar & Grill</a>.
+              Walk with the dinosaurs at <a href="https://carnegiemnh.org/" target="_blank" rel="noopener">Carnegie
+                Museum of Natural History</a>.
             </li>
           </ul>
-          <br>
-          <span class="more-text"> 
-            <p><strong>More things to do:</strong></p>
-            <ul class ="location-font">
-              <li>
-                <a href="https://mistereds.com/story" target="_blank" rel="noopener">Mr. Ed's Emporium</a> is an extensive candy shop and musuem of elephants figures collected by the owner over a lifetime.
-              </li>
-              
-              <li>
-                Of course, take a ghost tour after dark through <a href="https://gettysburgghosttours.com/ghost-tours/" target="_blank" rel="noopener">Gettysburg Ghost Tours</a>, 
-                or try the <a href="https://gettysburgghosttours.com/craft-beer-and-spirit-tour-with-johlene-spooky-riley/" target="_blank" rel="noopener">Craft Beer and Spirits Tour</a>.
-              </li>
-            </ul>
-          </span>
-          
+
+        </span>
         <br>
         <button class="read-more-btn">Read More</button>
-        </div>
 
-        <div class="col-xl-4 into-bttm-pdding">
-          <h3 class="left-title"><strong>Things to do in Gettysburg</strong></h3>
-          <img src="assets/images/gettysburg2.jpg" class="map-pg-img" alt="Image of a monument at Gettysburg battlefield">
-          <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
-          <p class="back-map1">Back to map</p>
-        </div>
+
       </div>
-    </section>  
-    
-    <!--Harrisburg-->
-        
-    <section>
-      <div class="row section-color map-top-padding readmore-bttm-mobile" id="Harrisburg"> 
-        <div class="col-12 location-bttm-pdding">
-          <h3><strong>Things to do in Harrisburg</strong></h3>
-        </div>
-        <div class="col-xl-4 into-bttm-pdding">
-          <img src="assets/images/harrisburg-bridge.jpg" class="map-pg-img" alt="Image of Harrisburg bridge and Pride of the Susquehanna boat">
-          <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
-          <p class="back-map1">Back to map</p>
-        </div>
-        <div class="col-xl-8">
-          
-          <p><strong>Where to eat:</strong></p>
-          <ul class ="location-font">
+    </div>
+  </section>
+
+  <!--Fallingwater-->
+
+  <section>
+    <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Fallingwater">
+
+      <div class="col-xl-8 location-top-pdding">
+
+        <p><strong>Where to eat:</strong></p>
+
+        <ul class="location-font">
+          <li>
+            You can grab a picnic lunch after a tour of the house at the <a
+              href="https://fallingwater.org/experience-fallingwater/#lunch" target="_blank" rel="noopener">Fallingwater
+              Café</a>.
+          </li>
+
+          <li>For a sit-down meal and a pint, head to the nearby <a href="https://www.fallscitypub.com/" target="_blank"
+              rel="noopener">Falls City Pub</a>.
+          </li>
+
+          <li>Enjoy healthy farm to table fare at the <a href="https://www.bittersweetfresh.com/" target="_blank"
+              rel="noopener">Bittersweet Café</a>.
+          </li>
+        </ul>
+
+        <br>
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
+
+          <ul class="location-font">
             <li>
-              See all over downtown Harrisburg city from the roof of the original <a href="https://abcbrew.com/" target="_blank" rel="noopener">Appalachian Brewing Company</a>.
+              Of course, take a tour of the <a href="https://fallingwater.org/visitor-information/" target="_blank"
+                rel="noopener">Fallingwater House</a>
+              and go hiking at Bear Run Nature Reserve.
             </li>
-            
+
             <li>
-              Stop for a quick, hearty, and delicious lunch at local favourite, <a href="http://neatoburrito.com/" target="_blank" rel="noopener">Neato Burrito</a>.
+              If you're feeling adventurous, go white water rafting in Ohiopyle with <a href="https://wwaraft.com/"
+                target="_blank" rel="noopener">White Water Adventures</a>.
             </li>
-            
+
             <li>
-              Browse local art, watch the artists at work, and enjoy carefully crafted local-grown food at <a href="https://millworksharrisburg.com/food-drink/" target="_blank" rel="noopener">Millworks</a>.
+              Visit the <a href="https://www.nps.gov/flni/planyourvisit/index.htm" target="_blank" rel="noopener">Flight
+                93 Memorial</a> before looping back up onto the main route 30.
             </li>
           </ul>
-          <br>
-          <span class="more-text">
-            <p><strong>More things to do:</strong></p> 
-            <ul class ="location-font">
-              <li>
-                Enjoy an afternoon of outdoor activities at <a href="http://www.visitcityisland.com/" target="_blank" rel="noopener">City Island</a>.
-              </li>
-              
-              <li>
-                Take a tour of the <a href="https://forthunter.org/" target="_blank" rel="noopener">Fort Hunter Mansion</a> and have a picnic in the park, further north along the Susquehanna River.
-              </li>
-              
-              <li>
-                Learn about the history and famous art of Pennsylvania at the <a href="http://statemuseumpa.org/exhibits/" target="_blank" rel="noopener">State Museum of Pennsylvania</a>.
-              </li>
-            </ul>
-          </span>
-          
+
+        </span>
+
         <br>
         <button class="read-more-btn">Read More</button>
 
-        </div>
-
       </div>
-    </section>
 
-    <!--Lancaster-->
+      <div class="col-xl-4 into-bttm-pdding">
+        <h3 class="left-title"><strong>Things to do around Fallingwater</strong></h3>
+        <img src="assets/images/fallingwater2.jpg" class="map-pg-img" alt="Image of Fallingwater house in autumn">
+        <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+        <p class="back-map1">Back to map</p>
+      </div>
+    </div>
 
-    <section>
-      <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Lancaster"> 
-        
-        <div class="col-xl-8 location-top-pdding">
-          
-          <p><strong>Where to eat:</strong></p>
-          <ul class ="location-font">
+  </section>
+
+  <!--Bedford-->
+
+  <section>
+    <div class="row section-color map-top-padding readmore-bttm-mobile" id="Bedford">
+      <div class="col-12 location-bttm-pdding">
+        <h3><strong>Things to do around Bedford</strong></h3>
+      </div>
+      <div class="col-xl-4 into-bttm-pdding">
+        <img src="assets/images/bedford.jpg" class="map-pg-img" alt="Image of Bedford town in autumn">
+        <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+        <p class="back-map1">Back to map</p>
+      </div>
+      <div class="col-xl-8">
+
+        <p><strong>Where to eat:</strong></p>
+
+        <ul class="location-font">
+          <li>
+            Stop at the <a href="https://www.nps.gov/flni/planyourvisit/index.htm" target="_blank" rel="noopener">Jean
+              Bonnet Tavern</a>, where George Washington may have stayed, for American pub fair.
+          </li>
+
+          <li>
+            Try <a href="https://www.myhornoplenty.com/" target="_blank" rel="noopener">Horn O Plenty</a> for a healthy
+            and fresh-grown brunch.
+          </li>
+
+          <li>
+            For a special occasion, check out the carefully chosen menu at <a href="https://www.1009kitchen.com/"
+              target="_blank" rel="noopener">10/09</a>.
+          </li>
+        </ul>
+
+        <br>
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
+
+          <ul class="location-font">
             <li>
-              Stop right in downtown Lancaster for a lovely meal and cocktail at <a href="https://pressroomrestaurant.com/" target="_blank" rel="noopener">The Pressroom</a>.
+              There are multiple options for <a href="https://www.visitbedfordcounty.com/walkingtour/index.html"
+                target="_blank" rel="noopener">free walking tours</a> of the modern town of Bedford, either guided or
+              self-paced.
             </li>
+
             <li>
-              Try the <a href="https://princestreetcafe.com/" target="_blank" rel="noopener">Prince Street Café</a> for a light lunch and the best cup of coffee in town.
+              Explore the history of western PA by touring <a
+                href="https://www.tripadvisor.ie/Attraction_Review-g52178-d1547127-Reviews-Old_Bedford_Village-Bedford_Pennsylvania.html"
+                target="_blank" rel="noopener">old Bedford Village</a>, a reconstruction of the 18th-19th century town.
             </li>
+
             <li>
-              Take a detour over to route 322 to eat at the Amish and Pennsylvania Dutch Smorgasbord at <a href="https://www.shady-maple.com/" target="_blank" rel="noopener">Shady Maple</a>.
+              Take a step back from the hustle and bustle of the road and enjoy a spa day at <a
+                href="https://www.omnihotels.com/hotels/bedford-springs/spa" target="_blank" rel="noopener">Springs
+                Eternal Spa</a>.
             </li>
           </ul>
-          <br>
-          <span class="more-text">
-            <p><strong>More things to do:</strong></p>
-            <ul class ="location-font">
-              <li>
-                Peruse local produce and homemade products at <a href="https://www.discoverlancaster.com/directory/lancaster-central-market/" target="_blank" rel="noopener">Lancaster Central Market</a>, the oldest continuously open farmers market in the US.
-              </li>
-              <li>
-                Catch a play or hear the Lancaster Symphony Orchestra at the <a href="https://thefulton.org/" target="_blank" rel="noopener">Fulton Theatre</a>.
-              </li> 
-              <li>
-                Immerse yourself in the Amish way of life at the <a href="https://www.amishfarmandhouse.com/" target="_blank" rel="noopener">Amish Farm & House</a>.
-              </li>
-            </ul>
-          </span>
-          
+
+        </span>
+
         <br>
         <button class="read-more-btn">Read More</button>
-        </div>
-
-        <div class="col-xl-4 into-bttm-pdding">
-          <h3 class="left-title"><strong>Things to do in Lancaster</strong></h3>
-          <img src="assets/images/amish-country.jpg" class="map-pg-img" alt="Image of amish buggy in Lancaster county">
-          <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
-          <p class="back-map1">Back to map</p>
-        </div>
       </div>
-    </section>   
+    </div>
+  </section>
 
-    <!--Philadelphia-->
+  <!--Gettysburg-->
 
-    <section>
-      <div class="row section-color map-top-padding readmore-bttm-mobile" id="Philadelphia"> 
-        <div class="col-12 location-bttm-pdding">
-          <h3><strong>Things to do in Philadelphia</strong></h3>
-        </div>
-        <div class="col-xl-4 into-bttm-pdding">
-          <img src="assets/images/philly-skyline.jpg" class="map-pg-img" alt="Image of Philadelphia skyline">
-          <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
-          <p class="back-map1">Back to map</p>
-        </div>
-        <div class="col-xl-8">
-          
-          <p><strong>Where to eat:</strong></p>
-          <ul class ="location-font">
+  <section>
+    <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Gettysburg">
+
+      <div class="col-xl-8 location-top-pdding">
+
+        <p><strong>Where to eat:</strong></p>
+        <br>
+        <ul class="location-font">
+          <li>
+            Located in a ivy-covered brick building, <a href="http://www.warehousegourmet.net/" target="_blank"
+              rel="noopener">Warehouse Gourmet: Bistro & Brew Pub</a> is a romantic place to stop for dinner.
+          </li>
+
+          <li>
+            Taste classic central Pennsylvania cuisine in an 160 year-old restored barn at <a
+              href="https://www.hickorybridgefarm.com/" target="_blank" rel="noopener">Hickory Bridge Farm
+              Restaurant</a>.
+          </li>
+
+          <li>
+            Looking for a place right on the town square to catch a game? Try <a
+              href="https://www.bluegraybargrill.com/" target="_blank" rel="noopener">Blue & Gray Bar: Bar & Grill</a>.
+          </li>
+        </ul>
+        <br>
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
+          <ul class="location-font">
             <li>
-              We're not qualified to make a call in the great Philly cheeseteak debate, so we'll let you pick between <a href="https://www.patskingofsteaks.com/" target="_blank" rel="noopener">Pat's</a>
-              and <a href="https://www.genosteaks.com/" target="_blank" rel="noopener">Geno's</a>.
+              <a href="https://mistereds.com/story" target="_blank" rel="noopener">Mr. Ed's Emporium</a> is an extensive
+              candy shop and musuem of elephants figures collected by the owner over a lifetime.
             </li>
+
             <li>
-              <a href="https://ploughstars.com/" target="_blank" rel="noopener">The Plough and the Stars</a> is Philly's premiere Irish pub (with a Philly flair), owned by Irish emmigrants.
-            </li>
-            <li>
-              Head into Chinatown for a duck feast at <a href="https://www.sangkeechinatown.com/" target="_blank" rel="noopener">Sang Kee Peking Duck House</a>.
+              Of course, take a ghost tour after dark through <a href="https://gettysburgghosttours.com/ghost-tours/"
+                target="_blank" rel="noopener">Gettysburg Ghost Tours</a>,
+              or try the <a
+                href="https://gettysburgghosttours.com/craft-beer-and-spirit-tour-with-johlene-spooky-riley/"
+                target="_blank" rel="noopener">Craft Beer and Spirits Tour</a>.
             </li>
           </ul>
-          <br>
-          <span class="more-text">
-            <p><strong>More things to do:</strong></p>
-            <ul class ="location-font">  
-              <li>
-                If you have an interest in medical history, or a general interest in the macabre, you've gotta see the <a href="http://muttermuseum.org/" target="_blank" rel="noopener">Mütter Musuem</a>.
-              </li>
-              <li>
-                Walk the same halls where Al Capone was once locked up at <a href="https://www.easternstate.org/" target="_blank" rel="noopener">Eastern State Penitentiary</a>.
-              </li>
-              <li>
-                Relax by the Delaware River in the <a href="https://www.delawareriverwaterfront.com/places/spruce-street-harbor-park" target="_blank" rel="noopener">Spruce Street Harbor Park</a>.
-              </li>
-            </ul>
-          </span>
-          
+        </span>
+
+        <br>
+        <button class="read-more-btn">Read More</button>
+      </div>
+
+      <div class="col-xl-4 into-bttm-pdding">
+        <h3 class="left-title"><strong>Things to do in Gettysburg</strong></h3>
+        <img src="assets/images/gettysburg2.jpg" class="map-pg-img" alt="Image of a monument at Gettysburg battlefield">
+        <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+        <p class="back-map1">Back to map</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Harrisburg-->
+
+  <section>
+    <div class="row section-color map-top-padding readmore-bttm-mobile" id="Harrisburg">
+      <div class="col-12 location-bttm-pdding">
+        <h3><strong>Things to do in Harrisburg</strong></h3>
+      </div>
+      <div class="col-xl-4 into-bttm-pdding">
+        <img src="assets/images/harrisburg-bridge.jpg" class="map-pg-img"
+          alt="Image of Harrisburg bridge and Pride of the Susquehanna boat">
+        <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+        <p class="back-map1">Back to map</p>
+      </div>
+      <div class="col-xl-8">
+
+        <p><strong>Where to eat:</strong></p>
+        <ul class="location-font">
+          <li>
+            See all over downtown Harrisburg city from the roof of the original <a href="https://abcbrew.com/"
+              target="_blank" rel="noopener">Appalachian Brewing Company</a>.
+          </li>
+
+          <li>
+            Stop for a quick, hearty, and delicious lunch at local favourite, <a href="http://neatoburrito.com/"
+              target="_blank" rel="noopener">Neato Burrito</a>.
+          </li>
+
+          <li>
+            Browse local art, watch the artists at work, and enjoy carefully crafted local-grown food at <a
+              href="https://millworksharrisburg.com/food-drink/" target="_blank" rel="noopener">Millworks</a>.
+          </li>
+        </ul>
+        <br>
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
+          <ul class="location-font">
+            <li>
+              Enjoy an afternoon of outdoor activities at <a href="http://www.visitcityisland.com/" target="_blank"
+                rel="noopener">City Island</a>.
+            </li>
+
+            <li>
+              Take a tour of the <a href="https://forthunter.org/" target="_blank" rel="noopener">Fort Hunter
+                Mansion</a> and have a picnic in the park, further north along the Susquehanna River.
+            </li>
+
+            <li>
+              Learn about the history and famous art of Pennsylvania at the <a href="http://statemuseumpa.org/exhibits/"
+                target="_blank" rel="noopener">State Museum of Pennsylvania</a>.
+            </li>
+          </ul>
+        </span>
+
         <br>
         <button class="read-more-btn">Read More</button>
 
-        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Lancaster-->
+
+  <section>
+    <div class="row map-top-padding col-reverse readmore-bttm-mobile" id="Lancaster">
+
+      <div class="col-xl-8 location-top-pdding">
+
+        <p><strong>Where to eat:</strong></p>
+        <ul class="location-font">
+          <li>
+            Stop right in downtown Lancaster for a lovely meal and cocktail at <a
+              href="https://pressroomrestaurant.com/" target="_blank" rel="noopener">The Pressroom</a>.
+          </li>
+          <li>
+            Try the <a href="https://princestreetcafe.com/" target="_blank" rel="noopener">Prince Street Café</a> for a
+            light lunch and the best cup of coffee in town.
+          </li>
+          <li>
+            Take a detour over to route 322 to eat at the Amish and Pennsylvania Dutch Smorgasbord at <a
+              href="https://www.shady-maple.com/" target="_blank" rel="noopener">Shady Maple</a>.
+          </li>
+        </ul>
+        <br>
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
+          <ul class="location-font">
+            <li>
+              Peruse local produce and homemade products at <a
+                href="https://www.discoverlancaster.com/directory/lancaster-central-market/" target="_blank"
+                rel="noopener">Lancaster Central Market</a>, the oldest continuously open farmers market in the US.
+            </li>
+            <li>
+              Catch a play or hear the Lancaster Symphony Orchestra at the <a href="https://thefulton.org/"
+                target="_blank" rel="noopener">Fulton Theatre</a>.
+            </li>
+            <li>
+              Immerse yourself in the Amish way of life at the <a href="https://www.amishfarmandhouse.com/"
+                target="_blank" rel="noopener">Amish Farm & House</a>.
+            </li>
+          </ul>
+        </span>
+
+        <br>
+        <button class="read-more-btn">Read More</button>
+      </div>
+
+      <div class="col-xl-4 into-bttm-pdding">
+        <h3 class="left-title"><strong>Things to do in Lancaster</strong></h3>
+        <img src="assets/images/amish-country.jpg" class="map-pg-img" alt="Image of amish buggy in Lancaster county">
+        <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+        <p class="back-map1">Back to map</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Philadelphia-->
+
+  <section>
+    <div class="row section-color map-top-padding readmore-bttm-mobile" id="Philadelphia">
+      <div class="col-12 location-bttm-pdding">
+        <h3><strong>Things to do in Philadelphia</strong></h3>
+      </div>
+      <div class="col-xl-4 into-bttm-pdding">
+        <img src="assets/images/philly-skyline.jpg" class="map-pg-img" alt="Image of Philadelphia skyline">
+        <a href="#map-jump"><i class="fas fa-map-marked-alt map-icon1"></i></a>
+        <p class="back-map1">Back to map</p>
+      </div>
+      <div class="col-xl-8">
+
+        <p><strong>Where to eat:</strong></p>
+        <ul class="location-font">
+          <li>
+            We're not qualified to make a call in the great Philly cheeseteak debate, so we'll let you pick between <a
+              href="https://www.patskingofsteaks.com/" target="_blank" rel="noopener">Pat's</a>
+            and <a href="https://www.genosteaks.com/" target="_blank" rel="noopener">Geno's</a>.
+          </li>
+          <li>
+            <a href="https://ploughstars.com/" target="_blank" rel="noopener">The Plough and the Stars</a> is Philly's
+            premiere Irish pub (with a Philly flair), owned by Irish emmigrants.
+          </li>
+          <li>
+            Head into Chinatown for a duck feast at <a href="https://www.sangkeechinatown.com/" target="_blank"
+              rel="noopener">Sang Kee Peking Duck House</a>.
+          </li>
+        </ul>
+        <br>
+        <span class="more-text">
+          <p><strong>More things to do:</strong></p>
+          <ul class="location-font">
+            <li>
+              If you have an interest in medical history, or a general interest in the macabre, you've gotta see the <a
+                href="http://muttermuseum.org/" target="_blank" rel="noopener">Mütter Musuem</a>.
+            </li>
+            <li>
+              Walk the same halls where Al Capone was once locked up at <a href="https://www.easternstate.org/"
+                target="_blank" rel="noopener">Eastern State Penitentiary</a>.
+            </li>
+            <li>
+              Relax by the Delaware River in the <a
+                href="https://www.delawareriverwaterfront.com/places/spruce-street-harbor-park" target="_blank"
+                rel="noopener">Spruce Street Harbor Park</a>.
+            </li>
+          </ul>
+        </span>
+
+        <br>
+        <button class="read-more-btn">Read More</button>
 
       </div>
-    </section>
 
-  <!--Footer-->  
-    
+    </div>
+  </section>
+
+  <!--Footer-->
+
   <footer>
 
     <div class="container-fluid">
-      <div class="row no-gutter"> 
+      <div class="row no-gutter">
 
-    <!--Footer Contact Info-->
-        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos" >
+        <!--Footer Contact Info-->
+        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos">
           <a class="contact-btn" id="form-btn">Contact Us</a>
         </div>
 
@@ -559,11 +626,11 @@
         <div class="hide-form contact-modal" id="modal">
 
           <div class="contact-pop">
-  
+
             <span id="close-form">&times;</span>
-  
+
             <form aria-label="Send us your comments, ideas, or feedback" id="contactForm">
-            
+
               <h1 class="mobile-heading form-heading">Tell us more!</h1>
               <br>
               <label for="name" class="form-font label-display mobile-label">Name</label>
@@ -571,29 +638,31 @@
               <br>
               <br>
               <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
-              <input id="email" type="email" name="from_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+              <input id="email" type="email" name="from_email" placeholder="example@email.com" class="label-width"
+                aria-label="Email Address" required>
               <br>
               <br>
               <label for="enquiry" class="form-font label-display">Send us your comments, ideas, or feedback</label>
               <br>
-              <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
+              <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area"
+                required></textarea>
               <br>
               <br>
               <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
               <br>
               <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
-           </form>
-         </div>
-       </div>
+            </form>
+          </div>
+        </div>
 
-    <!--Social links-->
+        <!--Social links-->
         <div class="col-xl-4 col-md-6 col-6 footer-pos social-pos">
 
           <ul class="footer-links">
 
             <li>
               <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
-              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
             </li>
 
@@ -602,7 +671,7 @@
                 <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
-                      
+
             <li>
               <a href="https://www.twitter.com/" aria-label="Twitter" target="_blank" rel="noopener">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
@@ -614,31 +683,31 @@
                 <i class="fas fa-envelope-square" aria-hidden="true"></i>
               </a>
             </li>
-          
+
             <li>
               <a href="tel:0876093111" aria-label="Contact phone number" target="_blank" rel="noopener">
                 <i class="fas fa-phone-alt" aria-hidden="true"></i>
               </a>
             </li>
-                          
-          </ul>    
+
+          </ul>
         </div>
-                  
-    <!--Bookshop links-->
+
+        <!--Bookshop links-->
         <div class="col-xl-4 col-md-12 col-12 footer-pos explore-mobile">
           <h4 class="explore-head">
             <i class="fas fa-road"></i>
             Explore Pennsylvania:
           </h4>
-  
+
           <ul class="footer-links">
-                          
+
             <li>
               <a href="http://www.weirdus.com/states/pennsylvania/index.php" target="_blank" rel="noopener">
-                  Weird Pennsylvania
+                Weird Pennsylvania
               </a>
             </li>
-                          
+
             <li>
               <a href="https://uncoveringpa.com/" target="_blank" rel="noopener">
                 Uncovering PA
@@ -650,22 +719,27 @@
                 Atlas Obscura
               </a>
             </li>
-          </ul>   
+          </ul>
         </div>
-                
-      </div> 
-    </div>  
-  </footer>
-  
-<!--JavaScript links-->  
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+      </div>
+    </div>
+  </footer>
+
+  <!--JavaScript links-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
   <!--JavaScript files on site-->
 
-  
+
   <script src="assets/js/contact-button.js"></script>
   <script src="assets/js/newsletter-button.js"></script>
   <script src="assets/js/newsletter-email.js"></script>
@@ -673,15 +747,15 @@
   <script src="assets/js/maps.js"></script>
   <script src="assets/js/read-more.js"></script>
 
- <!--Sweet Alert--> 
+  <!--Sweet Alert-->
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!--EmailJS-->
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script>(function(){
-    emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
+  <script>(function () {
+      emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
     })();
   </script>
 
@@ -691,8 +765,10 @@
 
   <!--Google Maps-->
 
-  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL9D8PL6MHBPThnZpi1xUlGQcka4TVAJc&map_ids=1a97cdea16f163b5&libraries=places"></script>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL9D8PL6MHBPThnZpi1xUlGQcka4TVAJc&map_ids=1a97cdea16f163b5&libraries=places"></script>
 
-    
+
 </body>
+
 </html>
