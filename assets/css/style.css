@@ -25,20 +25,12 @@ a:hover i {
   color: #087e8b;
 }
 
-.active-link {
-  color: #aed19e;
-}
-
 h1.form-heading {
   color: #087e8b;
 }
 
 div.section-color {
   background-color: #aed19e;
-}
-
-.four-four-background {
-  background-color: #ffca85;
 }
 
 /*--- General styles---*/
@@ -500,6 +492,12 @@ li a {
 
 /*--- 404 Page---*/
 
+.four-four-background {
+  background-color: #ffca85;
+  height: 100%;
+  width: 100%;
+}
+
 .ff-text {
   padding-top: 12%;
   padding-left: 17%;
@@ -619,6 +617,12 @@ li a {
     padding-top: 60px;
     padding-left: 250px;
   }
+
+  /*--- 404 page styles--*/
+
+  .ff-img {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 812px) {
@@ -722,9 +726,31 @@ li a {
     padding-top: 8%;
     padding-left: 12%;
   }
+
+  /*--- 404 page styles--*/
+
+  .ff-text {
+    padding-left: 10%;
+  }
+
+  .ff-img {
+    padding-left: 20%;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  
+  /*--- General Styles--*/
+
+  .bn-txt-pos {
+    padding-top: 7%;
+    padding-left: 8%;
+  }
+
+  .logo-size {
+    padding-left: 5%;
+  }
+  
   /*--- Footer Styles--*/
 
   footer {
@@ -751,13 +777,10 @@ li a {
     width: 65%;
   }
 
-  .bn-txt-pos {
-    padding-top: 7%;
-    padding-left: 8%;
-  }
+  /*--- 404 page styles--*/
 
-  .logo-size {
-    padding-left: 5%;
+  .four-four-mobile {
+    padding-top: 12%;
   }
 }
 
@@ -804,6 +827,9 @@ li a {
 }
 
 @media screen and (max-width: 540px) {
+
+  /*--- General Styles--*/
+
   .mobile-label {
     width: 85%;
   }
