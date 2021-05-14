@@ -183,6 +183,10 @@ I also followed the instructions on the general [Google Autocomplete documentati
 
 ### Other Existing Features
 
+#### Covid travel announcment
+
+I used Bootstrap to create a travel alert to remind visitors of Covid-19 restrictions in Pennsylvania. The code for this alert comes from [this alert code](https://getbootstrap.com/docs/4.0/components/alerts/#dismissing) with a close button.
+
 #### Bootstrap Nav
 
 To save time to build other features on the site, I used a Bootstrap navigation with a dropdown folder for anchor links on the Plan Your Trip (map) page. 
@@ -228,6 +232,10 @@ All maps on the site are styled to have an atlas design on Google's Cloud-based 
 Finally, I added custom location cards to the maps.js file. Each unique card appears when a site visitor clicks on the map marker. This part of the map feature was built using a click event listener and by following [this StackOverflow post](https://stackoverflow.com/questions/47017679/how-to-show-infowindow-content-in-separate-div).
 
 The lat/long positions come from [this site](https://www.maps.ie/).
+
+#### 404 Page
+
+I added a custom 404 page to the site by naming the page 404.html. GitHub Pages automatically assigned the page as the default 404 page in case a site visitor goes to a broken link.
 
 ## Technologies used
 
@@ -303,7 +311,65 @@ The lat/long positions come from [this site](https://www.maps.ie/).
 - [GIMP](https://www.gimp.org/)
     - I edited images on this tool  
 
-## Testing    
+## Testing 
+
+### Features
+
+#### User story: slideshow
+
+The slideshow was the first part of the homepage I built, and to test out adding it to the site, I started building it based on this [Medium article]( https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9) but I eventually switch to following the W3 article mentioned in the Features section. I updated my code for the change in instructions that I was following. 
+
+At one point, I also had JavaScript on the site to highlight an active link in the header. This conflicted with the active class in the slider.js file. I ended up removing this active link feature for unrelated reasons, but had to update the active class in the other JavaScript file to work around this conflict. 
+
+#### User story: information about hotels/restaurants 
+
+
+
+#### User story: newsletter/form pop-out
+
+These features use similar code, so I’m going to combine them in the testing section. 
+
+The main difficulty I had with creating the pop-out forms was connecting the forms to EmailJS properly. I followed the instructions from the course on how to add the EmailJS code to the site and even tested this out on a blank workspace to make sure other code on the page wasn’t conflicting. The code from the course video didn’t work at all for me on either form or on the empty workspace. 
+
+In the end, I went through EmailJS’s documentation and found their instructions for connecting a form to EmailJS, and this is what works on my site. 
+
+Next, when I added both the newsletter and the contact forms to the same page, only one form would send to EmailJS. 
+
+After testing this and consulting with my mentor, it turned out that the EmailJS code starts with this function `window.onload = function()` which only works for one JavaScript file connected to EmailJS on a page. 
+
+To fix this, my mentor suggested that I use this code to load the JavaScript files connected to EmailJS individually: `window.addEventListener("load", () => `
+
+Next, I temporarily had a fixed header on the map page and had to move the location of the pop-up form in the modal so that the form wasn't hidden behind the header. I ended up removing the fixed header and using the map icons to jump back up to the top of he page. Both forms load close to the middle of the page instead of teh top on all devices, which looks better on desktop and mobile. So I left the forms in this position. 
+
+Finally, I had to resize the newsletter form on smaller devices using media queries because the form was appaering too small and form content was overflowing from the background on smaller screens. I also adjusted the size of the form on mobile to fully fit the Google reCAPTCHA field. 
+
+I didn't have any problems with adding Sweet Alert to the forms.
+
+#### User story: Search Box
+
+The Search Box started on the page for the main map with the cards and markers, but was moved to a separate Search page. I decided to do this because, even with set map bounds, the Search Box worked inconsistently with the map zoom lower than 10 (the main map uses a zoom of 7 to show the entire state of Pennsylvania).
+
+The JS code for the Search Box was also added to map.js. After testing the Search Box code and the rest of the maps.js code, ruling out each section of the JavaScript piece by piece, my mentor and I realised that the map zoom factor that determines how the search feature works. When the map had a lower zoom, sometimes searches would appear with markers in Knocknacarra instead of Pennsylvania, pulling my location instead of the set bounds. When the map zoom is higher, the Search Box feature shows markers for places in a specific area of Pennsylvania. 
+
+However, the main map requires a lower zoom to show all the specific place markers connected to the map card. To resolve this, we decided to create a new map on a new Search page. The Search Box now works as expected and shows search locations in the map viewport only. 
+
+#### Logo
+
+The logo has a default height and weight set. It's also set to direct to the homepage when clicked on. 
+
+#### Covid travel announcment
+
+The main issue I had with this announcement was when I tried to add a fixed header to the map page. Closing the announcment then caused the banner at the top of the page to partially hide behind the header. 
+
+To fix this, I instead added the anchor links back up to the map with the map icon and removed the fixed header. This map icon/anchor link jump is much neater than using the fixed header and the header dropdown.
+
+#### Bootstrap Nav
+
+The Bootstrap Nav works as expected and was adjusted to have my own page names, links, and anchor links. It folds up behind a hamburger icon on smaller screen sizes to save space in the header. I've also moved the mobile navigation slightly more to the centre of the page to remove some of the blank space. 
+
+#### Map with markers and corresponding cards
+
+
 
 
 ## Deployment
