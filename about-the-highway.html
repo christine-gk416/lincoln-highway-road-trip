@@ -1,241 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Style packs and CSS-->
+  <!--Style packs and CSS-->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Lincoln Highway Road Trip</title>
+  <title>Lincoln Highway Road Trip</title>
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    <meta name="description" content="Learn more about the history of the Lincoln Highway (route 30), the first transcontinental highway in the US. Also learn more about the state of Pennsylvania, the birthplace of the United States.">
+  <meta name="description"
+    content="Learn more about the history of the Lincoln Highway (route 30), the first transcontinental highway in the US. Also learn more about the state of Pennsylvania, the birthplace of the United States.">
 
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar navbar-light header-background navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo-size" src="/assets/images/lincoln.png" alt="Lincoln Highway Road Trip logo">
-            </a>
+  <header>
+    <nav class="navbar navbar-light header-background navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-size" src="/assets/images/lincoln.png" alt="Lincoln Highway Road Trip logo">
+      </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto link-styles">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="about-the-highway.html">About Route 30</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="lincoln-highway-map.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plan Your Trip
-                  </a>
-                  <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Pittsburgh">Pittsburgh</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Fallingwater">Fallingwater</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Bedford">Bedford</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Gettysburg">Gettysburg</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Harrisburg">Harrisburg</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Lancaster">Lancaster</a>
-                    <a class="dropdown-item" href="lincoln-highway-map.html#Philadelphia">Philadelphia</a>
-                  </div>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="search.html">Search</a>
-                </li>
-
-              </ul>
-            </div>    
-          </nav>
-    </header>
-
-    <div class="alert alert-info fade show alert-margin" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      Learn more about 
-      <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" 
-      target="_blank" class="alert-link" rel="noopener">COVID-19 restrictions</a>
-      in Pennsylvania. 
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto link-styles">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about-the-highway.html">About Route 30</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lincoln-highway-map.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plan Your Trip
+            </a>
+            <div class="dropdown-menu dropdown-background" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="lincoln-highway-map.html">Map it out</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Pittsburgh">Pittsburgh</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Fallingwater">Fallingwater</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Bedford">Bedford</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Gettysburg">Gettysburg</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Harrisburg">Harrisburg</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Lancaster">Lancaster</a>
+              <a class="dropdown-item" href="lincoln-highway-map.html#Philadelphia">Philadelphia</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="alert alert-info fade show alert-margin" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    Learn more about
+    <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Travelers.aspx" target="_blank"
+      class="alert-link" rel="noopener">COVID-19 restrictions</a>
+    in Pennsylvania.
+  </div>
+
+  <section class="banner-background">
+    <h1 class="bn-txt-pos">The Lincoln Highway in Pennsylvania</h1>
+  </section>
+
+  <!--Newsletter pop-out section-->
+
+  <section>
+
+    <!--Pop-out Button-->
+
+    <div class="col-12 about-btn-pos mobile-news-btn newsletter-button">
+      <a class="news-btn-styles" id="newsletterButton" aria-label="Open newsletter form">
+        Get our Newsletter!
+      </a>
     </div>
 
-    <section class="banner-background">
-      <h1 class="bn-txt-pos">The Lincoln Highway in Pennsylvania</h1>
-    </section>
+    <!--Hidden form-->
 
-      <!--Newsletter pop-out section-->
+    <div class="hide-form contact-modal" id="modal2">
 
-      <section>
+      <div class="contact-pop newsletter-pop">
 
-        <!--Pop-out Button-->
-  
-        <div class="col-12 about-btn-pos mobile-news-btn newsletter-button"> 
-          <a class="news-btn-styles" id="newsletterButton" aria-label="Open newsletter form">
-            Get our Newsletter!
-           </a>
+        <span id="close-form2">&times;</span>
+
+        <form aria-label="Subscribe to our Newsletter" id="newsletterForm">
+          <h1 class="mobile-heading form-heading">Subscribe!</h1>
+          <img src="assets/images/windy-road.jpg" class="newsletter-img" alt="Image of a winding road">
+          <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
+          <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com"
+            class="label-width" aria-label="Email Address" required>
+          <br>
+          <br>
+          <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
+          <br>
+          <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--Lincoln Highway History-->
+
+  <section>
+    <div class="row">
+      <div class="col header-background about-text">
+        <h2>The history of the Lincoln Highway</h2>
+        <img src="assets/images/historical-postcard.jpg" class="postcard-img"
+          alt="Historical postcard of the Lincoln Highway in 1920s">
+        <p>
+          In 1913, the main method of travel in the United States was by railway. The road infrastructure between states
+          was mainly managed by each individual state.
+          Much of it was still dirt track built for horse and carriage.
+
+        </p>
+        <br>
+        <p>
+          With the advent of the automobile and the wide-spread growth of this new form of transportation, entrepreneurs
+          in the auto industry started to envision new types of roads.
+          The idea for the first transcontinental road for automobiles in the US came from Carl G. Fischer.
+          Fischer was an owner of the Indianapolis speedway, was an early racecar driver, and the manufacturer of
+          Prest-O-Lite compressed carbide-gas headlights.
+        </p>
+        <br>
+        <p>
+          The plan for the Lincoln Highway was to construct a paved road from Times Square in New York City to Lincoln
+          Park in San Francisco. With funding from people all over the US from school children in Alaska to the
+          President at the time (Woodrow Wilson),
+          Fischer’s group started construction on the highway in late 1913. They decided to name the highway in honour
+          of form president Abraham Lincoln, after plans to name a road from DC to Gettysburg, PA after the president
+          fell through.
+          The cohort building the road was then established themselves as the Lincoln Highway Association (LHA).
+
+        </p>
+        <br>
+        <div class="more-text">
+          <p>
+            The original Lincoln Highway was finished in 1915, crossed 14 states, and took around 34 days to complete in
+            a car. In Pennsylvania, the highway included the historic Lancaster Turnpike (created in 1796) and the
+            Pittsburgh Road (started in 1758 as a British military trail)
+            making the Pennsylvania leg of the road one of the most historic. After the Joint Board on Interstate
+            Highways was founded, the growing system of interstate highways in the US were standardised with numbered
+            names in 1926.
+            The Lincoln Highway was renamed to Route 30 throughout Pennsylvania and remains Route 30—for the most
+            part—all the way out to Wyoming. It’s still referred to the Lincoln Highway and Route 30 in Pennsylvania
+            today.
+          </p>
+
+          <br>
+          <p>
+            In the early days of the highway, cars were mostly owned by wealthy people and a road trip was seen as a
+            luxury, though a great deal of camping was involved to go cross country. As cars became more accessible to
+            everyone in the United States, and more people hit the road on vacation,
+            business owners put up novelty architecture to draw the vacationers to their establishment.
+            Notable examples of these roadside giants are the Bedford Coffee Pot and the Haynes Shoe House in York,
+            Pennsylvania (now a museum and ice cream shop).
+          </p>
+          <br>
+          <p>
+            It’s still possible to make the entire Lincoln Highway transcontinental route, and two groups of road
+            trippers made this journey in 2013 to commemorate the 100th anniversary: one starting in NYC and another
+            starting in San Francisco.
+            Today, it take only a few days to make the trip on the modern infrastructure of the highway.
+          </p>
+          <br>
+          <p>
+            Pennsylvania makes up the heritage quarter of today’s Lincoln Highway.
+            Route 30 still hosts the roadside attractions from the early days of the highway, and is still called
+            Lincoln Highway by the locals.
+            In fact a Lincoln Highway Experience museum is located between Latrobe and Ligonier, PA.
+            A cup of coffee and slice of fresh made pie are included in the tickets of admission to the museum.
+          </p>
+
         </div>
-  
-        <!--Hidden form-->
-  
-        <div class="hide-form contact-modal" id="modal2">
-  
-          <div class="contact-pop newsletter-pop">
-  
-            <span id="close-form2">&times;</span>
-  
-            <form aria-label="Subscribe to our Newsletter" id="newsletterForm">
-              <h1 class="mobile-heading form-heading">Subscribe!</h1>
-              <img src="assets/images/windy-road.jpg" class="newsletter-img" alt="Image of a winding road">
-              <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
-              <input id="email-newsletter" type="email" name="subscriber_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
-              <br>
-              <br>
-              <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
-              <br>
-              <input type="submit" value="Send" class="btn btn-outline-light" aria-label="Submit this form">
-           </form>
-         </div>
-       </div>
-      </section>
 
-    <!--Lincoln Highway History-->
 
-    <section>
-      <div class="row">
-        <div class="col header-background about-text">
-          <h2>The history of the Lincoln Highway</h2>
-          <img src="assets/images/historical-postcard.jpg" class="postcard-img" alt="Historical postcard of the Lincoln Highway in 1920s">
-          <p>
-            In 1913, the main method of travel in the United States was by railway. The road infrastructure between states was mainly managed by each individual state. 
-            Much of it was still dirt track built for horse and carriage. 
-            
-          </p>
-          <br>
-          <p>
-            With the advent of the automobile and the wide-spread growth of this new form of transportation, entrepreneurs in the auto industry started to envision new types of roads. 
-            The idea for the first transcontinental road for automobiles in the US came from Carl G. Fischer. 
-            Fischer was an owner of the Indianapolis speedway, was an early racecar driver, and the manufacturer of Prest-O-Lite compressed carbide-gas headlights.
-          </p>  
-          <br>
-          <p>   
-            The plan for the Lincoln Highway was to construct a paved road from Times Square in New York City to Lincoln Park in San Francisco. With funding from people all over the US from school children in Alaska to the President at the time (Woodrow Wilson), 
-            Fischer’s group started construction on the highway in late 1913. They decided to name the highway in honour of form president Abraham Lincoln, after plans to name a road from DC to Gettysburg, PA after the president fell through. 
-            The cohort building the road was then established themselves as the Lincoln Highway Association (LHA).
-            
-          </p>
-          <br>
-          <div class="more-text"> 
-            <p>
-              The original Lincoln Highway was finished in 1915, crossed 14 states, and took around 34 days to complete in a car. In Pennsylvania, the highway included the historic Lancaster Turnpike (created in 1796) and the Pittsburgh Road (started in 1758 as a British military trail)
-               making the Pennsylvania leg of the road one of the most historic. After the Joint Board on Interstate Highways was founded, the growing system of interstate highways in the US were standardised with numbered names in 1926. 
-               The Lincoln Highway was renamed to Route 30 throughout Pennsylvania and remains Route 30—for the most part—all the way out to Wyoming. It’s still referred to the Lincoln Highway and Route 30 in Pennsylvania today. 
-            </p>
-            
-            <br>
-            <p>
-              In the early days of the highway, cars were mostly owned by wealthy people and a road trip was seen as a luxury, though a great deal of camping was involved to go cross country. As cars became more accessible to everyone in the United States, and more people hit the road on vacation, 
-              business owners put up novelty architecture to draw the vacationers to their establishment. 
-              Notable examples of these roadside giants are the Bedford Coffee Pot and the Haynes Shoe House in York, Pennsylvania (now a museum and ice cream shop). 
-            </p>
-            <br>
-            <p>
-              It’s still possible to make the entire Lincoln Highway transcontinental route, and two groups of road trippers made this journey in 2013 to commemorate the 100th anniversary: one starting in NYC and another starting in San Francisco. 
-              Today, it take only a few days to make the trip on the modern infrastructure of the highway. 
-            </p>
-            <br>
-            <p>
-              Pennsylvania makes up the heritage quarter of today’s Lincoln Highway. 
-              Route 30 still hosts the roadside attractions from the early days of the highway, and is still called Lincoln Highway by the locals. 
-              In fact a Lincoln Highway Experience museum is located between Latrobe and Ligonier, PA. 
-              A cup of coffee and slice of fresh made pie are included in the tickets of admission to the museum.
-            </p>
-
-          </div>  
-          
-          
         <br>
         <button class="read-more-btn">Read More</button>
-        </div>
       </div>
+    </div>
 
-    </section>  
+  </section>
 
-     <!--About Pennsylvania-->
+  <!--About Pennsylvania-->
 
-    <section>
-      <div class="row">
-        <div class="col about-text header-background">
-          <h2>About Pennsylvania</h2>
-          <img src="assets/images/independence-hall.jpg" class="ind-hall-img" alt="Image of Independence Hall in Philadelphia">
+  <section>
+    <div class="row">
+      <div class="col about-text header-background">
+        <h2>About Pennsylvania</h2>
+        <img src="assets/images/independence-hall.jpg" class="ind-hall-img"
+          alt="Image of Independence Hall in Philadelphia">
+        <p>
+          This road trip is planned across the state of Pennsylvania, from Pittsburgh in the west to Philadelphia in the
+          east.
+          The route planned out for this project follows the Lincoln Highway across the state to see roadside
+          attractions, learn about the history of the state as a keystone of the US, and to allow road trippers to stop
+          along the way to enjoy local cuisine and culture.
+        </p>
+        <br>
+        <p>
+          Pennsylvania is the 5th most populous state, with Philadelphia being the largest city in the state. Harrisburg
+          is the capitol, located in the middle like most capitols in the United States.
+          All cities in Pennsylvania have their own distinctive cultural touchstones. Philadelphia and Pittsburgh
+          probably have the most robust nightlife, but the smaller cities on this trip like Harrisburg and Lancaster can
+          also hold their own.
+          This road trip is planned out to highlight some of the key places of interest in these cities.
+        </p>
+        <br>
+        <p>
+          As the 2nd state to join the US, Pennsylvania also holds its place of historical significance. Both
+          Philadelphia and Lancaster were once the capitol of the entire United States.
+          This road trip also traces Pennsylvania’s history as a colony, it’s role in the American Revolution, and the
+          significance of Gettysburg as the turning point in the American Civil War.
+          We recommend taking some time to learn about the state’s place in American history, while also enjoying the
+          quirky attractions and local flavour.
+        </p>
+        <br>
+        <div class="more-text">
           <p>
-            This road trip is planned across the state of Pennsylvania, from Pittsburgh in the west to Philadelphia in the east. 
-            The route planned out for this project follows the Lincoln Highway across the state to see roadside attractions, learn about the history of the state as a keystone of the US, and to allow road trippers to stop along the way to enjoy local cuisine and culture. 
-          </p>   
-          <br>
-          <p>
-            Pennsylvania is the 5th most populous state, with Philadelphia being the largest city in the state. Harrisburg is the capitol, located in the middle like most capitols in the United States. 
-            All cities in Pennsylvania have their own distinctive cultural touchstones. Philadelphia and Pittsburgh probably have the most robust nightlife, but the smaller cities on this trip like Harrisburg and Lancaster can also hold their own. 
-            This road trip is planned out to highlight some of the key places of interest in these cities. 
-          </p>  
-          <br>
-          <p>
-            As the 2nd state to join the US, Pennsylvania also holds its place of historical significance. Both Philadelphia and Lancaster were once the capitol of the entire United States. 
-            This road trip also traces Pennsylvania’s history as a colony, it’s role in the American Revolution, and the significance of Gettysburg as the turning point in the American Civil War. 
-            We recommend taking some time to learn about the state’s place in American history, while also enjoying the quirky attractions and local flavour. 
+            One key thing to keep in mind is that Pennsylvania has seasonal weather, which ranges from hot and humid in
+            the summertime (75°F / 23.9°C to 95°F / 35°C range) to well below freezing and snowy in the winter.
+            We recommend taking this trip between April-October. The summer months would probably be the best time to
+            take a road trip, since most of the tourist attractions, outdoor tours/wineries, and amusement parks will be
+            open.
+            Pennsylvania is a state that sees spectacular fall foliage, so autumn is another ideal season to take a road
+            trip. Apple orchards, pumpkin patches, corn mazes, and haunted hayrides are popular autumn attractions.
           </p>
           <br>
-          <div class="more-text"> 
-            <p>
-              One key thing to keep in mind is that Pennsylvania has seasonal weather, which ranges from hot and humid in the summertime (75°F / 23.9°C to 95°F / 35°C range) to well below freezing and snowy in the winter. 
-              We recommend taking this trip between April-October. The summer months would probably be the best time to take a road trip, since most of the tourist attractions, outdoor tours/wineries, and amusement parks will be open. 
-              Pennsylvania is a state that sees spectacular fall foliage, so autumn is another ideal season to take a road trip. Apple orchards, pumpkin patches, corn mazes, and haunted hayrides are popular autumn attractions. 
-            </p>
-            <br>
-            <p>The terrain of the state varies from mountainous to relatively flat. 
-              Note that the start of this road trip is in Pittsburgh, up in the Allegheny mountains. 
-              So the first leg of the road trip is quite steep and winding. Once you leave the Alleghenies though the road stays on a relatively straightforward and flat course through miles of farmland, probably from Gettysburg onward. 
-              You’ll also cross several key rivers as you cross the state. We think the Susquehanna is the most scenic, but as you take this trip, you can judge for yourself!
-            </p>
-            <br>
-            <p>
-              On behalf of the Lincoln Highway Road Trip team, we hope you enjoy your immersive journey across the state!
-            </p>
-          </div>
+          <p>The terrain of the state varies from mountainous to relatively flat.
+            Note that the start of this road trip is in Pittsburgh, up in the Allegheny mountains.
+            So the first leg of the road trip is quite steep and winding. Once you leave the Alleghenies though the road
+            stays on a relatively straightforward and flat course through miles of farmland, probably from Gettysburg
+            onward.
+            You’ll also cross several key rivers as you cross the state. We think the Susquehanna is the most scenic,
+            but as you take this trip, you can judge for yourself!
+          </p>
           <br>
-        <button class="read-more-btn">Read More</button>
+          <p>
+            On behalf of the Lincoln Highway Road Trip team, we hope you enjoy your immersive journey across the state!
+          </p>
         </div>
-
+        <br>
+        <button class="read-more-btn">Read More</button>
       </div>
 
-    </section>
-      
+    </div>
+
+  </section>
+
 
   <footer>
 
     <div class="container-fluid">
-      <div class="row no-gutter"> 
+      <div class="row no-gutter">
 
-    <!--Footer Contact Info-->
-        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos" >
+        <!--Footer Contact Info-->
+        <div class="col-xl-4 col-md-6 col-6 footer-pos contact-pos">
           <a class="contact-btn" id="form-btn">Contact Us</a>
         </div>
 
@@ -244,11 +291,11 @@
         <div class="hide-form contact-modal" id="modal">
 
           <div class="contact-pop">
-  
+
             <span id="close-form">&times;</span>
-  
+
             <form aria-label="Send us your comments, ideas, or feedback" id="contactForm">
-            
+
               <h1 class="mobile-heading form-heading">Tell us more!</h1>
               <br>
               <label for="name" class="form-font label-display mobile-label">Name</label>
@@ -256,29 +303,32 @@
               <br>
               <br>
               <label for="email" aria-label="Email Address" class="form-font label-display mobile-label">Email</label>
-              <input id="email" type="email" name="from_email" placeholder="example@email.com" class="label-width" aria-label="Email Address" required>
+              <input id="email" type="email" name="from_email" placeholder="example@email.com" class="label-width"
+                aria-label="Email Address" required>
               <br>
               <br>
               <label for="enquiry" class="form-font label-display">Send us your comments, ideas, or feedback</label>
               <br>
-              <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area" required></textarea>
+              <textarea id="enquiry" name="enquiry" cols="45" rows="8" aria-label="Fill in comments in this text area"
+                required></textarea>
               <br>
               <br>
               <div class="g-recaptcha" data-sitekey="6Leuc8QaAAAAAMDFGUGuXcyZTQf0DL8--7p9LQbJ"></div>
               <br>
-              <input type="submit" value="Send" onsubmit="return sendMail(this);" class="btn btn-outline-light" aria-label="Submit this form">
-           </form>
-         </div>
-       </div>
+              <input type="submit" value="Send" onsubmit="return sendMail(this);" class="btn btn-outline-light"
+                aria-label="Submit this form">
+            </form>
+          </div>
+        </div>
 
-    <!--Social links-->
+        <!--Social links-->
         <div class="col-xl-4 col-md-6 col-6 footer-pos social-pos">
 
           <ul class="footer-links">
 
             <li>
               <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
-              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
             </li>
 
@@ -287,7 +337,7 @@
                 <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
-                      
+
             <li>
               <a href="https://www.twitter.com/" aria-label="Twitter" target="_blank" rel="noopener">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
@@ -299,31 +349,31 @@
                 <i class="fas fa-envelope-square" aria-hidden="true"></i>
               </a>
             </li>
-          
+
             <li>
               <a href="tel:0876093111" aria-label="Contact phone number" target="_blank" rel="noopener">
                 <i class="fas fa-phone-alt" aria-hidden="true"></i>
               </a>
             </li>
-                          
-          </ul>    
+
+          </ul>
         </div>
-                  
-    <!--Travel resources links-->
+
+        <!--Travel resources links-->
         <div class="col-xl-4 col-md-12 col-12 footer-pos explore-mobile">
           <h4 class="explore-head">
             <i class="fas fa-road"></i>
             Explore Pennsylvania:
           </h4>
-  
+
           <ul class="footer-links">
-                          
+
             <li>
               <a href="http://www.weirdus.com/states/pennsylvania/index.php" target="_blank" rel="noopener">
-                  Weird Pennsylvania
+                Weird Pennsylvania
               </a>
             </li>
-                          
+
             <li>
               <a href="https://uncoveringpa.com/" target="_blank" rel="noopener">
                 Uncovering PA
@@ -335,40 +385,45 @@
                 Atlas Obscura
               </a>
             </li>
-          </ul>   
+          </ul>
         </div>
-                
-      </div> 
-    </div>  
+
+      </div>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
   <script src="assets/js/newsletter-button.js"></script>
   <script src="assets/js/newsletter-email.js"></script>
   <script src="assets/js/contact-button.js"></script>
   <script src="assets/js/email-js.js"></script>
   <script src="assets/js/read-more.js"></script>
 
-  <!--Sweet Alert--> 
+  <!--Sweet Alert-->
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-   <!--EmailJS-->
+  <!--EmailJS-->
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script>(function(){
-    emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
+  <script>(function () {
+      emailjs.init("user_MlMdk5SWptu2RtsNn6Osk");
     })();
-  </script> 
+  </script>
 
   <!--Google reCAPTCHA-->
 
   <script defer src="https://www.google.com/recaptcha/api.js"></script>
-    
+
 </body>
+
 </html>
