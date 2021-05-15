@@ -354,20 +354,22 @@ div#map {
 
 .postcard-img {
   float: left;
-  width: auto;
-  height: 65%;
-  padding-right: 3%;
+  width: 50%;
+  height: auto;
+  padding-right: 5%;
+  padding-bottom: 5%;
 }
 
-.about-content {
-  padding: 7%;
+.about-text {
+  padding: 5% 10%;
 }
 
 .ind-hall-img {
   float: right;
-  width: auto;
-  height: 60%;
-  padding-left: 3%;
+  width: 50%;
+  height: auto;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 
 /*--- Search Page --*/
@@ -716,11 +718,19 @@ li a {
   /*--- About page styles--*/
 
   .postcard-img {
-    height: 25%;
+    height: auto;
+    width: 65%;
   }
 
   .ind-hall-img {
-    height: 25%;
+    height: auto;
+    width: 65%;
+  }
+
+  .about-btn-pos {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 37%;
   }
 
   /*--- Search page styles--*/
@@ -794,6 +804,10 @@ li a {
     font-size: 25px;
   }
 
+  .contact-pop.newsletter-pop {
+    width: 57%;
+  }
+
   /*--- Footer Styles--*/
 
   footer {
@@ -851,6 +865,10 @@ li a {
 
   h1 {
     font-size: 25px;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   h3 {
@@ -941,6 +959,10 @@ li a {
     width: 85%;
   }
 
+  .mobile-news-btn.newsletter-button.about-btn-pos {
+    padding-top: 20%;
+  }
+
   /*--- Map Page styles--*/
 
   .bn-txt-pos2 {
@@ -972,11 +994,19 @@ li a {
   /*--- About page styles--*/
 
   .postcard-img {
-    height: 20%;
+    height: auto;
+    width: 100%;
+    padding: 5%;
   }
 
   .ind-hall-img {
-    height: 20%;
+    height: auto;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .about-text {
+    padding: 5% 15%;
   }
 
   /*--- Search Page styles--*/
@@ -986,4 +1016,18 @@ li a {
     padding-top: 12%;
     padding-left: 3%;
   }
+}
+
+@media screen and (max-width: 320px) {
+
+  /*--- General styles--*/
+
+  .contact-pop.newsletter-pop {
+    width: 100%;
+  }
+
+  .mobile-news-btn.newsletter-button.about-btn-pos {
+    padding-top: 15%;
+    padding-left: 15%;
+  }  
 }
