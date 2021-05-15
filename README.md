@@ -264,7 +264,18 @@ The lat/long positions come from [this site](https://www.maps.ie/).
 
 I added a custom 404 page to the site by naming the page 404.html. GitHub Pages automatically assigned the page as the default 404 page in case a site visitor goes to a broken link.
 
+### Future features
+
+1. I plan to add Google Directions to the map on the search page so that Route 30 is more clearly marked out on the search map for site visitors to follow, instead of requiring users to scroll through the map to the next location.
+
+2. The markers on the main map are customised, but not accessible to screen readers. In a future version of this project, I plan to improve the accessibility of these markers. 
+
+3. The pop-out forms on the site are not fully accessible to screen readers. I'd also like to fix these forms to be accessible so that the forms pop-out if a user has a screen reader. 
+
+4. I'd like to add a section on the About the Highway page with more resources on the Lincoln Highway Heritage Quarter.
+
 <a name="technologies"></a>
+
 ## Technologies used
 
 ### Languages and libraries
@@ -352,7 +363,19 @@ At one point, I also had JavaScript on the site to highlight an active link in t
 
 #### User story: information about hotels/restaurants 
 
+The main testing on this feature was on the Read More/Read Less buttons. I originally tried to put the button inside one `<p>` tag so that all content was inside the same `<div>`. This did't work properly because the content above and below the button needed to be in different elements. 
 
+Then, I used a `<span>` to place the hidden content that appears after you click on the Read More button. I wanted to use an `<ul>` to show each suggestion on its own bullet point. This caused an error with my HTML, and I decided to use a `<div>` instead to hold the content. 
+
+I also originally used `<br>` to show a break between bullet points, but this cause some spacing issues on mobile view, and decided to use padding so I could have more control over teh spacing instead. 
+
+Finally, I used a aria-labels to make the map icon that jumps back up to the map more accessible. 
+
+#### User story: History of the Lincoln Highway
+
+To style this page, I wrapped each of the two images on the page in each text section by floating the image into the text. Then I added a Read More/Less section under each text section. Because I didn't properly size the image widths, the images would resize with when the Read More/Less button was clicked and this caused the button to disappear and overflow the page section on smaller screens.
+
+To fix this, I properly sized the images to have `width: auto` and a height sized by percent, depending on the screen size. The images now stay properly sized when the Read/More button is clicked and the button works as expected without overflowing.
 
 #### User story: newsletter/form pop-out
 
@@ -395,6 +418,8 @@ To fix this, I instead added the anchor links back up to the map with the map ic
 #### Bootstrap Nav
 
 The Bootstrap Nav works as expected and was adjusted to have my own page names, links, and anchor links. It folds up behind a hamburger icon on smaller screen sizes to save space in the header. I've also moved the mobile navigation slightly more to the centre of the page to remove some of the blank space. 
+
+The primary testing I did with this navbar was to adjust the anchor links in the dropdown folder so that they work correctly on the live site. I add the page slug then the anchor to fix this issue. 
 
 #### Map with markers and corresponding cards
 
