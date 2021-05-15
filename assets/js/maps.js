@@ -1,12 +1,22 @@
 function initMap() {
+
+  // Add a variable that creates the map on the Lincoln Highway Map page, sets the zoom, centers the map, and styles it using Google Maps JS
+
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 7.25, 
+    zoom: 7.25,
     center: {
-    lat: 40.58, 
-    lng: -77.57,},
+      lat: 40.58,
+      lng: -77.57,
+    },
     mapId: "1a97cdea16f163b5",
-  }); 
+  });
+
+  // Create variables for the map marker coordinates, the info window content, and the content on the map cards
+
   const markers = [
+
+    // Pittsburgh
+
     {
       coords: { lat: 40.44, lng: -79.99 },
       content: "<h3>Pittsburgh</h3><p>Start here! &#128664</p>",
@@ -29,6 +39,8 @@ function initMap() {
             <a href="#Pittsburgh" class="read-more-btn">More info</a>`,
     },
 
+    // Fallingwater
+
     {
       coords: { lat: 39.906, lng: -79.467 },
       content: "<h3>Fallingwater</h3>",
@@ -48,6 +60,8 @@ function initMap() {
             <br>
             <a href="#Fallingwater" class="read-more-btn">More info</a>`,
     },
+
+    // Bedford
 
     {
       coords: { lat: 40.022899, lng: -78.517347 },
@@ -71,6 +85,8 @@ function initMap() {
             <a href="#Bedford" class="read-more-btn">More info</a>`,
     },
 
+    // Gettsburg 
+
     {
       coords: { lat: 39.8121605, lng: -77.2216721 },
       content: "<h3>Gettysburg</h3><p>&#128123</p>",
@@ -89,6 +105,8 @@ function initMap() {
             <br>
             <a href="#Gettysburg" class="read-more-btn">More info</a>`,
     },
+
+    // Harrisburg
 
     {
       coords: { lat: 40.25959, lng: -76.881866 },
@@ -110,6 +128,8 @@ function initMap() {
             <a href="#Harrisburg" class="read-more-btn">More info</a>`,
     },
 
+    // Lancaster
+
     {
       coords: { lat: 40.03, lng: -76.3 },
       content: "<h3>Lancaster</h3>",
@@ -129,6 +149,8 @@ function initMap() {
             <br>
             <a href="#Lancaster" class="read-more-btn">More info</a>`,
     },
+
+    // Philadelphia
 
     {
       coords: { lat: 39.9526, lng: -75.1652 },
@@ -153,9 +175,13 @@ function initMap() {
     },
   ];
 
+  // Loop through the map markers
+
   for (var i = 0; i < markers.length; i++) {
     addMarker(markers[i]);
   }
+
+  // Create map markers with custom image icon
 
   function addMarker(props) {
     let image = "https://maps.google.com/mapfiles/kml/paddle/red-stars.png";
@@ -165,18 +191,26 @@ function initMap() {
       map: map,
     });
 
+    // Create info window that appears with the map markers
+
     if (props.content) {
-      var infoWindow = new google.maps.InfoWindow({
+      let infoWindow = new google.maps.InfoWindow({
         content: props.content,
       });
+
+      // Show info window on mouseover
 
       marker.addListener("mouseover", function () {
         infoWindow.open(map, marker);
       });
 
+      // Hide info window on mouseout
+
       marker.addListener("mouseout", function () {
         infoWindow.close(map, marker);
       });
+
+      // Change the HTMl content for the sidecard beside the map when the corresponding marker is clicked on
 
       google.maps.event.addListener(
         marker,
@@ -190,6 +224,8 @@ function initMap() {
     }
   }
 }
+
+// Load map after the initial HTML document and before stylesheets and images
 
 document.addEventListener("DOMContentLoaded", function (event) {
   initMap();
