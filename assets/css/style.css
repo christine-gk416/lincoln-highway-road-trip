@@ -82,7 +82,7 @@ body {
 }
 
 .location-font {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
 }
 
@@ -662,7 +662,7 @@ li a {
 
   .contact-pop {
     margin-top: 17%;
-    width: 45%;
+    width: 50%;
   }
 
   textarea {
@@ -709,11 +709,11 @@ li a {
   .contact-pop.newsletter-pop {
     width: 43%;
     margin-top: 25%;
-  }  
+  }
 
   .newsletter-img {
     width: 80%;
-  }  
+  }
 
   /*--- About page styles--*/
 
@@ -752,7 +752,6 @@ li a {
 }
 
 @media screen and (max-width: 768px) {
-  
   /*--- General Styles--*/
 
   .bn-txt-pos {
@@ -763,7 +762,7 @@ li a {
   .logo-size {
     padding-left: 5%;
   }
-  
+
   /*--- Footer Styles--*/
 
   footer {
@@ -844,7 +843,6 @@ li a {
 }
 
 @media screen and (max-width: 540px) {
-
   /*--- General Styles--*/
 
   .mobile-label {
@@ -956,7 +954,7 @@ li a {
 
   .contact-pop {
     margin: 35% auto;
-    width: 85%;
+    width: 90%;
   }
 
   .mobile-news-btn.newsletter-button.about-btn-pos {
@@ -1019,7 +1017,6 @@ li a {
 }
 
 @media screen and (max-width: 320px) {
-
   /*--- General styles--*/
 
   .contact-pop.newsletter-pop {
@@ -1029,5 +1026,5 @@ li a {
   .mobile-news-btn.newsletter-button.about-btn-pos {
     padding-top: 15%;
     padding-left: 15%;
-  }  
+  }
 }
