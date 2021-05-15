@@ -62,6 +62,16 @@ These are the user stories I've identified for the current version of this proje
 
 ### Wireframes
 
+[Sitemap](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:24e97274-e2c5-47b4-af2c-a77bf2a2a116)
+
+[Home](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9d169343-950f-44eb-876b-656b23d0cb4f)
+
+[About the Lincoln Highway](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:700b8ac2-8078-4bb9-9483-abebc9f6255e)
+
+[Plan your trip](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:ac31e46a-6be3-46d6-9b39-ff79999767e7)
+
+[Search](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:97b663bd-cc07-49ac-bbb5-1011388c46ac)
+
 ### Design
 
 **Colors**
@@ -153,6 +163,12 @@ Finally, I added an anchor link to a map icon below the image in each location s
 I used `scroll-behavior: smooth;` CSS to make all these page jumps less harsh.
 
 ![Location Gif](assets/images/location-userstory.gif)
+
+#### User Story 3- History of the Lincoln Highway
+
+This features is more a text content section that required me to reasearch the highway and to write my own content summary that's engaging for the site visitor. I've also included some general information about the state of Pennsylvania. 
+
+To save space on the page, I also used a Read More/Less Button, using the same tool from User Story 2.
 
 #### User Story 4- Newsletter 
 
@@ -418,7 +434,26 @@ The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.co
 
 ### Text content sources 
 
-#### Location sections sources
+**Content for the About the Lincoln Highway page**
+
+https://uncoveringpa.com/lincoln-highway-experience
+
+https://www.lincolnhighwayassoc.org/
+
+https://www.fhwa.dot.gov/infrastructure/lincoln.cfm
+
+https://eu.usatoday.com/story/travel/destinations/2013/07/05/lincoln-highway-100th-anniversary-transcontinental-road/2491097/
+
+https://lhhc.org/lincoln-highway-experience/visit.html
+
+https://en.wikipedia.org/wiki/Lincoln_Highway
+
+https://en.wikipedia.org/wiki/Pennsylvania
+
+https://www.britannica.com/place/Pennsylvania-state
+
+
+### Location sections sources
 
 **Pittsburgh**
 
@@ -478,6 +513,7 @@ https://en.wikipedia.org/wiki/Rocky_Steps
 - fallingwater.jpg is from Unsplash by [Kirk Thornton](https://unsplash.com/@kirkthornton)
 - fallingwater2.jpg is also from Unsplash by [Cameron Venti](https://unsplash.com/@ventiviews)
 - favicon.ico is a general emoji of a road from [favicon.io](https://favicon.io/emoji-favicons/)
+- fulton-inn.jpeg comes from the [Fulton Steamboat Inn website](https://fultonsteamboatinn.com/)
 - gettysburg.jpg is sourced from freeimages.com by [Eric Nelson](https://www.freeimages.com/photographer/ericnelson-32464)
 - gettysburg2.jpg comes from Unsplash by [Timothy Pierce](https://unsplash.com/@tpierce)
 - harrisburg-bridge.jpg is an image by [Charles Jackson](https://unsplash.com/@cneasonj) on Unsplash
