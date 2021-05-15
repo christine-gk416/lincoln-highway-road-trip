@@ -14,13 +14,23 @@ The Lincoln Highway Road trip is a project meant to give people an alternate to 
 
 www.lincolnhighwayroadtrip.com
 
+
 ![Responsive demo](assets/images/responsive-demo2.png)
 
 From [Am I Responsive?](http://ami.responsivedesign.is/)
 
 ## Table of Conents
 
+- [Ux & Design Planning](#ux)
+- [Features](#features)
+- [Technologies used](#technologies)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 <br>
+
+<a name="ux"></a>
 
 ## UX Planning
 
@@ -100,7 +110,8 @@ In the banner headings near the top of each page, I used Kiwi Maru because it's 
 
 The reason I used three fonts is that I understand a font pack should remain small and that adding multiple fonts to a site can increase loading time.
 
-## Features:
+<a name="features"></a>
+## Features: 
 
 ### User Story Features:
 
@@ -237,6 +248,7 @@ The lat/long positions come from [this site](https://www.maps.ie/).
 
 I added a custom 404 page to the site by naming the page 404.html. GitHub Pages automatically assigned the page as the default 404 page in case a site visitor goes to a broken link.
 
+<a name="technologies"></a>
 ## Technologies used
 
 ### Languages and libraries
@@ -311,6 +323,7 @@ I added a custom 404 page to the site by naming the page 404.html. GitHub Pages 
 - [GIMP](https://www.gimp.org/)
     - I edited images on this tool  
 
+<a name="testing"></a>
 ## Testing 
 
 ### Features
@@ -371,6 +384,7 @@ The Bootstrap Nav works as expected and was adjusted to have my own page names, 
 
 
 
+<a name="deployment"></a>
 
 ## Deployment
 
@@ -396,6 +410,7 @@ This CNAME file created a conflict with my original workspace, which I wasn't ab
 
 The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.com
 
+<a name="credits"></a>
 
 ## Credits
 
