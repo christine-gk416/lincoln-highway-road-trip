@@ -121,6 +121,7 @@ In the banner headings near the top of each page, I used Kiwi Maru because it's 
 The reason I used three fonts is that I understand a font pack should remain small and that adding multiple fonts to a site can increase loading time.
 
 <a name="features"></a>
+
 ## Features: 
 
 ### User Story Features:
@@ -307,9 +308,6 @@ I added a custom 404 page to the site by naming the page 404.html. GitHub Pages 
 - [Popper](https://popper.js.org/) 
     - The navigation bar also uses **Popper**.
 
-- Ajax
-    - This was also used for the navigation bar.
-
 - [Google Maps JS API](https://developers.google.com/maps/documentation/javascript/overview)
   - The map was created from this custom **Google Maps API** and the atlas style used for the map colouring comes from their built-in map style options and a unique map style ID. 
 
@@ -351,13 +349,14 @@ I added a custom 404 page to the site by naming the page 404.html. GitHub Pages 
     - I edited images on this tool  
 
 <a name="testing"></a>
+
 ## Testing 
 
 ### Features
 
 #### User story: slideshow
 
-The slideshow was the first part of the homepage I built, and to test out adding it to the site, I started building it based on this [Medium article]( https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9) but I eventually switch to following the W3 article mentioned in the Features section. I updated my code for the change in instructions that I was following. 
+The slideshow was the first part of the homepage I built, and to test out adding it to the site, I started building it based on this [Medium article](https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9) but I eventually switch to following the W3 article mentioned in the Features section. I updated my code for the change in instructions that I was following. 
 
 At one point, I also had JavaScript on the site to highlight an active link in the header. This conflicted with the active class in the slider.js file. I ended up removing this active link feature for unrelated reasons, but had to update the active class in the other JavaScript file to work around this conflict. 
 
@@ -423,6 +422,73 @@ The primary testing I did with this navbar was to adjust the anchor links in the
 
 #### Map with markers and corresponding cards
 
+I tried to follow Google's documentation on how to make the map markers accessible, but their documentation suggested creating an array wth the location name as part of the coordinates for each location. However, this caused all the map markers to disappear from the map. I'd like to take some time in a future version of this project to accurately fix the accessibiity of the map markers. 
+
+Next I had the info windo set to appear with an on click event listener, but decided to use mouseover/mouseout event listeners for the info windows instead. 
+
+Finally I tested out having the map card above and below the map on mobile view and found that it works best with the flow of the site if the card appears below the map on mobile view. 
+
+### Validators
+
+#### CSS
+
+I validated the CSS on [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator). The CSS has no major errors. There are two warnings: 
+
+    220		-webkit-animation-name is an unknown vendor extension
+    221		-webkit-animation-duration is an unknown vendor extension
+
+I did some research on this and I've found that these aren't official W3C CSS specifications, but are designed to work on WebKit browsers like Google Chrome and Safari. There's more on this [here](https://www.quackit.com/css/properties/webkit/css_-webkit-animation-name.cfm).
+
+This CSS also came from a W3 Schools lesson, so I've cited this CSS as borrowed code. 
+
+#### HTML 
+
+I used the [W3 validator](https://validator.w3.org/nu/#textarea) to validate my HTML. 
+
+**Home Page**
+
+This page doesn't show any major errors. However, it does show some warnings for my Headings because I used h4 headings in my site footer. I did this so that the bottom of the site would have the smallest heading, but I don't have many other headings on this page because it's mostly images and buttons.
+
+**All other pages**
+
+All the other pages on the site don't through major errors either. The only warnings that appear are for the H1 headings. I used H1 fonts for all the banner areas on the site because these are the main topic of the page. This is the first text on the page, so I think that this text should be marked as the H1 heading. 
+
+Also, I used H1 for the top of my forms, so that this is the first content with information about my forms. I think I can fix these warnings after I make my forms properly accessible to screen readers.
+
+#### JavaScript
+
+I used [JShint](https://jshint.com/) to validate my JavaScript.
+
+The main warning I recieved for my JavaScript was:
+
+	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+I researched this error and found that this error appears for new ES6 features that may not run on systems that don't support them. This information was found on a [Treehouse forum post](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6).
+
+I used `// jshint esversion: 6` to work around this error. 
+
+**Slider.js**
+
+This file is showing an error:
+    Two Unused Variables:
+    6	plusSlides
+    10	currentSlide
+
+However, these are both functions, not variables and this code was from a W3 Scools article, so I left it as is on the site.
+
+### Browsers and responsive design
+
+The site looks much the same on Google Chrome, Firefox, and Safari. While building the site, I switched between Firefox and Google Chrome so I could make sure that the styles on both browsers were consistent. I tested the site out on desktop Safari, and it looks much the same, but the navbar is a little more squished than on the other two browsers. This is because Safari on my device loads on a smaller screen thatn Chrome of Firefox.
+
+While working on the mobile version of the site, I deployed it early so that I could test out how it works on my phone. The site resizes well on Safari and Google Chrome on my iPhone SE 2020. 
+
+To build the mobile version of the site, I used both Chrome and Firefox Developer Tools. I created media queries to make the site fully responsive across different mobile phone types in regular mode and landscape mode. I also used media queries to fit the site on iPad and Surface devices on regular and landscape views. 
+
+### Lighthouse
+
+I ran my site through Google Chrome Lighthouse.
+
+All pages on the site have an accessiblity score of over 96 on mobile and desktop. Each page has an SEO score of 100. Finally all pages have a Best Practices score of over 93 on mobile and desktop views.
 
 
 <a name="deployment"></a>
@@ -454,8 +520,6 @@ The live site can now be accessed live online at: wwww.lincolnhighwayroadtrip.co
 <a name="credits"></a>
 
 ## Credits
-
-### Code sources
 
 ### Text content sources 
 
@@ -551,3 +615,8 @@ https://en.wikipedia.org/wiki/Rocky_Steps
 - pittsburgh2.jpg is also from Unsplash, taken by [Guido Coppa](https://unsplash.com/@gcoppa)
 - turn-around.gif was sourced from the official Groundhog Day film page on [Giphy](https://giphy.com/groundhogday/)
 - windy-roady.jpg is from [Matt Duncan](https://unsplash.com/@foxxmd) on Unsplash
+
+### Acknowledgements
+
+- The Lincoln Highway Heritage Corridor Project and the Lincoln Highway Association for their inspiration and their work on preserving and promoting the highway
+- My mentor Excellence Ilesanmi, because I'd be lost without his advice and guidance
