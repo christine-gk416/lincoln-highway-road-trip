@@ -166,6 +166,8 @@ body {
   margin: auto;
 }
 
+  /*--CSS code from the W3 Schools article on buildng a slideshow--*/
+
 .mySlides {
   display: none;
 }
