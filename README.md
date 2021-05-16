@@ -151,7 +151,7 @@ This feature is connected to the main Google Map that’s on the map page.
 
 To allow users to navigate the map page to plan out their road trip, I added a few buttons on the page. The first is on the card for each map location, that appears when you click on a map pin. There’s a More Info anchor link that then takes the user to a location section on the page.
 
-In each location section, I added in a paragraph of text with external links to different places to eat along the road trip. Then I created a Read More button with jQuery to show more information about hotels and places of interest (more external links). The jQuery button also can be clicked on to show less information (Read Less). jQuery was specifically used to demonstrate that I understand how to use this JavaScript framework.
+In each location section, I added in bullet points of text as an unordered list with external links to different places to eat along the road trip. Then I created a Read More button with jQuery to show more information about hotels and places of interest (more external links). The jQuery button also can be clicked on to show less information (Read Less). jQuery was specifically used to demonstrate that I understand how to use this JavaScript framework.
 
 I followed these two Youtube videos for instructions on how to build these Read More/Read Less buttons with jQuery:
 
@@ -470,6 +470,7 @@ I used `// jshint esversion: 6` to work around this error.
 **Slider.js**
 
 This file is showing an error:
+
     Two Unused Variables:
     6	plusSlides
     10	currentSlide
